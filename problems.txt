@@ -1,0 +1,27 @@
+atwood.eps
+figa1.eps
+freebody.eps
+kater1.eps
+projectile.app.eps
+bethe 33% fgrep '\begin{figure}[' *tex | fgrep h
+appa.tex:\begin{figure}[hbt]
+appb.tex:\begin{figure}[hbt]
+appc.tex:\begin{figure}[hbt]    %Appendix C, Fig 1
+appc.tex:\begin{figure}[!hbt]     %Appendix C, Fig 2: temp vs distance
+appc.tex:\begin{figure}[!hbt]    %linear graph of pressure vs altitude
+appc.tex:\begin{figure}[!hbt]   %semi-log graph of pressure vs altitude
+appc.tex:\begin{figure}[!hbt]    %linear graph of speed vs molecular weight
+appc.tex:\begin{figure}[!hbt]   %semi-log graph of pressure vs altitude
+appc.tex:\begin{figure}[!hbt]   %semi-log graph of pressure vs altitude
+atwood.tex:\begin{figure}[!hbt]     %Atwood machine diagram, atwood.eps
+freefall2.tex:\begin{figure}[hbt]
+freefall.tex:\begin{figure}[hbt]
+intro.tex:%\begin{figure}[hbt]
+intro.tex:%\begin{figure}[hbt]
+kater.tex:\begin{figure}[!hbt]     %Kater pendulum drawing, kater.eps
+kater.tex:\begin{figure}[!hbt]     %Kater pendulum apparatus, kater1.eps
+kinetic.tex:\begin{figure}[hbt]
+project.tex:\begin{figure}[hbt]
+rotation.tex:\begin{figure}[!hbt]
+rotation.tex:\begin{figure}[!hbt]
+rotation.tex:\begin{figure}[!hbt]

@@ -1,0 +1,104 @@
+\documentclass[11pt,twoside]{report}
+\usepackage[dvips]{graphics}
+\pagestyle{plain}
+\textwidth=6in
+\textheight=9.25in
+\topmargin=-0.65in 				% + 1 3/8 in  = 7/8
+\oddsidemargin=.25in 				% + 1 in      = 1.25
+\evensidemargin=.25in 				% + 1 in      = 1.25
+\parindent=0in					% no indent
+\parskip=2ex					% skip lines
+\flushbottom
+%\begin{figure}
+%\vspace{2.5in}
+%\special{ps:fig6_1.ps}
+%\caption{Diagram of a two body collision showing the situation before and
+%   after the collision.  \label{fig:tb1}}
+%\end{figure}
+%\begin{equation}
+%M_{1} \vec{V_{1}}  = M_{1} \vec{V_{1}'} + M_{2} \vec{V_{2}'}  \label{eqn:tb1}
+%\end{equation}
+%Figure~\ref{fig:tb1}
+%Equations~\ref{eqn:tb2a}
+\thispagestyle{empty}
+\begin{document}
+
+\section*{Appendix E---Uncertainty Formulae}
+In the below equations the quantities
+$a,b,c,\ldots$ have uncertainties $\delta a,\delta b,\delta c,\ldots$ 
+whereas the quantities
+$K, k_1,k_2,\ldots$ are ``constants" (like $\pi$ or 2) with
+zero error or quantities with so small error that they can be treated
+as error-free (like the mass of a proton: $m_p=(1.67262158\pm.00000013)\times 10^{-27}$~kg
+or Avogadro's number $N_A = (6.022 141 99\pm .0000047)\times 10^{23}$).
+This table reports the error in a calculated quantity $R$ (which is assumed to be positive).  
+Note that a quantity like
+$\delta a$ is called an {\em absolute} error; whereas the quantity
+$\delta a/a$ is called the {\em relative} error (or, when multiplied by
+100, the {\em percent} error).  The odd Pythagorean-theorem-like addition
+(e.g., $\delta R= \sqrt{\delta a^2 + \delta b^2}$) is called ``addition in
+quadrature".  Thus the formula for the error in $R=K\;{ab/cd}$ could be stated as
+``the percent error in $R$ is the sum of the percent errors in $a,b,c$ and $d$ added
+in quadrature".
+
+\begin{center}
+\begin{tabular}{lclr}      
+{\Large Equation}&$\quad$&{\Large Uncertainty}\\ \\
+${\displaystyle R= a+K }$&&
+${\displaystyle \delta R= \delta a
+}$&(E.1)\\ \\
+${\displaystyle R= K\; a }$&&
+${\displaystyle {\delta R \over R}={\delta a \over a}
+}\quad$ or $\quad{\displaystyle {\delta R }={|K|\; \delta a }
+}$&(E.2)\\ \\
+${\displaystyle R= {K\over a} }$&&
+${\displaystyle {\delta R \over R}={\delta a \over a}
+}\quad$ or $\quad{\displaystyle {\delta R }={|K|\; \delta a \over a^2}
+}$&(E.3)\\ \\
+${\displaystyle R= K\; a^{k_1} }$&&
+${\displaystyle {\delta R \over R}={|k_1|\;\delta a \over a}
+}\quad$ or $\quad{\displaystyle {\delta R }={|k_1K a^{k_1-1}|\; \delta a }
+}$&(E.4)\\ \\
+${\displaystyle R= a\pm b }$&&
+${\displaystyle \delta R= \sqrt{\delta a^2 + \delta b^2} 
+}$&(E.5)\\ \\
+${\displaystyle R= k_1 a + k_2 b }$&&
+${\displaystyle \delta R=\sqrt{
+\left({k_1 \delta a}\right)^2+
+\left({k_2 \delta b}\right)^2}
+}$&(E.6)\\ \\
+${\displaystyle R= K\;ab }$&&
+${\displaystyle {\delta R \over R}=\sqrt{
+\left({\delta a\over a}\right)^2+
+\left({\delta b\over b}\right)^2}
+}$&(E.7)\\ \\
+${\displaystyle R= K\;{a\over b} }$&&
+${\displaystyle {\delta R \over R}=\sqrt{
+\left({\delta a\over a}\right)^2+
+\left({\delta b\over b}\right)^2}
+}$&(E.8)\\ \\
+${\displaystyle R= f(a) }$&&
+${\displaystyle \delta R= |f'(a)|\;\delta a
+}$&(E.9)\\ \\
+${\displaystyle R=K\;{ab \over cd} }$&&
+${\displaystyle {\delta R \over R}=\sqrt{
+\left({\delta a\over a}\right)^2+
+\left({\delta b\over b}\right)^2+
+\left({\delta c\over c}\right)^2+
+\left({\delta d\over d}\right)^2} }$&(E.10)\\ \\
+${\displaystyle R=K\;{a^{k_1}b^{k_2} \over c^{k_3}d^{k_4}} }$&&
+${\displaystyle {\delta R \over R}=\sqrt{
+\left({k_1 \delta a\over a}\right)^2+
+\left({k_2 \delta b\over b}\right)^2+
+\left({k_3 \delta c\over c}\right)^2+
+\left({k_4 \delta d\over d}\right)^2} }$&(E.11)\\ \\
+${\displaystyle R=f(a,b,c,d) }$&&
+${\displaystyle \delta R=\sqrt{
+\left({\partial f \over \partial a}\;\delta a\right)^2+
+\left({\partial f \over \partial b}\;\delta b\right)^2+
+\left({\partial f \over \partial c}\;\delta c\right)^2+
+\left({\partial f \over \partial d}\;\delta d\right)^2} }$&(E.12)\\
+\end{tabular}
+\end{center}
+\end{document}
+\bye

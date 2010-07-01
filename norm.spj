@@ -1,0 +1,86 @@
+set nrow 40
+let c1=.026*inorm(ran)+.19
+sort c1 to c2
+set a .14 b .16
+let c3=wind(c2)
+set a .16 b .18
+let c4=wind(c2)
+set a .18 b .20
+let c5=wind(c2)
+set a .20 b .22
+let c6=wind(c2)
+set a .22 b .24
+let c7=wind(c2)
+set a .24 b .26
+let c8=wind(c2)
+
+.12-.14			1
+.14-.16: 4	3	2
+.16-.18: 9	9	9
+.18-.20: 15	11	14
+.20-.22: 9	14	11
+.22-.24: 3	3	1
+.24-.26: 0	0	2...mean=.19 sdev=.024
+.12 0
+.12 1
+.14 1
+.14 0
+.14 2
+.16 2
+.16 0
+.16 9
+.18 9
+.18 0
+.18 14
+.20 14
+.20 0
+.20 11
+.22 11
+.22 0
+.22 1
+.24 1
+.24 0
+.24 2
+.26 2
+.26 0
+
+
+set nrow 80
+set a=-.1 b=.5
+let c2=ran
+let c1=wind(c2)*(.02*inorm(ran)+.21)+(1-wind(c2))*(.02*inorm(ran)+.15)
+sort c1 to c2
+
+set a .10 b .12
+let c3=wind(c2)
+set a .12 b .14
+let c4=wind(c2)
+set a .14 b .16
+let c5=wind(c2)
+set a .16 b .18
+let c6=wind(c2)
+set a .18 b .20
+let c7=wind(c2)
+set a .20 b .22
+let c8=wind(c2)
+set a .22 b .24
+let c9=wind(c2)
+set a .24 b .26
+let c10=wind(c2)
+cst c3
+cst c4
+cst c5
+cst c6
+cst c7
+cst c8
+cst c9
+cst c10
+
+.10-.12 5	7	1	4	2	2
+.12-.14	 12	8	5	10	10	9
+.14-.16: 13	12	14	18	9	22
+.16-.18:  17	11	9	11	17	9
+.18-.20: 10	10	13	10	18	12
+.20-.22: 14	17	18	16	14	20
+.22-.24:  6	10	14	8	5	5
+.24-.26:  2	3	4	2	4	1

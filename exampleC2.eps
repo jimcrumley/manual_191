@@ -1,0 +1,818 @@
+%!PS-Adobe-2.0 EPSF-2.0
+%%BoundingBox: 45 287 462 714
+%%Title: /tmp/exampleC.eps
+%%CreationDate: 9:24 AM May 28, 2007
+%%Pages: 1
+%%EndComments
+%%BeginProlog
+%%BeginResource ShowcaseResource
+1 setlinejoin
+/M  { moveto } bind def /S { show  } bind def
+/R { rmoveto } bind def /L { lineto } bind def
+/B { newpath 0 0 M 0 1 L 1 1 L 1 0 L closepath } bind def
+/CS { closepath stroke } bind def
+/S {
+    /fixwidth exch def
+    dup length /nchars exch def
+    dup stringwidth pop
+    fixwidth exch sub nchars div
+    exch 0 exch ashow
+} def
+/bwproc {
+	rgbproc
+	dup length 3 idiv string 0 3 0
+	5 -1 roll {
+	add 2 1 roll 1 sub dup 0 eq
+	{ pop 3 idiv 3 -1 roll dup 4 -1 roll dup
+	  3 1 roll 5 -1 roll put 1 add 3 0 }
+	{ 2 1 roll } ifelse
+	} forall
+	pop pop pop
+} def
+systemdict /colorimage known not {
+	/colorimage {
+		pop
+		pop
+		/rgbproc exch def
+		{ bwproc } image
+	} def
+} if
+1 1 scale
+0 setlinewidth
+/drawtri {
+/y3 exch def
+/x3 exch def
+/y2 exch def
+/x2 exch def
+/y1 exch def
+/x1 exch def
+0 setgray
+newpath
+x1 y1 moveto
+x2 y2 lineto
+x3 y3 lineto
+closepath
+stroke
+} bind def
+/filltri {
+/y3 exch def
+/x3 exch def
+/y2 exch def
+/x2 exch def
+/y1 exch def
+/x1 exch def
+newpath
+x1 y1 moveto
+x2 y2 lineto
+x3 y3 lineto
+closepath
+fill
+} bind def
+/cliptri {
+/y3 exch def
+/x3 exch def
+/y2 exch def
+/x2 exch def
+/y1 exch def
+/x1 exch def
+0 setgray
+newpath
+x1 y1 moveto
+x2 y2 lineto
+x3 y3 lineto
+closepath
+clip
+} bind def
+/imgscanrgb {
+gsave
+translate
+/scandy exch def
+/scandx exch def
+/istr scandx 3 mul string def
+scandx scandy scale
+scandx scandy 8
+[scandx 0 0 scandy neg 0 scandy]
+{currentfile istr readhexstring pop}
+false 3
+colorimage
+grestore
+} bind def
+/imgscanbw {
+gsave
+translate
+/scandy exch def
+/scandx exch def
+/istr scandx string def
+scandx scandy scale
+scandx scandy 8
+[scandx 0 0 scandy neg 0 scandy]
+{currentfile istr readhexstring pop}
+image
+grestore
+} bind def
+/showcaseisoencoding [
+/.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef
+/space /exclam /quotedbl /numbersign
+/dollar /percent /ampersand /quoteright
+/parenleft /parenright /asterisk /plus
+/comma /minus /period /slash
+/zero /one /two /three /four /five /six /seven
+/eight /nine /colon /semicolon
+/less /equal /greater /question
+/at /A /B /C /D /E /F /G
+/H /I /J /K /L /M /N /O
+/P /Q /R /S /T /U /V /W
+/X /Y /Z /bracketleft
+/backslash /bracketright /asciicircum /underscore
+/quoteleft /a /b /c /d /e /f /g
+/h /i /j /k /l /m /n /o
+/p /q /r /s /t /u /v /w
+/x /y /z /braceleft
+/bar /braceright /asciitilde /guilsinglright
+/fraction /florin /quotesingle /quotedblleft
+/guilsinglleft /fi /fl /endash
+/dagger /daggerdbl /bullet /quotesinglbase
+/quotedblbase /quotedblright /ellipsis /trademark
+/dotlessi /grave /acute /circumflex
+/tilde /macron /breve /dotaccent
+/dieresis /perthousand /ring /cedilla
+/Ydieresis /hungarumlaut /ogonek /caron
+/emdash /exclamdown /cent /sterling
+/currency /yen /brokenbar /section
+/dieresis /copyright /ordfeminine /guillemotleft
+/logicalnot /hyphen /registered /macron
+/degree /plusminus /twosuperior /threesuperior
+/acute /mu /paragraph /periodcentered
+/cedilla /onesuperior /ordmasculine /guillemotright
+/onequarter /onehalf /threequarters /questiondown
+/Agrave /Aacute /Acircumflex /Atilde
+/Adieresis /Aring /AE /Ccedilla
+/Egrave /Eacute /Ecircumflex /Edieresis
+/Igrave /Iacute /Icircumflex /Idieresis
+/Eth /Ntilde /Ograve /Oacute
+/Ocircumflex /Otilde /Odieresis /multiply
+/Oslash /Ugrave /Uacute /Ucircumflex
+/Udieresis /Yacute /Thorn /germandbls
+/agrave /aacute /acircumflex /atilde
+/adieresis /aring /ae /ccedilla
+/egrave /eacute /ecircumflex /edieresis
+/igrave /iacute /icircumflex /idieresis
+/eth /ntilde /ograve /oacute
+/ocircumflex /otilde /odieresis /divide
+/oslash /ugrave /uacute /ucircumflex
+/udieresis /yacute /thorn /ydieresis ] def
+/showcasedingbatencoding [
+/.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef
+/.notdef /a1 /a2 /a202 /a3 /a4 /a5 /a119 /a118 /a117
+/a11 /a12 /a13 /a14 /a15 /a16 /a105 /a17 /a18 /a19
+/a20 /a21 /a22 /a23 /a24 /a25 /a26 /a27 /a28 /a6 /a7
+/a8 /a9 /a10 /a29
+/a30 /a31 /a32 /a33 /a34 /a35 /a36 /a37 /a38 /a39
+/a40 /a41 /a42 /a43 /a44 /a45 /a46 /a47 /a48 /a49
+/a50 /a51 /a52 /a53 /a54 /a55 /a56 /a57 /a58 /a59
+/a60 /a61 /a62 /a63 /a64 /a65 /a66 /a67 /a68 /a69
+/a70 /a71 /a72 /a73 /a74 /a203 /a75 /a204 /a76 /a77 /a78
+/a79 /a81 /a82 /a83 /a84 /a97 /a98 /a99 /a100 /.notdef
+/a205 /a85 /a206 /a86 /a87 /a88 /a89 /a90 /a91 /a92 /a93
+/a94 /a95 /a96
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /a101 /a102 /a103 /a104 /a106 /a107 /a108
+/a112 /a111 /a110 /a109
+/a120 /a121 /a122 /a123 /a124 /a125 /a126 /a127 /a128 /a129
+/a130 /a131 /a132 /a133 /a134 /a135 /a136 /a137 /a138 /a139
+/a140 /a141 /a142 /a143 /a144 /a145 /a146 /a147 /a148 /a149
+/a150 /a151 /a152 /a153 /a154 /a155 /a156 /a157 /a158 /a159
+/a160 /a161 /a163 /a164 /a196 /a165 /a192 /a166 /a167 /a168
+/a169 /a170 /a171 /a172 /a173 /a162 /a174 /a175 /a176 /a177
+/a178 /a179 /a193 /a180 /a199 /a181 /a200 /a182 /.notdef
+/a201 /a183 /a184 /a197 /a185 /a194 /a198 /a186 /a195 /a187
+/a188 /a189 /a190 /a191 /.notdef
+] def
+/Times-Roman findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding showcaseisoencoding def
+  currentdict
+end
+/Times-Roman-SHOWISO exch definefont pop
+/Times-Italic findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding showcaseisoencoding def
+  currentdict
+end
+/Times-Italic-SHOWISO exch definefont pop
+/Symbol findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  currentdict
+end
+/Symbol-SHOWISO exch definefont pop
+/newfont 10 dict def
+newfont begin
+
+ /FontType 3 def
+ /FontMatrix [1 0 0 1 0 0] def
+ /FontBBox [0 0 1 1] def
+ /Encoding 256 array def
+ 0 1 255 {Encoding exch /.notdef put} for
+
+ /CharProcs 1 dict def
+ CharProcs begin
+ /.notdef {} def
+
+end
+
+ /BuildChar {
+  1 0
+  0 0 1 1
+  setcachedevice
+  exch begin
+  Encoding exch get
+  CharProcs exch get
+  end
+  exec
+ } def
+end
+/PatternFont newfont definefont pop
+
+%%EndResource
+%%EndProlog
+%%BeginSetup
+%%EndSetup
+%%Page: label 1
+gsave
+/saveit save def
+gsave
+gsave
+1.000000 setlinewidth
+matrix currentmatrix
+[10.2351 16.4698 -66.1622 51.0844 303.701 564.214] concat
+newpath
+0 0 1 0 360 arc
+0 0 0 setrgbcolor
+closepath setmatrix stroke
+grestore
+gsave
+1.000000 setlinewidth
+matrix currentmatrix
+[15.4889 24.5983 -93.7543 72.3381 306.191 563.628] concat
+newpath
+0 0 1 0 360 arc
+0 0 0 setrgbcolor
+closepath setmatrix stroke
+grestore
+gsave
+1.000000 setlinewidth
+matrix currentmatrix
+[17.9569 28.7867 -113.954 87.9681 304.36 565.058] concat
+newpath
+0 0 1 0 360 arc
+0 0 0 setrgbcolor
+closepath setmatrix stroke
+grestore
+gsave
+matrix currentmatrix
+[324 0 0 -342 126 702] concat
+B
+setmatrix
+0 0 0 setrgbcolor
+2.000000 setlinewidth
+gsave stroke grestore
+grestore
+gsave
+0 0 0 setrgbcolor
+2.000000 setlinewidth
+newpath
+234 369 M
+234 360 L
+stroke
+grestore
+gsave
+0 0 0 setrgbcolor
+2.000000 setlinewidth
+newpath
+342 369 M
+342 360 L
+stroke
+grestore
+gsave
+0 0 0 setrgbcolor
+2.000000 setlinewidth
+newpath
+134.833 621 M
+125.833 621 L
+stroke
+grestore
+gsave
+0 0 0 setrgbcolor
+2.000000 setlinewidth
+newpath
+134.833 531 M
+125.833 531 L
+stroke
+grestore
+gsave
+0 0 0 setrgbcolor
+2.000000 setlinewidth
+newpath
+134.833 445.5 M
+125.833 445.5 L
+stroke
+grestore
+gsave
+gsave
+matrix currentmatrix
+[1 0 0 1 101 346.5] concat
+newpath
+0 0 M 0 24 L 14 24 L 14 0 L
+closepath setmatrix
+0 0 0 setrgbcolor
+grestore
+newpath
+99 344.5 M 99 373.643 L 117 373.643 L 117 344.5 L
+closepath clip newpath
+0 0 0 setrgbcolor
+matrix currentmatrix
+[1 0 0 1 101 346.5] concat
+/Times-Roman-SHOWISO findfont 24 scalefont setfont
+0 0 0 setrgbcolor
+0 5.14286 M (6) 12 S
+setmatrix
+grestore
+gsave
+gsave
+matrix currentmatrix
+[1 0 0 1 101 432] concat
+newpath
+0 0 M 0 24 L 14 24 L 14 0 L
+closepath setmatrix
+0 0 0 setrgbcolor
+grestore
+newpath
+99 430 M 99 459.143 L 117 459.143 L 117 430 L
+closepath clip newpath
+0 0 0 setrgbcolor
+matrix currentmatrix
+[1 0 0 1 101 432] concat
+/Times-Roman-SHOWISO findfont 24 scalefont setfont
+0 0 0 setrgbcolor
+0 5.14286 M (7) 12 S
+setmatrix
+grestore
+gsave
+gsave
+matrix currentmatrix
+[1 0 0 1 101 517.5] concat
+newpath
+0 0 M 0 24 L 14 24 L 14 0 L
+closepath setmatrix
+0 0 0 setrgbcolor
+grestore
+newpath
+99 515.5 M 99 544.643 L 117 544.643 L 117 515.5 L
+closepath clip newpath
+0 0 0 setrgbcolor
+matrix currentmatrix
+[1 0 0 1 101 517.5] concat
+/Times-Roman-SHOWISO findfont 24 scalefont setfont
+0 0 0 setrgbcolor
+0 5.14286 M (8) 12 S
+setmatrix
+grestore
+gsave
+gsave
+matrix currentmatrix
+[1 0 0 1 101 608] concat
+newpath
+0 0 M 0 24 L 14 24 L 14 0 L
+closepath setmatrix
+0 0 0 setrgbcolor
+grestore
+newpath
+99 606 M 99 635.143 L 117 635.143 L 117 606 L
+closepath clip newpath
+0 0 0 setrgbcolor
+matrix currentmatrix
+[1 0 0 1 101 608] concat
+/Times-Roman-SHOWISO findfont 24 scalefont setfont
+0 0 0 setrgbcolor
+0 5.14286 M (9) 12 S
+setmatrix
+grestore
+gsave
+gsave
+matrix currentmatrix
+[1 0 0 1 89 690] concat
+newpath
+0 0 M 0 24 L 26 24 L 26 0 L
+closepath setmatrix
+0 0 0 setrgbcolor
+grestore
+newpath
+87 688 M 87 717.143 L 117 717.143 L 117 688 L
+closepath clip newpath
+0 0 0 setrgbcolor
+matrix currentmatrix
+[1 0 0 1 89 690] concat
+/Times-Roman-SHOWISO findfont 24 scalefont setfont
+0 0 0 setrgbcolor
+0 5.14286 M (10) 24 S
+setmatrix
+grestore
+gsave
+gsave
+matrix currentmatrix
+[1 0 0 1 120.5 328.5] concat
+newpath
+0 0 M 0 24 L 14 24 L 14 0 L
+closepath setmatrix
+0 0 0 setrgbcolor
+grestore
+newpath
+118.5 326.5 M 118.5 355.643 L 136.5 355.643 L 136.5 326.5 L
+closepath clip newpath
+0 0 0 setrgbcolor
+matrix currentmatrix
+[1 0 0 1 120.5 328.5] concat
+/Times-Roman-SHOWISO findfont 24 scalefont setfont
+0 0 0 setrgbcolor
+0 5.14286 M (0) 12 S
+setmatrix
+grestore
+gsave
+gsave
+matrix currentmatrix
+[1 0 0 1 227.5 328.5] concat
+newpath
+0 0 M 0 24 L 14 24 L 14 0 L
+closepath setmatrix
+0 0 0 setrgbcolor
+grestore
+newpath
+225.5 326.5 M 225.5 355.643 L 243.5 355.643 L 243.5 326.5 L
+closepath clip newpath
+0 0 0 setrgbcolor
+matrix currentmatrix
+[1 0 0 1 227.5 328.5] concat
+/Times-Roman-SHOWISO findfont 24 scalefont setfont
+0 0 0 setrgbcolor
+0 5.14286 M (5) 12 S
+setmatrix
+grestore
+gsave
+gsave
+matrix currentmatrix
+[1 0 0 1 330.5 328.5] concat
+newpath
+0 0 M 0 24 L 26 24 L 26 0 L
+closepath setmatrix
+0 0 0 setrgbcolor
+grestore
+newpath
+328.5 326.5 M 328.5 355.643 L 358.5 355.643 L 358.5 326.5 L
+closepath clip newpath
+0 0 0 setrgbcolor
+matrix currentmatrix
+[1 0 0 1 330.5 328.5] concat
+/Times-Roman-SHOWISO findfont 24 scalefont setfont
+0 0 0 setrgbcolor
+0 5.14286 M (10) 24 S
+setmatrix
+grestore
+gsave
+gsave
+matrix currentmatrix
+[1 0 0 1 435.5 328.5] concat
+newpath
+0 0 M 0 24 L 26 24 L 26 0 L
+closepath setmatrix
+0 0 0 setrgbcolor
+grestore
+newpath
+433.5 326.5 M 433.5 355.643 L 463.5 355.643 L 463.5 326.5 L
+closepath clip newpath
+0 0 0 setrgbcolor
+matrix currentmatrix
+[1 0 0 1 435.5 328.5] concat
+/Times-Roman-SHOWISO findfont 24 scalefont setfont
+0 0 0 setrgbcolor
+0 5.14286 M (15) 24 S
+setmatrix
+grestore
+gsave
+matrix currentmatrix
+[4.5 0 0 4.5 303 564.5] concat
+newpath
+0 0 1 0 360 arc
+setmatrix
+0 0 0 setrgbcolor
+closepath fill
+grestore
+gsave
+gsave
+matrix currentmatrix
+[1 0 0 1 192.5 287.859] concat
+newpath
+0 0 M 0 32 L 225.04 32 L 225.04 0 L
+closepath setmatrix
+0 0 0 setrgbcolor
+grestore
+newpath
+190.5 285.859 M 190.5 322.259 L 419.54 322.259 L 419.54 285.859 L
+closepath clip newpath
+0 0 0 setrgbcolor
+matrix currentmatrix
+[1 0 0 1 192.5 287.859] concat
+/Times-Italic-SHOWISO findfont 32 scalefont setfont
+0 0 0 setrgbcolor
+0 6.4 M (y) 14.208 S
+/Times-Roman-SHOWISO findfont 32 scalefont setfont
+14.208 6.4 M ( intercept ) 127.968 S
+/Times-Italic-SHOWISO findfont 32 scalefont setfont
+142.176 6.4 M (A) 19.552 S
+/Times-Roman-SHOWISO findfont 32 scalefont setfont
+161.728 6.4 M ( \(\232) 29.312 S
+191.04 6.4 M (C\)) 32 S
+setmatrix
+grestore
+gsave
+gsave
+matrix currentmatrix
+[-4.37114e-08 1 -1 -4.37114e-08 78 414] concat
+newpath
+0 0 M 0 32 L 206.416 32 L 206.416 0 L
+closepath setmatrix
+0 0 0 setrgbcolor
+grestore
+newpath
+43.6 412 M 43.6 622.416 L 80 622.416 L 80 412 L
+closepath clip newpath
+0 0 0 setrgbcolor
+matrix currentmatrix
+[-4.37114e-08 1 -1 -4.37114e-08 78 414] concat
+/Times-Roman-SHOWISO findfont 32 scalefont setfont
+0 0 0 setrgbcolor
+0 6.4 M (slope ) 75.552 S
+/Times-Italic-SHOWISO findfont 32 scalefont setfont
+75.552 6.4 M (B) 19.552 S
+/Times-Roman-SHOWISO findfont 32 scalefont setfont
+95.104 6.4 M ( \(\232C/cm\)) 109.312 S
+setmatrix
+grestore
+gsave
+0 0 0 setrgbcolor
+1.000000 setlinewidth
+[4] 0 setdash
+newpath
+302.5 562.5 M
+302.5 360 L
+stroke
+grestore
+gsave
+0 0 0 setrgbcolor
+1.000000 setlinewidth
+[4] 0 setdash
+newpath
+369.5 517.5 M
+374 360 L
+stroke
+grestore
+gsave
+gsave
+matrix currentmatrix
+[1 0 0 1 324.5 406.5] concat
+newpath
+0 0 M 0 24 L 28.52 24 L 28.52 0 L
+closepath setmatrix
+0 0 0 setrgbcolor
+grestore
+newpath
+322.5 403.466 M 322.5 435.466 L 355.02 435.466 L 355.02 403.466 L
+closepath clip newpath
+0 0 0 setrgbcolor
+matrix currentmatrix
+[1 0 0 1 324.5 406.5] concat
+/Symbol findfont 24 scalefont setfont
+0 0 0 setrgbcolor
+0 4.96552 M (d) 11.856 S
+/Times-Italic-SHOWISO findfont 24 scalefont setfont
+11.856 4.96552 M (A) 14.664 S
+setmatrix
+grestore
+gsave
+0 0 0 setrgbcolor
+gsave
+0 setlinejoin
+300.5 400.5 translate
+180 rotate
+1.1 1.1 scale
+newpath 0 0 M -10 -3 L -10 3 L closepath fill
+grestore
+gsave
+0 setlinejoin
+374.5 400.5 translate
+0 rotate
+1.1 1.1 scale
+newpath 0 0 M -10 -3 L -10 3 L closepath fill
+grestore
+1.000000 setlinewidth
+newpath
+309.5 400.5 M
+365.5 400.5 L
+stroke
+grestore
+gsave
+0 0 0 setrgbcolor
+1.000000 setlinewidth
+[4] 0 setdash
+newpath
+301.5 564.333 M
+126 564.333 L
+stroke
+grestore
+gsave
+0 0 0 setrgbcolor
+1.000000 setlinewidth
+[4] 0 setdash
+newpath
+243 616.833 M
+126 616.833 L
+stroke
+grestore
+gsave
+gsave
+matrix currentmatrix
+[1 0 0 1 175.5 579.833] concat
+newpath
+0 0 M 0 24 L 28.52 24 L 28.52 0 L
+closepath setmatrix
+0 0 0 setrgbcolor
+grestore
+newpath
+173.5 576.799 M 173.5 608.799 L 206.02 608.799 L 206.02 576.799 L
+closepath clip newpath
+0 0 0 setrgbcolor
+matrix currentmatrix
+[1 0 0 1 175.5 579.833] concat
+/Symbol findfont 24 scalefont setfont
+0 0 0 setrgbcolor
+0 4.96552 M (d) 11.856 S
+/Times-Italic-SHOWISO findfont 24 scalefont setfont
+11.856 4.96552 M (B) 14.664 S
+setmatrix
+grestore
+gsave
+0 0 0 setrgbcolor
+gsave
+0 setlinejoin
+162 617.5 translate
+90 rotate
+1.1 1.1 scale
+newpath 0 0 M -10 -3 L -10 3 L closepath fill
+grestore
+gsave
+0 setlinejoin
+162 566 translate
+-90 rotate
+1.1 1.1 scale
+newpath 0 0 M -10 -3 L -10 3 L closepath fill
+grestore
+1.000000 setlinewidth
+newpath
+162 608.5 M
+162 575 L
+stroke
+grestore
+gsave
+matrix currentmatrix
+[4.5 0 0 4.5 244 617.333] concat
+newpath
+0 0 1 0 360 arc
+setmatrix
+0 0 0 setrgbcolor
+closepath fill
+grestore
+gsave
+matrix currentmatrix
+[4.5 0 0 4.5 369.833 518.5] concat
+newpath
+0 0 1 0 360 arc
+setmatrix
+0 0 0 setrgbcolor
+closepath fill
+grestore
+gsave
+matrix currentmatrix
+[18 0 0 -22.5 249.667 643.834] concat
+B
+setmatrix
+1 1 1 setrgbcolor
+gsave fill grestore
+1 1 1 setrgbcolor
+2.000000 setlinewidth
+gsave stroke grestore
+grestore
+gsave
+gsave
+matrix currentmatrix
+[1 0 0 1 250 621.198] concat
+newpath
+0 0 M 0 24 L 19.328 24 L 19.328 0 L
+closepath setmatrix
+0 0 0 setrgbcolor
+grestore
+newpath
+247.5 618.698 M 247.5 649.164 L 271.828 649.164 L 271.828 618.698 L
+closepath clip newpath
+0 0 0 setrgbcolor
+matrix currentmatrix
+[1 0 0 1 250 621.198] concat
+/Times-Italic-SHOWISO findfont 24 scalefont setfont
+0 0 0 setrgbcolor
+0 4.96552 M (Q) 17.328 S
+setmatrix
+grestore
+gsave
+matrix currentmatrix
+[13.5 0 0 -22.5 310 591.001] concat
+B
+setmatrix
+1 1 1 setrgbcolor
+gsave fill grestore
+1 1 1 setrgbcolor
+2.000000 setlinewidth
+gsave stroke grestore
+grestore
+gsave
+gsave
+matrix currentmatrix
+[1 0 0 1 309.667 566.532] concat
+newpath
+0 0 M 0 24 L 16.664 24 L 16.664 0 L
+closepath setmatrix
+0 0 0 setrgbcolor
+grestore
+newpath
+307.167 564.032 M 307.167 594.497 L 328.831 594.497 L 328.831 564.032 L
+closepath clip newpath
+0 0 0 setrgbcolor
+matrix currentmatrix
+[1 0 0 1 309.667 566.532] concat
+/Times-Italic-SHOWISO findfont 24 scalefont setfont
+0 0 0 setrgbcolor
+0 4.96552 M (R) 14.664 S
+setmatrix
+grestore
+gsave
+matrix currentmatrix
+[13.5 0 0 -22.5 371 547.333] concat
+B
+setmatrix
+1 1 1 setrgbcolor
+gsave fill grestore
+1 1 1 setrgbcolor
+2.000000 setlinewidth
+gsave stroke grestore
+grestore
+gsave
+gsave
+matrix currentmatrix
+[1 0 0 1 370.667 523.031] concat
+newpath
+0 0 M 0 24 L 14 24 L 14 0 L
+closepath setmatrix
+0 0 0 setrgbcolor
+grestore
+newpath
+368.167 520.531 M 368.167 550.997 L 387.167 550.997 L 387.167 520.531 L
+closepath clip newpath
+0 0 0 setrgbcolor
+matrix currentmatrix
+[1 0 0 1 370.667 523.031] concat
+/Times-Italic-SHOWISO findfont 24 scalefont setfont
+0 0 0 setrgbcolor
+0 4.96552 M (S) 12 S
+setmatrix
+grestore
+grestore
+showpage
+saveit restore
+grestore
+%%EOF

@@ -1,0 +1,427 @@
+%!
+%%BoundingBox: 10 10 602 782
+/font1 {/Times-Roman findfont 10 scalefont setfont} bind def
+/font2 {/Times-Roman findfont 16 scalefont setfont} bind def
+/font3 {/Times-Roman findfont 25 scalefont setfont} bind def
+/font4 {/Times-Roman findfont 38 scalefont setfont} bind def
+
+/m /moveto load def
+/l /lineto load def
+/S /stroke load def
+/d /setdash load def
+/w /setlinewidth load def
+
+/s /show load def
+/sc {dup stringwidth pop 2 div neg 0 rmoveto s} bind def
+/sr {dup stringwidth pop  neg 0 rmoveto s} bind def
+/syc {gsave currentpoint translate 90 rotate dup stringwidth pop 2 div neg 0 rmoveto s grestore} bind def
+
+/triup {/base exch def 0 base rmoveto base neg base 2 mul neg rlineto base 2 mul 0 rlineto closepath fill} bind def
+/tridwn {/base exch def 0 base neg rmoveto base neg base 2 mul rlineto base 2 mul 0 rlineto closepath fill} bind def
+/box  {/side exch 2 mul def side 2 div neg side 2 div neg rmoveto side 0 rlineto 0 side rlineto side neg 0 rlineto closepath fill} bind def
+/diamnd {/side exch def 0 side neg rmoveto side side rlineto side neg side rlineto side neg side neg rlineto closepath fill} bind def
+
+/cbezier  .55228475 def
+/cbezier1 .44771525 def
+/carcx { /dy exch radius mul def /dx exch radius mul def currentpoint exch dx cbezier mul add exch 
+currentpoint dy cbezier1 mul add exch dx add exch
+currentpoint dy  add exch dx add exch curveto} bind def
+/carcy { /dy exch radius mul def /dx exch radius mul def currentpoint dy cbezier mul add 
+currentpoint dy add exch dx cbezier1 mul add exch
+currentpoint dy add exch dx add exch curveto} bind def
+/circle {/radius exch def 0 radius neg rmoveto 1 1 carcx -1 1 carcy -1 -1 carcx 1 -1 carcy closepath fill} bind def
+
+/dot {gsave .2 setlinewidth -.1 0 rmoveto .2 0 rlineto stroke grestore} bind def
+
+/triuS {/base exch def 0 base rmoveto base neg base 2 mul neg rlineto base 2 mul 0 rlineto closepath stroke} bind def
+/tridwS {/base exch def 0 base neg rmoveto base neg base 2 mul rlineto base 2 mul 0 rlineto closepath stroke} bind def
+/boS  {/side exch 2 mul def side 2 div neg side 2 div neg rmoveto side 0 rlineto 0 side rlineto side neg 0 rlineto closepath stroke} bind def
+/diamnS {/side exch def 0 side neg rmoveto side side rlineto side neg side rlineto side neg side neg rlineto closepath stroke} bind def
+/circlS {/radius exch def 0 radius neg rmoveto 1 1 carcx -1 1 carcy -1 -1 carcx 1 -1 carcy closepath stroke} bind def
+
+90 rotate 0 -612 translate
+font2
+ % start of actual plot
+font3
+145.0 100.8 m
+145.0 111.9 l
+S
+145.0  74.2 m
+(0) sc 
+200.7 100.8 m
+200.7 106.3 l
+S
+256.3 100.8 m
+256.3 111.9 l
+S
+256.3  74.2 m
+(10) sc 
+311.9 100.8 m
+311.9 106.3 l
+S
+367.5 100.8 m
+367.5 111.9 l
+S
+367.5  74.2 m
+(20) sc 
+423.1 100.8 m
+423.1 106.3 l
+S
+478.8 100.8 m
+478.8 111.9 l
+S
+478.8  74.2 m
+(30) sc 
+534.4 100.8 m
+534.4 106.3 l
+S
+590.0 100.8 m
+590.0 111.9 l
+S
+590.0  74.2 m
+(40) sc 
+645.6 100.8 m
+645.6 106.3 l
+S
+701.2 100.8 m
+701.2 111.9 l
+S
+701.2  74.2 m
+(50) sc 
+701.2 543.6 m
+701.2 532.5 l
+S
+645.6 543.6 m
+645.6 538.0 l
+S
+590.0 543.6 m
+590.0 532.5 l
+S
+534.4 543.6 m
+534.4 538.0 l
+S
+478.8 543.6 m
+478.8 532.5 l
+S
+423.1 543.6 m
+423.1 538.0 l
+S
+367.5 543.6 m
+367.5 532.5 l
+S
+311.9 543.6 m
+311.9 538.0 l
+S
+256.3 543.6 m
+256.3 532.5 l
+S
+200.7 543.6 m
+200.7 538.0 l
+S
+145.0 543.6 m
+145.0 532.5 l
+S
+137.7 537.3 m
+148.8 537.3 l
+S
+122.9 528.4 m
+(1400) sr 
+137.7 501.1 m
+146.0 501.1 l
+S
+137.7 465.0 m
+148.8 465.0 l
+S
+122.9 456.1 m
+(1200) sr 
+137.7 428.8 m
+146.0 428.8 l
+S
+137.7 392.7 m
+148.8 392.7 l
+S
+122.9 383.8 m
+(1000) sr 
+137.7 356.5 m
+146.0 356.5 l
+S
+137.7 320.4 m
+148.8 320.4 l
+S
+122.9 311.5 m
+(800) sr 
+137.7 284.2 m
+146.0 284.2 l
+S
+137.7 248.1 m
+148.8 248.1 l
+S
+122.9 239.3 m
+(600) sr 
+137.7 212.0 m
+146.0 212.0 l
+S
+137.7 175.8 m
+148.8 175.8 l
+S
+122.9 167.0 m
+(400) sr 
+137.7 139.7 m
+146.0 139.7 l
+S
+137.7 103.5 m
+148.8 103.5 l
+S
+122.9  94.7 m
+(200) sr 
+728.0 103.5 m
+717.0 103.5 l
+S
+728.0 139.7 m
+719.7 139.7 l
+S
+728.0 175.8 m
+717.0 175.8 l
+S
+728.0 212.0 m
+719.7 212.0 l
+S
+728.0 248.1 m
+717.0 248.1 l
+S
+728.0 284.2 m
+719.7 284.2 l
+S
+728.0 320.4 m
+717.0 320.4 l
+S
+728.0 356.5 m
+719.7 356.5 l
+S
+728.0 392.7 m
+717.0 392.7 l
+S
+728.0 428.8 m
+719.7 428.8 l
+S
+728.0 465.0 m
+717.0 465.0 l
+S
+728.0 501.1 m
+719.7 501.1 l
+S
+728.0 537.3 m
+717.0 537.3 l
+S
+137.7 100.8 m
+728.0 100.8 l
+728.0 543.6 l
+137.7 543.6 l
+137.7 100.8 l
+S
+432.9 561.3 m
+(Speed of Sound vs. Molecular Weight) sc 
+432.9  47.7 m
+(Molecular Weight) sc 
+ 50.6 322.2 m
+(Speed of Sound \(m/s\)) syc
+167.3 490.3 m
+  3.0 boS   
+167.3 493.2 m
+167.3 497.5 l
+S
+164.3 497.5 m
+170.2 497.5 l
+S
+167.3 487.3 m
+167.3 483.1 l
+S
+164.3 483.1 m
+170.2 483.1 l
+S
+189.5 352.9 m
+  3.0 boS   
+189.5 355.9 m
+189.5 360.2 l
+S
+186.6 360.2 m
+192.5 360.2 l
+S
+189.5 350.0 m
+189.5 345.7 l
+S
+186.6 345.7 m
+192.5 345.7 l
+S
+300.8 203.6 m
+  3.0 boS   
+300.8 206.6 m
+300.8 210.9 l
+S
+297.8 210.9 m
+303.7 210.9 l
+S
+300.8 200.7 m
+300.8 196.4 l
+S
+297.8 196.4 m
+303.7 196.4 l
+S
+323.0 187.4 m
+  3.0 boS   
+323.0 190.3 m
+323.0 194.6 l
+S
+320.1 194.6 m
+326.0 194.6 l
+S
+323.0 184.4 m
+323.0 180.2 l
+S
+320.1 180.2 m
+326.0 180.2 l
+S
+467.6 155.6 m
+  3.0 boS   
+467.6 158.5 m
+467.6 162.8 l
+S
+464.7 162.8 m
+470.6 162.8 l
+S
+467.6 152.6 m
+467.6 148.4 l
+S
+464.7 148.4 m
+470.6 148.4 l
+S
+501.0 145.8 m
+  3.0 boS   
+501.0 148.8 m
+501.0 153.0 l
+S
+498.0 153.0 m
+504.0 153.0 l
+S
+501.0 142.9 m
+501.0 138.6 l
+S
+498.0 138.6 m
+504.0 138.6 l
+S
+634.5 117.3 m
+  3.0 boS   
+634.5 120.2 m
+634.5 124.5 l
+S
+631.5 124.5 m
+637.4 124.5 l
+S
+634.5 114.3 m
+634.5 110.1 l
+S
+631.5 110.1 m
+637.4 110.1 l
+S
+164.5 523.4 m
+169.9 466.2 l
+175.2 425.0 l
+180.6 393.7 l
+186.0 368.7 l
+191.4 348.2 l
+196.7 331.1 l
+202.1 316.4 l
+207.5 303.7 l
+212.8 292.5 l
+218.2 282.6 l
+223.6 273.7 l
+228.9 265.7 l
+234.3 258.4 l
+239.7 251.7 l
+245.0 245.7 l
+250.4 240.0 l
+255.8 234.8 l
+261.1 230.0 l
+266.5 225.5 l
+271.9 221.3 l
+277.2 217.3 l
+282.6 213.6 l
+288.0 210.1 l
+293.3 206.8 l
+298.7 203.6 l
+304.1 200.6 l
+309.4 197.8 l
+314.8 195.1 l
+320.2 192.5 l
+325.5 190.1 l
+330.9 187.7 l
+336.3 185.5 l
+341.6 183.3 l
+347.0 181.3 l
+352.4 179.3 l
+357.7 177.4 l
+363.1 175.5 l
+368.5 173.8 l
+373.8 172.1 l
+379.2 170.4 l
+384.6 168.8 l
+389.9 167.3 l
+395.3 165.8 l
+400.7 164.3 l
+406.0 163.0 l
+411.4 161.6 l
+416.8 160.3 l
+422.1 159.0 l
+427.5 157.8 l
+432.9 156.6 l
+438.2 155.4 l
+443.6 154.2 l
+449.0 153.1 l
+454.3 152.1 l
+459.7 151.0 l
+465.1 150.0 l
+470.4 149.0 l
+475.8 148.0 l
+481.2 147.1 l
+486.5 146.1 l
+491.9 145.2 l
+497.3 144.3 l
+502.6 143.5 l
+508.0 142.6 l
+513.4 141.8 l
+518.7 141.0 l
+524.1 140.2 l
+529.5 139.4 l
+534.8 138.7 l
+540.2 137.9 l
+545.6 137.2 l
+550.9 136.5 l
+556.3 135.8 l
+561.7 135.1 l
+567.0 134.4 l
+572.4 133.8 l
+577.8 133.1 l
+583.1 132.5 l
+588.5 131.9 l
+593.9 131.2 l
+599.2 130.6 l
+604.6 130.1 l
+610.0 129.5 l
+615.3 128.9 l
+620.7 128.3 l
+626.1 127.8 l
+631.4 127.2 l
+636.8 126.7 l
+642.2 126.2 l
+647.5 125.7 l
+652.9 125.2 l
+658.3 124.6 l
+663.6 124.2 l
+669.0 123.7 l
+674.4 123.2 l
+679.7 122.7 l
+685.1 122.3 l
+690.5 121.8 l
+695.8 121.4 l
+701.2 120.9 l
+ S showpage

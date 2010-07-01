@@ -1,0 +1,358 @@
+%!
+%%BoundingBox: 10 10 602 782
+/font1 {/Times-Roman findfont 10 scalefont setfont} bind def
+/font2 {/Times-Roman findfont 16 scalefont setfont} bind def
+/font3 {/Times-Roman findfont 25 scalefont setfont} bind def
+/font4 {/Times-Roman findfont 38 scalefont setfont} bind def
+
+/m /moveto load def
+/l /lineto load def
+/S /stroke load def
+/d /setdash load def
+/w /setlinewidth load def
+
+/s /show load def
+/sc {dup stringwidth pop 2 div neg 0 rmoveto s} bind def
+/sr {dup stringwidth pop  neg 0 rmoveto s} bind def
+/syc {gsave currentpoint translate 90 rotate dup stringwidth pop 2 div neg 0 rmoveto s grestore} bind def
+
+/triup {/base exch def 0 base rmoveto base neg base 2 mul neg rlineto base 2 mul 0 rlineto closepath fill} bind def
+/tridwn {/base exch def 0 base neg rmoveto base neg base 2 mul rlineto base 2 mul 0 rlineto closepath fill} bind def
+/box  {/side exch 2 mul def side 2 div neg side 2 div neg rmoveto side 0 rlineto 0 side rlineto side neg 0 rlineto closepath fill} bind def
+/diamnd {/side exch def 0 side neg rmoveto side side rlineto side neg side rlineto side neg side neg rlineto closepath fill} bind def
+
+/cbezier  .55228475 def
+/cbezier1 .44771525 def
+/carcx { /dy exch radius mul def /dx exch radius mul def currentpoint exch dx cbezier mul add exch 
+currentpoint dy cbezier1 mul add exch dx add exch
+currentpoint dy  add exch dx add exch curveto} bind def
+/carcy { /dy exch radius mul def /dx exch radius mul def currentpoint dy cbezier mul add 
+currentpoint dy add exch dx cbezier1 mul add exch
+currentpoint dy add exch dx add exch curveto} bind def
+/circle {/radius exch def 0 radius neg rmoveto 1 1 carcx -1 1 carcy -1 -1 carcx 1 -1 carcy closepath fill} bind def
+
+/dot {gsave .2 setlinewidth -.1 0 rmoveto .2 0 rlineto stroke grestore} bind def
+
+/triuS {/base exch def 0 base rmoveto base neg base 2 mul neg rlineto base 2 mul 0 rlineto closepath stroke} bind def
+/tridwS {/base exch def 0 base neg rmoveto base neg base 2 mul rlineto base 2 mul 0 rlineto closepath stroke} bind def
+/boS  {/side exch 2 mul def side 2 div neg side 2 div neg rmoveto side 0 rlineto 0 side rlineto side neg 0 rlineto closepath stroke} bind def
+/diamnS {/side exch def 0 side neg rmoveto side side rlineto side neg side rlineto side neg side neg rlineto closepath stroke} bind def
+/circlS {/radius exch def 0 radius neg rmoveto 1 1 carcx -1 1 carcy -1 -1 carcx 1 -1 carcy closepath stroke} bind def
+
+90 rotate 0 -612 translate
+font2
+ % start of actual plot
+font3
+226.5 519.9 m
+  3.0 boS   
+226.5 522.8 m
+226.5 523.4 l
+S
+223.6 523.4 m
+229.5 523.4 l
+S
+226.5 516.9 m
+226.5 516.3 l
+S
+223.6 516.3 m
+229.5 516.3 l
+S
+315.4 439.4 m
+  3.0 boS   
+315.4 442.4 m
+315.4 444.4 l
+S
+312.4 444.4 m
+318.4 444.4 l
+S
+315.4 436.4 m
+315.4 434.3 l
+S
+312.4 434.3 m
+318.4 434.3 l
+S
+476.0 298.2 m
+  3.0 boS   
+476.0 301.1 m
+476.0 307.5 l
+S
+473.1 307.5 m
+479.0 307.5 l
+S
+476.0 295.2 m
+476.0 288.5 l
+S
+473.1 288.5 m
+479.0 288.5 l
+S
+493.1 275.8 m
+  3.0 boS   
+493.1 278.7 m
+493.1 286.0 l
+S
+490.2 286.0 m
+496.1 286.0 l
+S
+493.1 272.8 m
+493.1 265.0 l
+S
+490.2 265.0 m
+496.1 265.0 l
+S
+569.3 224.2 m
+  3.0 boS   
+569.3 227.1 m
+569.3 237.0 l
+S
+566.4 237.0 m
+572.3 237.0 l
+S
+569.3 221.2 m
+569.3 210.6 l
+S
+566.4 210.6 m
+572.3 210.6 l
+S
+582.0 205.7 m
+  3.0 boS   
+582.0 208.6 m
+582.0 219.5 l
+S
+579.0 219.5 m
+584.9 219.5 l
+S
+582.0 202.7 m
+582.0 190.9 l
+S
+579.0 190.9 m
+584.9 190.9 l
+S
+622.8 140.8 m
+  3.0 boS   
+622.8 143.7 m
+622.8 159.1 l
+S
+619.8 159.1 m
+625.7 159.1 l
+S
+622.8 137.8 m
+622.8 120.9 l
+S
+619.8 120.9 m
+625.7 120.9 l
+S
+209.5 535.7 m
+596.6 188.4 l
+682.3 111.5 l
+S
+137.7 100.8 m
+137.7 111.9 l
+S
+137.7  74.2 m
+(0) sc 
+201.8 100.8 m
+201.8 106.3 l
+S
+265.9 100.8 m
+265.9 111.9 l
+S
+265.9  74.2 m
+(1) sc 
+330.0 100.8 m
+330.0 106.3 l
+S
+394.1 100.8 m
+394.1 111.9 l
+S
+394.1  74.2 m
+(2) sc 
+458.2 100.8 m
+458.2 106.3 l
+S
+522.3 100.8 m
+522.3 111.9 l
+S
+522.3  74.2 m
+(3) sc 
+586.4 100.8 m
+586.4 106.3 l
+S
+650.5 100.8 m
+650.5 111.9 l
+S
+650.5  74.2 m
+(4) sc 
+714.6 100.8 m
+714.6 106.3 l
+S
+714.6 543.6 m
+714.6 538.0 l
+S
+650.5 543.6 m
+650.5 532.5 l
+S
+586.4 543.6 m
+586.4 538.0 l
+S
+522.3 543.6 m
+522.3 532.5 l
+S
+458.2 543.6 m
+458.2 538.0 l
+S
+394.1 543.6 m
+394.1 532.5 l
+S
+330.0 543.6 m
+330.0 538.0 l
+S
+265.9 543.6 m
+265.9 532.5 l
+S
+201.8 543.6 m
+201.8 538.0 l
+S
+137.7 543.6 m
+137.7 532.5 l
+S
+137.7 531.9 m
+146.0 531.9 l
+S
+137.7 509.3 m
+146.0 509.3 l
+S
+137.7 486.7 m
+148.8 486.7 l
+S
+122.9 477.8 m
+(7.0) sr 
+137.7 464.0 m
+146.0 464.0 l
+S
+137.7 441.4 m
+146.0 441.4 l
+S
+137.7 418.7 m
+146.0 418.7 l
+S
+137.7 396.1 m
+146.0 396.1 l
+S
+137.7 373.5 m
+148.8 373.5 l
+S
+122.9 364.6 m
+(6.5) sr 
+137.7 350.8 m
+146.0 350.8 l
+S
+137.7 328.2 m
+146.0 328.2 l
+S
+137.7 305.5 m
+146.0 305.5 l
+S
+137.7 282.9 m
+146.0 282.9 l
+S
+137.7 260.3 m
+148.8 260.3 l
+S
+122.9 251.4 m
+(6.0) sr 
+137.7 237.6 m
+146.0 237.6 l
+S
+137.7 215.0 m
+146.0 215.0 l
+S
+137.7 192.3 m
+146.0 192.3 l
+S
+137.7 169.7 m
+146.0 169.7 l
+S
+137.7 147.1 m
+148.8 147.1 l
+S
+122.9 138.2 m
+(5.5) sr 
+137.7 124.4 m
+146.0 124.4 l
+S
+137.7 101.8 m
+146.0 101.8 l
+S
+728.0 101.8 m
+719.7 101.8 l
+S
+728.0 124.4 m
+719.7 124.4 l
+S
+728.0 147.1 m
+717.0 147.1 l
+S
+728.0 169.7 m
+719.7 169.7 l
+S
+728.0 192.3 m
+719.7 192.3 l
+S
+728.0 215.0 m
+719.7 215.0 l
+S
+728.0 237.6 m
+719.7 237.6 l
+S
+728.0 260.3 m
+717.0 260.3 l
+S
+728.0 282.9 m
+719.7 282.9 l
+S
+728.0 305.5 m
+719.7 305.5 l
+S
+728.0 328.2 m
+719.7 328.2 l
+S
+728.0 350.8 m
+719.7 350.8 l
+S
+728.0 373.5 m
+717.0 373.5 l
+S
+728.0 396.1 m
+719.7 396.1 l
+S
+728.0 418.7 m
+719.7 418.7 l
+S
+728.0 441.4 m
+719.7 441.4 l
+S
+728.0 464.0 m
+719.7 464.0 l
+S
+728.0 486.7 m
+717.0 486.7 l
+S
+728.0 509.3 m
+719.7 509.3 l
+S
+728.0 531.9 m
+719.7 531.9 l
+S
+137.7 100.8 m
+728.0 100.8 l
+728.0 543.6 l
+137.7 543.6 l
+137.7 100.8 l
+S
+432.9 561.3 m
+(Speed of Sound vs. Molecular Weight) sc 
+432.9  47.7 m
+(Ln\(Molecular Weight\)) sc 
+ 65.4 322.2 m
+(Ln\(Speed of Sound\) \(m/s\)) syc
+ showpage

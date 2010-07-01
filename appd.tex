@@ -1,0 +1,596 @@
+%APPENDIX D--COMPUTER ASSISTED CURVE FITTING
+\newapp
+%\section*{Computer Assisted Curve Fitting}
+%\addcontentsline{toc}{subsection}{Computer Assisted Curve Fitting}
+\label{compassis}
+
+\section*{Introduction}
+
+The preceding appendix showed how to use graphical techniques to find
+out whether a set of data is consistent with a power law or
+exponential function.  It also showed how to find the parameters $A$
+and $B$ (and their units!) that describe those functions.
+
+Although these methods are powerful, they nonetheless have serious
+limitations.  They are helpful in gaining
+a good understanding of what is involved in fitting a set of data to a
+function.  But often our data will not be consistent with any of the
+functions we have talked about so far---straight line, power law, or
+exponential.  (A simple example is the quadratic function, $y = A
++ B x + C x^2$.)  Moreover, we might hope to find more systematic ways
+of
+finding the {\em uncertainties} in the parameters that characterize a
+given function than we were able to develop in Appendix C.
+
+Those limitations are largely overcome if we use a numerical technique
+that is variously called the ``method of least squares,'' or
+sometimes, ``regression analysis.''  (Social scientists are likely to
+use the second phrase.)  In this appendix, we will give a brief
+description of the method of least squares.  We will also introduce
+you to a computer program, Linfit, that we will be using to do
+least-squares fits.
+
+\section*{References}
+
+Our treatment of the method of least squares in this appendix is
+necessarily brief and incomplete.  At some point in your career, you
+are likely to need to learn more
+than can be provided here about least-squares fits.  
+A good introduction is the book by
+Taylor that we have already mentioned several times in this manual:
+
+\begin{itemize}
+   \item     John R.  Taylor, {\em An Introduction
+to Error Analysis}, second edition, (University Science Books, 1997).
+\end{itemize}
+
+The Physics Department requires this book for all second year and
+higher laboratory courses, and we recommend it for anyone planning to
+major in physics or engineering.  Copies are available in the libraries,
+and should also be available or easily ordered at both bookstores.
+
+Two other useful if more advanced books are:
+
+\begin{itemize}
+\item Philip R.  Bevington \& D. Keith Robinson, {\em Data Reduction and
+Error Analysis for the
+Physical Sciences} (McGraw-Hill, 1992); and
+%
+\item  William H. Press et al,
+{\em Numerical Recipes in Fortran}, second edition, (Cambridge
+University Press, 1992) especially chapter 15.
+  Much of the Fortran
+code used in Linfit is drawn from the first two sources.
+\end{itemize}
+In
+addition, many statistics texts and texts on experimental design and
+data analysis have sections on least-squares fitting.
+
+
+\section*{Method of Least Squares}
+
+One often wants to find the best equation that describes a set of
+experimental data.  The method of least squares 
+is the most commonly used technique for 
+numerical fitting data to a function.  Suppose, for example, that we
+have a set of experimental data that lie roughly along a straight
+line.  We want to find the ``best" values of slope $B$ and intercept
+$A$
+for the equation
+\[
+y = A + Bx
+\]
+
+ that will describe the data.  The problem is that the
+data don't usually fall exactly on any line.  Moreover,
+the data points generally have experimental uncertainties
+associated with them.  As a result, any of
+several lines (that is, several different sets of values for $A$ and
+$B$) are usually plausible.  For straight-line functions, one can do
+reasonably well fitting ``by
+eyeball,"---that is, using your best judgment in drawing what appears to
+be the best line that describes the data.  But it would be nice
+to be able to do a little better.  The method of least squares
+provides
+a commonly used mathematical criterion for finding the ``best" fit.
+Suppose, for example, that our data points are 
+$(x_i, y_i)$ for $i=1,2,\ldots N$.
+
+For any point, the quantity
+\[
+y_i -(A + Bx_i)
+\]
+
+(often called a "deviation") is the difference between the
+experimental value $y_i$ and the value calculated from the equation 
+(a
+straight line) at the corresponding location $x_i$.  (Note that
+this quantity should be approximately the same as your experimental
+uncertainty or ``error bar.") The method of least squares finds the
+``best" fit by finding the values of $A$ and $B$ that minimize these
+deviations not just for a single data point but for all the
+data.  More specifically, it does so by finding the minimum in the
+quantity that mathematicians call the reduced chi-squared statistic:
+
+
+\begin{equation}
+\bar{\chi}^{2} \approx {{1} \over {N}} \; \sum_{i} {{\left[y_{i} -
+         f(x_{i})\right]^{2}} \over {\sigma_{i}^{2}}} .
+         \label{eq:chisq}
+\end{equation}
+
+For our special case in which the function is a straight line, this
+equation becomes
+
+\[
+\bar{\chi}^{2}= {{1} \over {N-2}} \; \sum_{i} {{\left[y_{i} -
+         (A + Bx_{i})\right]^{2}} \over {\sigma_{i}^{2}}}
+\]
+
+where $N$ is the number of data points, $f(x)$ is the fitting
+function,
+and the $\sigma$'s are the standard deviations introduced in Appendix
+A---more intuitively, the uncertainties (or ``errors") associated
+with
+each $y$ value.  In the second expression, $N-2$ is the 
+``number of degrees of freedom" for $N$ data points fit to a line.
+For a brief discussion of how one does the minimization
+mathematically,
+see the section ``What are ``linear" and ``non-linear" fits?'' in the
+on-line help in the fitting program Linfit.  See
+the References section above for references to more detailed
+discussions.  As a practical matter, the computer program will do the
+calculations involved, and report the values of the fitting parameters
+$A$, $B$, \ldots that best describe your data.
+
+Once a fit has been found, we need some way of determining
+how good the fit is.  If, for example, we inadvertently attempt
+to fit data that lie along some curve to a straight line
+fitting function, our fitting program will give an answer, even though
+the fit is a poor one in the sense that the fitting function
+will not go through many of the error bars.
+One good visual check is to compare the fitted
+solution to the data graphically --- that is, plot the function and
+your data on the same graph, and see how well the function
+describes your data.  Another easy way to check the fit is to see
+if the deviations --- that is, the difference between the data
+points $y_{i}$ and the calculated values $A + Bx_{i}$ --- are significantly
+larger than the corresponding uncertainty.  These deviations are listed on the 
+computer-generated Fit report,
+and will be easy to inspect.
+
+{\bf IMPORTANT:}  It turns out that our reduced chi-squared statistic
+provides another, more abstract criterion for goodness of fit.
+Statistical theory tells us that a good fit corresponds to a reduced
+chi-squared value of about one.  A proof is beyond the scope of
+this manual; see Taylor or any good statistics text for a more
+complete discussion.
+
+Nevertheless, it is not hard to understand this result intuitively.
+ Note that the quantity we are minimizing, the reduced
+chi-squared value, depends on the size of the experimental
+uncertainties (that is, the $\sigma$'s in Eq.~\ref{eq:chisq} above)
+as well as the
+deviations.   Thus, the reduced chi-squared value will be about one
+when the deviations --- the differences between the $y$ values
+and the fitting function, represented in Eq.~(\ref{eq:chisq}) by the
+quantities $ \left[y_{i} -  (A + Bx_{i})\right] $ --- are about
+equal to the size of the $y$ error bars, the $\sigma_i$.
+
+Take a look at this equation, and be sure you understand
+this point.  Larger values of the $\sigma$'s in this equation will
+lead to a smaller reduced chi-squared statistic, and vice versa.
+
+More or less arbitrarily, the fitting
+program Linfit assumes that any value of reduced chi-square
+($\bar{\chi}^2$) between 0.25 and 4 represents a
+reasonably good fit.  Otherwise, the program warns you that your fit
+may not be valid.
+
+There are two reasons why the value of the reduced
+chi-squared statistic might not be close to one.  First, you may have
+picked an inappropriate fitting function: If your data describe a
+curve and you try to fit them to a straight line, for example, you
+will certainly get a bad fit!  Look at a graph of your data along with
+the fitting function and see how well the two agree.
+
+Second, you may have overestimated or underestimated your experimental
+uncertainties.  In this case, your fit may be all right, but your
+uncertainties are nevertheless leading to a value of reduced
+chi-squared significantly larger or smaller than one.  In this case,
+{\bf DO NOT} try to correct the problem by guessing at the errors until you
+get a reasonable reduced chi-squared value!!  Instead, see if you can
+figure out why your estimates of the experimental error are off.  If
+you can't, talk to your instructor or simply say in your lab notebook
+that your estimates of experimental error are apparently wrong, and
+you are not sure why.  This approach is not only honest, it is much
+more in the spirit of scientific inquiry!  And as a practical matter,
+whoever grades your lab is more likely to be favorably impressed by a statement
+that you don't understand something than by an obvious attempt to
+``fudge" your error estimates!
+
+\subsection*{Using Errors in both $x$ and $y$}
+
+Most treatments of the method of least squares, and most computer
+programs that use it, assume that the only experimental uncertainties
+are in $y$ --- in other words, that any uncertainty in $x$ can be
+neglected.  This assumption is reasonably accurate in a surprising
+number of cases.  Nevertheless, in many experiments there will be
+significant uncertainties in both the $x$ and $y$ values.  The program
+Linfit does allow the use of such uncertainties for a few of the more
+widely used fitting functions.  In future versions, we hope to expand
+this list of functions.
+
+
+
+\newpage
+\section*{Introduction to Linfit}
+
+There are many computer programs that can do least-squares fits.  In
+this laboratory, we will for the most part use the program Linfit.
+Linfit is available on all Physics Department computers, and on most
+networked PCs on both campuses.  Computers that run the Windows NT
+operating system should have no difficulty in running Linfit.
+
+However, networked Windows 95/98 computers (for example, individually
+owned computers in dormitory rooms) may need to do an installation
+before Linfit will work properly.  People living off-campus can
+also install their own copy.  It's easy to do---just download  
+the installation program from Professor Gearhart's web site (http://employees.csbsju.edu/cgearhart/).  You can also start at the
+Physics Department site (http://www.csbsju.edu/physics/) and work your
+way down.  Please see the Physics Department
+Laboratory Manager or Professor Gearhart if you have any difficulty
+downloading the program or installing it.
+
+Your instructor or lab TA should be able to tell you where to find
+Linfit on the Windows Start button.  (The location occasionally
+changes, so we have not included it here.)
+
+The rest of this Appendix gives a brief introduction to Linfit.  The
+discussion is largely based
+on the on-line help available in Linfit.  To use the
+on-line help, simply choose the Help menu item or press the F1
+function key.  Note that on-line help topics may be printed if you
+need a hard copy of any particular help topic.
+
+\section*{Overview of Linfit}
+
+Linfit is centered around a Home screen: Starting from
+the Home Screen, users may use on-screen ``buttons" to choose an error
+mode, enter data, choose a fitting function, make a graph of the data,
+or do the fit.  In some cases, these buttons are inactive and colored
+red until they are usable.  For example, one cannot make a graph
+before data have been entered!  When these buttons become active,
+their color changes from red to green.
+
+The default error mode in Linfit is to use only uncertainties in $y$.
+However, you can change this default to allow the use of both $x$ and
+$y$ uncertainties by making the appropriate choice on the Error Type
+menu on the Home screen.
+
+Linfit also has a spreadsheet that is often useful for calculations
+and data reduction.
+
+Pressing a button typically transfers you to a new screen.  Once you
+are familiar with the program, it is often convenient to use the Window menu
+item found on most screens to transfer from one screen to another,
+rather than return to the Home screen each time.
+
+Descriptions of some of these screens are found below.  It is probably
+best to read these sections while you are actually using the program.
+
+\subsection*{Error Mode Screens}
+
+On these screens, you are prompted to choose a button corresponding to
+the nature of the experimental uncertainties in your experiment.  For
+example, the uncertainty can be a percentage of the $x$ or $y$ value,
+the same constant error for each point, and so on.  For most entries,
+you will be prompted for a numerical value.  Press the Continue button
+to return to the Home screen.
+
+\subsection*{Data Entry Screen}
+
+One uses this screen to enter or edit data.  The buttons on this
+screen perform the following tasks:
+`
+\begin{tabular} {l p{3in}}
+\underline{Enter Data}     &   This button prompts the user to enter
+                               data either from the keyboard or from a
+                               disk file.  Simply follow the on-screen
+                               directions.  \\ \\
+%
+\underline{Edit/Delete Data Point} \hspace{1in} &
+                               This button gives directions for
+                               editing or deleting data.  For example,
+                               to edit a data point, double-click on
+                               the entry that you
+                               want to edit. \\ \\
+
+\underline{Add Point} &	       To add more data points to the
+                               program, press this button and follow
+                               the on-screen directions.  \\ \\
+
+
+\underline{Switch X and Y}  &  Occasionally people inadvertently get
+                               their X and Y measurements reversed
+                               when they enter their data.  This
+                               button allows one to switch all X and Y
+                               values.  \\ \\
+
+
+\underline{Clear Data in Program}  &	
+                               If you want to do a fit to a new set of
+                               data, press this button to clear away
+                               all data currently in the program.\\ \\
+
+\underline{Save Data to File}	&
+                               This button prompts you to save your
+                               data to a disk file always a good idea!
+                               The button works exactly in the same way
+                               as the Save Data button on the Home
+                               screen.  \\ \\
+
+\underline{Continue}  &  Press this button to return to the Home
+                         screen. \\ \\
+
+
+\end{tabular}
+
+Some of these functions, and a few others, are also available from the
+menu bar at the top of the screen.
+
+\subsection*{Fitting Function Screen}
+
+On this screen, choose the fitting function you want to use and enter
+your estimates for your parameters, based on your analysis of your
+graphs. Check the small box by any
+parameter whose value you want to hold constant (that is, not allow to
+vary in doing the fit).  {\bf Note:  }Only under unusual
+circumstances will you ever need to hold a parameter constant
+
+In introductory physics courses at CSB/SJU, we strongly encourage
+students to do preliminary graphical analysis in their lab books and
+in the process calculate reasonably accurate parameter estimates.
+Only in this way can one develop an understanding of the data analysis
+skills that are essential for scientists and engineers.  Please see
+your instructor or consult the appropriate sections of your laboratory
+manual if you are unsure how to do this preliminary analysis.
+
+\subsection*{Graph Options Screen}
+
+You see this screen after pressing the GRAPH button on the home screen
+for the first time, or after pressing the Options button on the Graph
+screen. Use the graph options screen to select various options for
+your graph:
+
+\begin{itemize}
+\item You can select a linear, semi-log ($\log y$ vs. $x$), or log-log
+($\log y$
+vs. $\log x$) graph.  Among other things, you can use this choice to
+find out
+if your data are consistent with an exponential or power law fitting function before doing your fit.  (Recall that for an exponential function, a plot of log Y vs. X results in a straight line.  Similarly, for a power law function, a plot of log Y vs. log X results in a straight line.
+Be sure you can confirm this behavior by taking the log of both sides of an exponential or power law function.
+%
+\item You can turn the error bars on or off.  Default is on.
+%
+\item If you have already done a fit, you have the option to plot
+the
+fitting function on top of your data.  Default is on.
+If you have not done a fit, but have entered your parameter estimates, you may plot the resulting fitting function.  Default is off for this case.  If your parameters are not reasonably accurate, the results are not always predictable.
+Once you have selected your options, press the Plot Graph button to see your graph.  The Cancel button will return you to the Home screen.
+\end{itemize}
+
+\subsection*{Graph Data Screen}
+
+This screen gives you a plot of your data.  If you have already done
+your fit, it also superimposes a graph of your fitting function over
+your data, so that you can see how well the fitting function describes
+your data.
+
+Optionally, you may also plot the fitting function based on your
+estimates of the fit parameters .  It is a good way to see how
+accurate your estimates are.
+
+It is a good idea to look at a graph of your data BEFORE doing your
+fit.  In this way you can get some idea of what fitting functions
+might work.  For example, you would not want to try to fit a straight
+line to data that did not lie along a straight line!  By doing
+semi-log or log-log graphs, you can tell if your data are consistent
+with an exponential or power law function.  And so on.
+
+Note the row of icons at the top of the Graph screen.  Pressing these
+icons allows you to set various options on the graph, such as axis
+labels, size and style used for data points, and so on.  We encourage
+you to experiment with these options.  On-line help is available by
+pressing the Help button that appears after you press one of these
+icons.
+
+The buttons on the Graph screen perform the following functions:
+\begin{itemize}
+\item The Options button returns you to the Graph Options screen.
+\item The Continue button returns you to the Home screen.
+\item The Refresh button refreshes (that is, repaints) the graph.  It
+is often necessary to use this button to get a correct graph after
+making changes using the options available from the icons at the top
+of the screen.
+\end{itemize}
+Some of these options, and others as well, are available on the menu
+bar for this screen.
+
+\subsection*{Fit Screen}
+
+This screen reports the results of the current fit.  To do the fit,
+either use the menu Run/Go command or press the F5 function key.  You
+can print the report from the File menu.
+
+If you have more than 20 or 25 data points, your report may be
+divided into two or more pages.  Use the Up Arrow and Down Arrow
+keyboard keys, the indicated function keys, or the appropriate menu
+bar choices to move from one page to another.
+
+\subsection*{Spreadsheet}
+
+A spreadsheet can be a powerful tool for reducing data or doing any
+sort of repetitive calculation.  You can usually use your calculator
+for anything you might do in a spreadsheet; but many people find
+spreadsheets more convenient.
+
+The spreadsheet used in Linfit is Formula One, from Visual
+Components Inc.  Formula One is to a considerable extent compatible
+with Microsoft Excel.  It can read and write files in Excel format,
+though it cannot save or display Excel graphs or use many of the
+fancier features of Excel.  Nevertheless, to a considerable extent
+work done in Excel can be read into Linfit, and vice versa.
+
+We offer a few tips on how to use this spreadsheet here, but it is
+impractical to give a complete description.  Perhaps the best way to
+learn to use the spreadsheet is to read a book or take a workshop on
+Microsoft Excel (or some similar spreadsheet).  The details of the
+menu structure will not be the same.  But if you know the basics of
+how to work with a spreadsheet, what it can do, how to enter formulas,
+and the like, you should be able to work with the Linfit
+spreadsheet with out much difficulty.
+
+\paragraph*{Excel File Format} Please note: As of this writing (Summer
+1999), this spreadsheet cannot read files saved in the latest version
+of Microsoft Exel (version 8, in Office 97).  If you use this version
+of Excel, use the File/Save As menu in Excel to save your work in the
+format for versions 5/7 if you want to use your file in Linfit.
+Visual Components will probably introduce a new version that will read
+the latest Excel format, and we will add it to Linfit at that
+time.
+
+\paragraph*{How to enter formulas in the spreadsheet}
+Select (that is, click on) a cell, type an equals sign (=) and enter
+the formula.  The usual syntax applies: + - * / for add, subtract,
+multiply, and divide respectively.  You may place a cell reference in
+the formula by clicking on the cell.  You may use any of the functions
+supported by the spreadsheet in the formula (see Selected Spreadsheet
+Functions below).
+
+\paragraph*{Spreadsheet Data Menu}
+
+It is often convenient to move data to or from the data screen.  Most
+of commands
+on the spreadsheet Data Menu are specific to Linfit, and are designed
+to make it as easy as possible to move data back and forth. These
+commands include:
+
+\begin{itemize}
+\item {\em Get Data from Data Screen}\\
+Use this menu item to transfer data from the Data Screen into the spreadsheet
+%
+\item {\em Get Fit Results from Fit Screen} \\
+After you have done a least-squares fit, you can use this menu item to
+transfer the fit results into the spreadsheet.
+%
+\item {\em Select Data} \\
+You will often want to select data (one to three columns) before
+moving these data to the Data Screen.  One can do so by hand, of
+course: Simply drag the mouse over the range you want to select.  (You
+can select non-contiguous areas of the spreadsheet by holding down the
+Control (Ctrl) key as you drag the mouse.)
+
+However, the Select Data option on the Data menu automates this
+process.  To begin, select the columns (at least one, no more than
+three) by clicking on the column (A, B, C, ...) at the top of the
+spreadsheet.  To select more than one column, hold the Control (Ctrl)
+key down as you select columns after the first one.  Then, choose
+Data/Select Data.  You will be prompted to enter the beginning and
+ending row numbers to be selected.
+%
+\item {\em Move Data to Data Screen} \\
+Often you will want to move data from the spreadsheet to the Data
+Screen in order to do a fit or make a graph.  To do so, select the
+data either manually or choosing Select Data under the Data menu (see
+above).  Then choose "Move Data to Data Screen" under the Data menu.
+You will be prompted to tell the program whether the column or columns
+you have selected represent X, Y, or Y Error values.
+%
+\item {\em Parse Text to Columns}
+You can read a data file saved from a text editor or the Data screen
+into the spreadsheet.  Often, however, there will only be spaces
+between the columns of data (``space-delimited'' in computer terminology).
+Both Excel and Linfit will read such data into a single column.
+
+In order to put each column of data into a separate spreadsheet
+column, select the data with the mouse or keyboard and choose "Parse
+Text to Columns" from the Data menu.  \end{itemize}
+
+\paragraph*{Selected spreadsheet functions}
+Most spreadsheets contain a large collection of functions to perform
+various tasks and calculations.  The following topics list some
+available Linfit spreadsheet functions that are most likely to be
+useful to scientists and engineers.  See the on-line help for details
+on what these functions do, and how to use them.
+
+This list is not complete---for
+example, financial functions, date/time functions, and a good many
+others are not included here.  If you happen to know such functions,
+try them---they are likely to be here.
+
+\paragraph*{Logical Functions}
+\begin{center}
+\begin{tabbing}	
+TRUE \hspace{1in} \= FALSE \\
+IF               \> OR   \\
+NOT              \>       AND
+\end{tabbing}
+\end{center}
+%
+\paragraph*{Mathematical Functions}
+\begin{tabbing}
+ABS \hspace*{1in} \=  ACOS \hspace*{1in}  \= ACOSH \hspace*{1in} \=  ASIN \\
+ASINH    \>  ATAN  \>  ATAN2  \>  ATANH \\
+CHAR     \>  COS   \>  COSH   \>  EXP   \\
+FACT     \>  INT   \>  LN     \>  LOG  \\
+LOG10    \>  MAX   \>  MIN    \>  MOD  \\
+PI       \>  ROUND \>  ROUNDDOWN   \>  ROUNDUP \\
+SIGN     \>  SIN   \>  SINH   \>  SQRT   \\
+STDEV    \>  STDEVP \> TAN    \>  TANH  \\
+TRUNC   \\
+\end{tabbing}
+
+\paragraph*{Spreadsheet Functions}
+\begin{tabbing}	
+AVERAGE  \hspace{1in}  \=  COLUMN \hspace{1in}  \=  ROW  \\
+SUM     \>  SUMIF  \>  SUMSQ \\
+\end{tabbing}
+
+\subsection*{LINFIT Troubleshooting}
+
+Linfit is a linear least-squares fitting program that does
+least-squares fits of experimental data to a variety of fitting
+functions.  The bulk of the numerical analysis is done in Fortran code
+based on algorithms adapted from Bevington, {\em Data Reduction}
+\ldots,
+and Press et al, {\em Numerical Recipes} (see References).  Linfit
+employs
+a Windows interface written in Microsoft Visual Basic; the Fortran
+routines are compiled as Windows DLLs (Dynamic Link Libraries) and are
+called from Visual Basic.
+
+Although the program has been thoroughly tested and is reasonably
+stable, there may still be some bugs.  Those bugs can be in the
+programming, in Visual Basic, or even in Windows itself.  Please help
+us by reporting any problems you happen to encounter.
+
+If you can't get the program to fit your data or otherwise experience
+difficulty, check your entries for error mode and fitting function
+and see if there are any apparent problems.  For example, holding
+a fitting function parameter constant can sometimes cause problems
+if the value is zero or is otherwise inconsistent with your data.
+Make sure your data file
+is set up correctly, and that there are no ``nonsense" values.  If you
+ can't run the program, the network may be down.  Ask people around
+you---they will be having the same troubles if the network is down.  If all
+else fails, and you think you may have discovered a bug in LINFIT,
+please notify Professor Gearhart in the Physics Department (email:
+cgearhart@csbsju.edu).  Please send along as much detailed information
+as you can about what you were doing, how the program misbehaved, any
+error messages you saw, and the like.
+
+
+
+
+

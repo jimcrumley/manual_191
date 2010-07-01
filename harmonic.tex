@@ -1,0 +1,119 @@
+%SIMPLE HARMONIC MOTION
+\newexp
+\section*{Introduction}
+     In this experiment we will examine the behavior of a simple 
+harmonic oscillator, that is, a mass attached to the end of a 
+spring.  Remarkably, this system is one of the most important 
+in all of physics.  Almost any problem that involves 
+oscillations --- for example, the electrical oscillations in a 
+radio, or the oscillations of an atom around a lattice site in a 
+crystal --- can at least be approximated by the simple harmonic 
+oscillator.
+
+\section*{Analysis}
+     As you may know from the lectures and textbook, Hooke's law 
+states that the force exerted by a spring on a mass is given by
+\begin{equation}
+F = - kx   \label{eq:harm1}
+\end{equation}
+where $x$ is the displacement of the spring from its equilibrium 
+position and $k$, called the spring constant, is a constant 
+of proportionality that depends on the stiffness of the spring.
+
+     We will attempt to measure the spring constant in two ways.  
+In the first part of the experiment, we will hang masses on the 
+spring, and measure the displacement from equilibrium for a 
+number of different masses.  When the mass is at rest the 
+gravitational force $mg$ will just balance the force exerted by the 
+spring.  Hence a graph of force vs.\ displacement should allow you 
+either to confirm or reject Eq.~\ref{eq:harm1}, and if the graph is a 
+straight line, to determine the value of $k$ from a computer fit.
+
+     In the second part of the experiment we will set the mass 
+oscillating, and measure the period of oscillation, $T$ (that is, the 
+time for one complete oscillation) as a function of mass.  Then, 
+you can use your knowledge of graphical and computer analysis to 
+find the functional relationship between period and mass.  Look 
+up the theoretical expression for this relationship and use it 
+along with your computer analysis to find a value for the spring 
+constant $k$.  See if $k$ determined in this way agrees, within the 
+limits of experimental uncertainty, with the value you found in 
+the first part of the experiment.
+
+\section*{Experimental Procedure}
+     Examine the apparatus carefully and work out a suitable 
+procedure for the experiment.  Keep in mind the following points:
+\begin{enumerate}
+\item Be sure you measure the mass of the weight holder, and add
+it to your experimental masses.  You need the {\bf total} mass in
+motion.
+%calculate the force on the spring!
+
+\item Be sure you adjust the wire pointer on the apparatus to 
+         eliminate the effects of parallax.
+\item The largest source of experimental uncertainty in the 
+         measurement of the period is in deciding exactly when to 
+         start your timer, and exactly when to stop it.  The 
+         effect of this error can be minimized by measuring the 
+         time for a large number of oscillations.
+\end{enumerate}
+    
+\section*{Analysis of Data}
+     {\bf NOTE:}  Please be sure that you know what your units are, and
+     that you are using units consistently, in the following
+     analysis.
+
+     Use \WAPP to find:
+\begin{enumerate}     
+\item The value of the spring constant $k$, using Hooke's law.  Be sure
+that you also report the uncertainty in $k$, based on your least-squares
+fit.  Print out a fit report and  plot.
+
+%\item The functional dependence of the period of oscillation 
+%         on the mass.  Check your textbook, and compare your
+%	   result to the theoretical result. 
+
+%change in method: found T^2 vs m plot (while good since m_0 inconsequencial)
+%generally results in too small slope (due to difficulty of high frequency m=100g case?)
+% Hooke's law ks are consistent (\pm1 N/m) whereas oscillation k are
+%divergent and generally large +20%
+%solution(?): try power law approach
+ 
+\item The value of the spring constant $k$, using your 
+         oscillation period data. According to our work 
+in class, the period has a power law relationship
+to the oscillating mass:
+\[ T={2\pi\over\sqrt{k}}\; m^{1/2} \]
+
+First, look at a graph of log (period) vs. log (mass).  If it is linear, fit your period vs.\ mass data to a power law relationship and compare to the theoretical result (see your textbook).
+Print out fit report and  plot.
+Calculate and report the uncertainty in $k$, based on your least-squares
+fit.
+
+\item See if your two values 
+         of the spring constant agree within the limits of 
+         experimental uncertainty.  
+%{\bf Note:}  This part is tricky
+%and you may need to consult your instructor.  Don't leave this
+%part until the last moment!
+\end{enumerate}
+
+%\section*{Questions}
+%\begin{enumerate}
+%\item How could you find the velocity of the oscillating mass 
+%         at any arbitrary value of the displacement $x$?
+%\end{enumerate}
+
+\section*{Conclusions}
+Make a table listing both of your $k$ results (including uncertainties and the
+value of reduced $\chi^2$ of the corresponding fit).
+Comment on the consistency of your results for the determination of $k$ from
+the two different methods.  Mention any sources of error, both
+systematic and random.  Attach both fit results and plots.
+
+\section*{Quick Report Card}
+Properly report (sigfigs, units, error) your two values for $k$.
+
+\section*{Critique of Lab}
+     Follow the suggestions given in the Introduction to the
+Laboratory Manual.

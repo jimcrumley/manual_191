@@ -1,0 +1,55 @@
+enter id; receive 10 point dataset as a gif
+required applying some simple formulas to the data with spreadsheet
+enter WAPP; report paramters with units; make graph wiht labels.
+
+<h3>What Function Should Fit the Data?</h3>
+<INPUT NAME="nfunct" TYPE="radio" checked VALUE="1">Linear: <em>y</em>=<em>A</em>+<em>Bx</em><br>
+<INPUT NAME="nfunct" TYPE="radio" VALUE="2">Power: <em>y</em>=<em>A</em> <em>x</em><sup><em>B</em></sup><br>
+<INPUT NAME="nfunct" TYPE="radio" VALUE="3">Exponential: <em>y</em>=<em>A</em> exp(<em>Bx</em>)<br>
+<INPUT NAME="nfunct" TYPE="radio" VALUE="4">Natural Log: <em>y</em>=<em>A</em>+<em>B</em> log(<em>x</em>)<br>
+<INPUT NAME="nfunct" TYPE="radio" VALUE="5">Inverse <em>x</em>: <em>y</em>=<em>A</em>+<em>B/x</em><br>
+<INPUT NAME="nfunct" TYPE="radio" VALUE="6">Inverse <em>y</em>: 1/<em>y</em>=<em>A</em>+<em>Bx</em><br>
+<INPUT NAME="nfunct" TYPE="radio" VALUE="7">Inverse <em>x</em> &amp; <em>y</em>: 1/<em>y</em>=<em>A</em>+<em>B/x</em><br>
+<INPUT NAME="nfunct" TYPE="radio" VALUE="8">Arrhenius: <em>y</em>=<em>A</em> exp(<em>B/x</em>)<br>
+<INPUT NAME="nfunct" TYPE="radio" VALUE="9">Inverse-Natural Log: 1/<em>y</em>=<em>A</em>+<em>B</em> log(<em>x</em>)<br>
+EOM
+if [ "$WWW_xerror" -eq "0"  ]; then
+echo '<INPUT NAME="nfunct" TYPE="radio" VALUE="10">Quadratic: <em>y</em>=<em>A</em>+<em>Bx</em>+<em>Cx</em><sup>2</sup>'
+fi
+
+
+The ability to collect useful data (and estimate the accuracy of that data) and the ability to
+analyze data (interacting with and interpreting the results of programs like excel/WAPP) are
+two key skills we hope to develop in this course.  This lab practical exam will test
+the most straightforward skills: namely interacting with and interpreting the results
+of computer programs.  In this exam you will be given a dataset and told the appropriate functional
+form, and you will:
+
+enter this data into a spreadsheet (including numbers in scientific notation)
+transfer the data to WAPP (having set the proper y-error and functional form). All the datasets
+assume no x error and generally (but not always) there is a simple formula for y-error.
+interpret the resulting parameters (including proper units, sigfigs, and error)
+calculate some quantity based on those parameters (i.e., error propagation as in )
+self document your spreadsheet calculations
+
+Your work product for this exam includes:
+A quick report card, that properly reports (units, sigfigs, error) the functional parameters  
+and calculated parameters (5 points)
+hardcopy of the WAPP fit report (1/2 point)
+In most cases: two hardcopy plots (one with normal scales, and one in which scales have been chosen
+which linearize the curve).  The quadratic functional form cannot be linearized
+and the linear functional form is linear using normal scales, so in those cases you need only turn in
+one hardcopy plot. (2 points)
+Hardcopy of your spreadsheet showing the dataset and specified calculations which should be
+self-documented in the spreadsheet. (2 points)
+
+You will staple all of these sheets together and turn them into the lab instructor (1/2 point).
+Your lab notebook is not required for this exam.  You may use this lab manual and the textbook
+as references during this exam.
+
+
+
+
+
+
+using computers and your head)

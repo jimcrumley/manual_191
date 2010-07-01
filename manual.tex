@@ -1,0 +1,121 @@
+\documentclass[11pt,twoside]{report}
+\usepackage{graphics}
+\usepackage{subfigure}
+\usepackage{comment}
+%\includeonly{ballisti}   %intro, analysis, freefall, reaction, project, atwood,
+%twobody,kinetic, rotation,harmonic,pendulum,appa, appb, appc, appd}
+\setlength{\unitlength}{0.025in}
+%\input setbmp
+\newcommand{\delete}{\(<\)\begin{picture}(8,4.2)
+                     \put (-0.6,-0.1){\line(1,0){4.5}}
+                     \put (3.9,-0.1){\line(0,1){3}}
+                     \put (-0.6,2.9){\line(1,0){4.5}}
+                     \put (1.4,1.4){\makebox(0,0){x}}
+                     \end{picture}}
+\newcommand{\sine}{\begin{picture}(8,5)(0,-1)
+                  \put(2,0.5){\oval(3,4)[b]}
+                  \put(5,0.5){\oval(3,4)[t]}
+                  \end{picture}}
+\newcommand{\cnum}[1]{\begin{picture}(8,5)(0,-1)
+                  \put(4,0.5){\makebox(0,0){{\small {#1}}}}
+                  \put(4,0.5){\circle{6}}
+                  \end{picture}}
+\newcommand{\newexp}{\cleardoublepage
+                     \addtocounter{chapter}{1}
+                     \setcounter{equation}{0}
+                     \setcounter{figure}{0}
+                     \chapter*{EXPERIMENT \# \thechapter:\ \newname} 
+                     \markboth{\exphead}{\exphead}
+                     \addcontentsline{toc}{section}{\newname}}
+\newcommand{\newapp}{\cleardoublepage
+                     \addtocounter{chapter}{1}
+                     \setcounter{equation}{0}
+                     \setcounter{figure}{0}
+			   \setcounter{table}{0}	%added CAG, July 98
+		     \chapter*{\newname}
+                     \markboth{\apphead}{\apphead}
+                     \addcontentsline{toc}{section}{\newname}}
+\newcommand{\exphead}{\hspace*{\fill} \underline{EXPERIMENT \#\thechapter:\
+                      \newname} \hspace*{\fill}}
+\newcommand{\apphead}{\hspace*{\fill} \underline{\newname} \hspace*{\fill}}
+\newcommand{\nc}{\newcommand} \nc{\rnc}{\renewcommand}
+\nc{\bc}{\begin{center}} \nc{\ec}{\end{center}}
+\nc{\be}{\begin{enumerate}} \nc{\ee}{\end{enumerate}}
+\nc{\bi}{\begin{itemize}} \nc{\ei}{\end{itemize}}
+\nc{\bt}{\begin{tabular}} \nc{\et}{\end{tabular}}
+\nc{\beq}{\begin{equation}} \nc{\eeq}{\end{equation}}
+\nc{\beqa}{\begin{eqnarray}} \nc{\eeqa}{\end{eqnarray}}
+\nc{\bfig}{\begin{figure}} \nc{\efig}{\end{figure}}
+\nc{\bpic}{\begin{picture}} \nc{\epic}{\end{picture}}
+\nc{\WAPP}{{\sl WAPP}${}^+\;$}
+
+
+
+\pagestyle{headings}
+\textwidth=6in
+\textheight=9.25in
+\topmargin=-0.5in 				% + 1 3/8 in  = 7/8
+\oddsidemargin=.25in 				% + 1 in      = 1.25
+\evensidemargin=.25in 				% + 1 in      = 1.25
+\parindent=0in					% no indent
+\parskip=2ex					% skip lines
+\flushbottom
+\title{{\Huge {\bf Laboratory Manual for \\ Foundations of Physics I}}}
+\author{{\LARGE Physics 191}}
+\date{{\Large Fall 2007}}
+\begin{document}
+\maketitle
+\tableofcontents
+\setcounter{chapter}{-1}
+\newcommand{\newname}{Introduction}
+\include{intro}
+\renewcommand{\newname}{Data Analysis}
+\include{analysis}
+\renewcommand{\newname}{Freely Falling Body}
+\include{freefall}
+\renewcommand{\newname}{Reaction Time and Falling Bodies} \label{exp:react}
+\include{reaction} 
+\renewcommand{\newname}{Projectile Motion}
+\include{project}
+\renewcommand{\newname}{Atwood Machine}
+\include{atwood}
+\renewcommand{\newname}{Kinetic Friction}
+\include{kinetic}
+\renewcommand{\newname}{Ballistic Pendulum}
+\include{ballisti}
+\renewcommand{\newname}{Two-Body Collisions}
+\include{twobody}
+%\renewcommand{\newname}{WORK DONE BY A VARIABLE FORCE}
+%\include{variforce}
+\renewcommand{\newname}{Rotational Dynamics}
+\include{rotation}
+\renewcommand{\newname}{Lab Practical Exam}
+\include{practical}
+\renewcommand{\newname}{Simple Harmonic Motion}
+\include{harmonic}
+\renewcommand{\newname}{The Pendulum}
+\include{pendulum}
+%\renewcommand{\newname}{Kater Pendulum}
+%\include{kater}
+\appendix
+\renewcommand{\newname}{APPENDIX A---Error Analysis}
+\include{appa}
+\renewcommand{\newname}{APPENDIX B---Tables and Graphs}
+\include{appb}
+\renewcommand{\newname}{APPENDIX C---Graphical Analysis and Functional Forms}
+\include{appc}
+\renewcommand{\newname}{APPENDIX D---Computer Assisted Curve Fitting}
+\include{appd2}
+\renewcommand{\newname}{APPENDIX E---Uncertainty Formulae}
+\include{error_formula}
+
+\mbox{}
+
+\addtocontents{toc}{PLEASE NOTE:  We may not do the experiments 
+in this order, and may not do all of the experiments.   We may 
+introduce other experiments not on this list.}
+
+\mbox{}
+
+\end{document}
+\bye

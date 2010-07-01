@@ -1,0 +1,78 @@
+# PCTeX Project File, Version 1.1
+	name: manual
+	texformat: LATEX
+	typesetmode: DVI
+	spellwordlist: 
+manual.tex
+manual.dvi
+	wndpos: 1 -1 -1 -1 -1 0 0 679 483
+	zorder: 0
+	view: 103 -2
+manual.aux
+intro.aux
+analysis.aux
+freefall.aux
+reaction.aux
+project.aux
+atwood.aux
+kinetic.aux
+ballisti.aux
+twobody.aux
+rotation.aux
+harmonic.aux
+pendulum.aux
+appa.aux
+appb.aux
+appc.aux
+appd.aux
+manual.toc
+intro.tex
+analysis.tex
+freefall.tex
+behr2C.eps
+reaction.tex
+reactionC.eps
+fig3.2.ps
+fig3.3.ps
+project.tex
+projectile.app.eps
+atwood.tex
+atwood2.eps
+kinetic.tex
+kineticD.eps
+ballisti.tex
+ballis2.eps
+twobody.tex
+2-body.defs.eps
+2-body.coord.eps
+rotation.tex
+freebody2.eps
+diskB.eps
+plate.eps
+harmonic.tex
+pendulum.tex
+appa.tex
+figa1.eps
+appb.tex
+errbarsB.eps
+appc.tex
+gpherrB.eps
+temp_disB.ps
+pressureB.ps
+pressure_logB.ps
+speedB.ps
+speed_log_logB.ps
+speed_true_log_logB.ps
+appd.tex
+manual.log
+practical.aux
+appd2.aux
+error_formula.aux
+projectile.app2b.eps
+Rotatefig.eps
+practical.tex
+appb_TB1.ps
+appd2.tex
+exampleCs.eps
+exampleC2_plot.eps
+error_formula.tex

@@ -1,0 +1,922 @@
+% Kater Pendulum
+\newexp
+
+\section*{Introduction}
+
+It is well-known result that the period T of a simple pendulum is given by
+% MathType!MTEF!2!1!+-
+% feaaeaart1ev0aaatCvAUfKttLearuavP1wzZbItLDhis9wBH5garm
+% Wu51MyVXgaruWqVvNCPvMCG4uz3bWemv3yPrwynfgDOLeDHXwAJbqe
+% gWuDJLgzHbIqYL2zOrhinfgDObss0fgBPngarqqtubsr4rNCHbGeaG
+% qiVCI8FfYJH8sipiYdHaVhbbf9v8qqaqFr0xc9pk0xbba9q8WqFfea
+% Y-biLkVcLq-JHqpepeea0-as0Fb9pgeaYRXxe9vr0-vr0-vqpWqaae
+% aabiGaciaacaqabeaadaabauaaaOqaaiabdsfaujabg2da9iabikda
+% Yiabec8aWnaakaaabaWaaSaaaeaacqWGmbataeaacqWGNbWzaaaale
+% qaaaaa!46A8!
+\[
+T = 2\pi \sqrt {\frac{L}{g}} 
+\]
+where $L$ is the length.  In principle, then, a pendulum could be used
+to measure $g$,  the acceleration of gravity.  However, practical
+difficulties-primarily in measuring the length accurately-make it
+unsatisfactory for high precision measurements.
+
+It turns out that a physical pendulum-typically, a mass suspended from
+a knife edge-can be used for much more accurate measurements.  The
+Kater pendulum is such a physical pendulum.  It is named after its
+inventor, Captain Henry Kater, a captain in the British army and a
+Fellow of the Royal Society, who invented it around 1820.  For many
+years, it was the standard method of measuring $g$ to high accuracy.
+
+\begin{figure}[!hbt]     %Kater pendulum drawing, kater.eps
+\vspace{3in}
+\special{eps:kater.eps}
+\caption{Kater Pendulum.  The pendulum can oscillate about a knife edge through either hole.  The holes are located so that the two periods of oscillation are nearly equal. \label{fig:kater}}
+\end{figure}
+
+The beauty of this experiment is that it allows us, using relatively
+simple apparatus, to measure a physical quantity very accurately
+indeed-we hope, to within a few parts in 10,000.  It works as follows:
+Consider a physical pendulum with two supports that lie along a line
+through the center of mass, as shown in Figure 1.
+
+Suppose the distances $d_1$ and $d_2$ are adjusted so that the periods
+around both supports are equal: 
+$%\[
+T_1  = T_2  = T
+$%\]
+  .  Then it can be shown that this
+period is the period of a simple pendulum with length $L$ , the distance
+between the supports.  Thus, if the period and that distance can both
+be measured accurately, one can find the acceleration of gravity:
+% MathType!MTEF!2!1!+-
+% feaaeaart1ev0aaatCvAUfKttLearuavP1wzZbItLDhis9wBH5garm
+% Wu51MyVXgaruWqVvNCPvMCG4uz3bWemv3yPrwynfgDOLeDHXwAJbqe
+% gWuDJLgzHbIqYL2zOrhinfgDObss0fgBPngarqqtubsr4rNCHbGeaG
+% qiVCI8FfYJH8sipiYdHaVhbbf9v8qqaqFr0xc9pk0xbba9q8WqFfea
+% Y-biLkVcLq-JHqpepeea0-as0Fb9pgeaYRXxe9vr0-vr0-vqpWqaae
+% aabiGaciaacaqabeaadaabauaaaOqaaiabdsfaujabg2da9iabikda
+% Yiabec8aWnaakaaabaWaaSaaaeaacqWGKbazdaWgaaWcbaGaeGymae
+% dabeaakiabgUcaRiabdsgaKnaaBaaaleaacqaIYaGmaeqaaaGcbaGa
+% em4zaCgaaaWcbeaakiaaywW7cqqGVbWBcqqGYbGCcaaMf8Uaeeiiaa
+% Iaem4zaCMaeyypa0ZaaSaaaeaacqaI0aancqaHapaCdaahaaWcbeqa
+% aiabikdaYaaakmaabmaabaGaemizaq2aaSbaaSqaaiabigdaXaqaba
+% GccqGHRaWkcqWGKbazdaWgaaWcbaGaeGOmaidabeaaaOGaayjkaiaa
+% wMcaaaqaaiabdsfaunaaCaaaleqabaGaeGOmaidaaaaaaaa!620A!
+\begin{equation}%\[
+T = 2\pi \sqrt {\frac{{d_1  + d_2 }}{g}} \quad {\rm or}\quad {\rm  }g = \frac{{4\pi ^2 \left( {d_1  + d_2 } \right)}}{{T^2 }}
+ \label{eq:kater1}
+\end{equation}%\]
+
+\section*{Theory}
+
+In this section, we give a detailed derivation of Equation~(\ref{eq:kater1}).  The period of a physical pendulum is
+
+% MathType!MTEF!2!1!+-
+% feaaeaart1ev0aaatCvAUfKttLearuavP1wzZbItLDhis9wBH5garm
+% Wu51MyVXgaruWqVvNCPvMCG4uz3bWemv3yPrwynfgDOLeDHXwAJbqe
+% gWuDJLgzHbIqYL2zOrhinfgDObss0fgBPngarqqtubsr4rNCHbGeaG
+% qiVCI8FfYJH8sipiYdHaVhbbf9v8qqaqFr0xc9pk0xbba9q8WqFfea
+% Y-biLkVcLq-JHqpepeea0-as0Fb9pgeaYRXxe9vr0-vr0-vqpWqaae
+% aabiGaciaacaqabeaadaabauaaaOqaaiabdsfaujabg2da9iabikda
+% Yiabec8aWnaakaaabaWaaSaaaeaacqWGjbqsaeaacqWGnbqtcqWGNb
+% WzcqWGKbazaaaaleqaaaaa!4916!
+\[
+T = 2\pi \sqrt {\frac{I}{{Mgd}}} 
+\]
+
+where $I$ is the moment of inertia about the axis of rotation 
+of the pendulum, and $d$ is the distance from the axis of rotation to the center of mass.  From the Parallel Axis Theorem, it is apparent 
+that
+
+% MathType!MTEF!2!1!+-
+% feaaeaart1ev0aaatCvAUfKttLearuavP1wzZbItLDhis9wBH5garm
+% Wu51MyVXgaruWqVvNCPvMCG4uz3bWemv3yPrwynfgDOLeDHXwAJbqe
+% gWuDJLgzHbIqYL2zOrhinfgDObss0fgBPngarqqtubsr4rNCHbGeaG
+% qiVCI8FfYJH8sipiYdHaVhbbf9v8qqaqFr0xc9pk0xbba9q8WqFfea
+% Y-biLkVcLq-JHqpepeea0-as0Fb9pgeaYRXxe9vr0-vr0-vqpWqaae
+% aabiGaciaacaqabeaadaabauaaaOqaaiabdMeajjabg2da9iabdMea
+% jnaaBaaaleaacqWGJbWyaeqaaOGaey4kaSIaemyta0Kaemizaq2aaW
+% baaSqabeaacqaIYaGmaaaaaa!4855!
+\[
+I = I_c  + Md^2 
+\]
+where $I_c$ is the moment of inertia about the center of mass.  
+Thus for our physical pendulum in Figure 1, we have
+
+% MathType!MTEF!2!1!+-
+% feaaeaart1ev0aaatCvAUfKttLearuavP1wzZbItLDhis9wBH5garm
+% Wu51MyVXgaruWqVvNCPvMCG4uz3bWemv3yPrwynfgDOLeDHXwAJbqe
+% gWuDJLgzHbIqYL2zOrhinfgDObss0fgBPngarqqtubsr4rNCHbGeaG
+% qiVCI8FfYJH8sipiYdHaVhbbf9v8qqaqFr0xc9pk0xbba9q8WqFfea
+% Y-biLkVcLq-JHqpepeea0-as0Fb9pgeaYRXxe9vr0-vr0-vqpWqaae
+% aabiGaciaacaqabeaadaabauaaaOqaaiabdsfaunaaBaaaleaacqaI
+% XaqmaeqaaOGaeyypa0JaeGOmaiJaeqiWda3aaOaaaeaadaWcaaqaai
+% abdMeajnaaBaaaleaacqWGJbWyaeqaaOGaey4kaSIaemyta0Kaemiz
+% aq2aa0baaSqaaiabigdaXaqaaiabikdaYaaaaOqaaiabd2eanjabdE
+% gaNjabdsgaKnaaBaaaleaacqaIXaqmaeqaaaaaaeqaaOGaeeiiaaIa
+% eeiiaaIaeeiiaaIaaGzbVlabbggaHjabb6gaUjabbsgaKjabbccaGi
+% aaywW7cqqGGaaicqqGGaaicqWGubavdaWgaaWcbaGaeGOmaidabeaa
+% kiabg2da9iabikdaYiabec8aWnaakaaabaWaaSaaaeaacqWGjbqsda
+% WgaaWcbaGaem4yamgabeaakiabgUcaRiabd2eanjabdsgaKnaaDaaa
+% leaacqaIYaGmaeaacqaIYaGmaaaakeaacqWGnbqtcqWGNbWzcqWGKb
+% azdaWgaaWcbaGaeGOmaidabeaaaaaabeaaaaa!7134!
+\[
+T_1  = 2\pi \sqrt {\frac{{I_c  + Md_1^2 }}{{Mgd_1 }}} {\rm    }\quad {\rm and }\quad {\rm   }T_2  = 2\pi \sqrt {\frac{{I_c  + Md_2^2 }}{{Mgd_2 }}} 
+\]
+
+But we can always write $I_c$ in terms of the radius of 
+gyration $k$, the radius of a cylindrical ring that has the 
+same mass $M$ and the same rotational inertia $I$ as the actual 
+object:
+
+% MathType!MTEF!2!1!+-
+% feaaeaart1ev0aaatCvAUfKttLearuavP1wzZbItLDhis9wBH5garm
+% Wu51MyVXgaruWqVvNCPvMCG4uz3bWemv3yPrwynfgDOLeDHXwAJbqe
+% gWuDJLgzHbIqYL2zOrhinfgDObss0fgBPngarqqtubsr4rNCHbGeaG
+% qiVCI8FfYJH8sipiYdHaVhbbf9v8qqaqFr0xc9pk0xbba9q8WqFfea
+% Y-biLkVcLq-JHqpepeea0-as0Fb9pgeaYRXxe9vr0-vr0-vqpWqaae
+% aabiGaciaacaqabeaadaabauaaaOqaaiabdMeajnaaBaaaleaacqWG
+% JbWyaeqaaOGaeyypa0Jaemyta0KaaGjcVlabdUgaRnaaCaaaleqaba
+% GaeGOmaidaaaaa!47F7!
+\[
+I_c  = M{\kern 1pt} k^2 
+\]
+
+Hence the equation for the periods can be written
+
+% MathType!MTEF!2!1!+-
+% feaaeaart1ev0aaatCvAUfKttLearuavP1wzZbItLDhis9wBH5garm
+% Wu51MyVXgaruWqVvNCPvMCG4uz3bWemv3yPrwynfgDOLeDHXwAJbqe
+% gWuDJLgzHbIqYL2zOrhinfgDObss0fgBPngarqqtubsr4rNCHbGeaG
+% qiVCI8FfYJH8sipiYdHaVhbbf9v8qqaqFr0xc9pk0xbba9q8WqFfea
+% Y-biLkVcLq-JHqpepeea0-as0Fb9pgeaYRXxe9vr0-vr0-vqpWqaae
+% aabiGaciaacaqabeaadaabauaaaOqaaiabdsfaunaaBaaaleaacqaI
+% XaqmaeqaaOGaeyypa0JaeGOmaiJaeqiWda3aaOaaaeaadaWcaaqaai
+% abd2eanjabdUgaRnaaCaaaleqabaGaeGOmaidaaOGaey4kaSIaemyt
+% a0Kaemizaq2aa0baaSqaaiabigdaXaqaaiabikdaYaaaaOqaaiabd2
+% eanjabdEgaNjabdsgaKnaaBaaaleaacqaIXaqmaeqaaaaaaeqaaOGa
+% eeiiaaIaeeiiaaIaaGzbVlabbccaGiabbggaHjabb6gaUjabbsgaKj
+% abbccaGiaaywW7cqqGGaaicqqGGaaicqWGubavdaWgaaWcbaGaeGOm
+% aidabeaakiabg2da9iabikdaYiabec8aWnaakaaabaWaaSaaaeaacq
+% WGnbqtcqWGRbWAdaahaaWcbeqaaiabikdaYaaakiabgUcaRiabd2ea
+% njabdsgaKnaaDaaaleaacqaIYaGmaeaacqaIYaGmaaaakeaacqWGnb
+% qtcqWGNbWzcqWGKbazdaWgaaWcbaGaeGOmaidabeaaaaaabeaaaaa!734A!
+\[
+T_1  = 2\pi \sqrt {\frac{{Mk^2  + Md_1^2 }}{{Mgd_1 }}} {\rm   }\quad {\rm  and }\quad {\rm   }T_2  = 2\pi \sqrt {\frac{{Mk^2  + Md_2^2 }}{{Mgd_2 }}} 
+\]
+
+or simplifying,
+
+% MathType!MTEF!2!1!+-
+% feaaeaart1ev0aaatCvAUfKttLearuavP1wzZbItLDhis9wBH5garm
+% Wu51MyVXgaruWqVvNCPvMCG4uz3bWemv3yPrwynfgDOLeDHXwAJbqe
+% gWuDJLgzHbIqYL2zOrhinfgDObss0fgBPngarqqtubsr4rNCHbGeaG
+% qiVCI8FfYJH8sipiYdHaVhbbf9v8qqaqFr0xc9pk0xbba9q8WqFfea
+% Y-biLkVcLq-JHqpepeea0-as0Fb9pgeaYRXxe9vr0-vr0-vqpWqaae
+% aabiGaciaacaqabeaadaabauaaaOqaaiabdsfaunaaBaaaleaacqaI
+% XaqmaeqaaOGaeyypa0JaeGOmaiJaeqiWda3aaOaaaeaadaWcaaqaai
+% abdUgaRnaaCaaaleqabaGaeGOmaidaaOGaey4kaSIaemizaq2aa0ba
+% aSqaaiabigdaXaqaaiabikdaYaaaaOqaaiabdEgaNjabdsgaKnaaBa
+% aaleaacqaIXaqmaeqaaaaaaeqaaOGaeeiiaaIaeeiiaaIaaGzbVlab
+% bccaGiabbggaHjabb6gaUjabbsgaKjabbccaGiabbccaGiaaywW7cq
+% qGGaaicqWGubavdaWgaaWcbaGaeGOmaidabeaakiabg2da9iabikda
+% Yiabec8aWnaakaaabaWaaSaaaeaacqWGRbWAdaahaaWcbeqaaiabik
+% daYaaakiabgUcaRiabdsgaKnaaDaaaleaacqaIYaGmaeaacqaIYaGm
+% aaaakeaacqWGNbWzcqWGKbazdaWgaaWcbaGaeGOmaidabeaaaaaabe
+% aaaaa!6C78!
+\begin{equation}%\[
+T_1  = 2\pi \sqrt {\frac{{k^2  + d_1^2 }}{{gd_1 }}} {\rm   }\quad {\rm  and  }\quad {\rm  }T_2  = 2\pi \sqrt {\frac{{k^2  + d_2^2 }}{{gd_2 }}} 
+ \label{eq:bothT}
+\end{equation}%\]
+(Note that by using the radius of gyration, we have eliminated the
+mass.  This step is not necessary, but it makes the rest of the
+derivation less cumbersome.)
+
+If we have adjusted the distances $d_1$ and $d_2$ so that the periods are
+the same, it follows that
+
+% MathType!MTEF!2!1!+-
+% feaaeaart1ev0aaatCvAUfKttLearuavP1wzZbItLDhis9wBH5garm
+% Wu51MyVXgaruWqVvNCPvMCG4uz3bWemv3yPrwynfgDOLeDHXwAJbqe
+% gWuDJLgzHbIqYL2zOrhinfgDObss0fgBPngarqqtubsr4rNCHbGeaG
+% qiVCI8FfYJH8sipiYdHaVhbbf9v8qqaqFr0xc9pk0xbba9q8WqFfea
+% Y-biLkVcLq-JHqpepeea0-as0Fb9pgeaYRXxe9vr0-vr0-vqpWqaae
+% aabiGaciaacaqabeaadaabauaaaOqaamaalaaabaGaem4AaS2aaWba
+% aSqabeaacqaIYaGmaaGccqGHRaWkcqWGKbazdaqhaaWcbaGaeGymae
+% dabaGaeGOmaidaaaGcbaGaemizaq2aaSbaaSqaaiabigdaXaqabaaa
+% aOGaeyypa0ZaaSaaaeaacqWGRbWAdaahaaWcbeqaaiabikdaYaaaki
+% abgUcaRiabdsgaKnaaDaaaleaacqaIYaGmaeaacqaIYaGmaaaakeaa
+% cqWGKbazdaWgaaWcbaGaeGOmaidabeaaaaaaaa!52D5!
+\[
+\frac{{k^2  + d_1^2 }}{{d_1 }} = \frac{{k^2  + d_2^2 }}{{d_2 }}
+\]
+We bring all of the $k^2$  terms to the left side and 
+rearrange as follows:
+
+% MathType!MTEF!2!1!+-
+% feaaeaart1ev0aaatCvAUfKttLearuavP1wzZbItLDhis9wBH5garm
+% Wu51MyVXgaruWqVvNCPvMCG4uz3bWemv3yPrwynfgDOLeDHXwAJbqe
+% gWuDJLgzHbIqYL2zOrhinfgDObss0fgBPngarqqtubsr4rNCHbGeaG
+% qiVCI8FfYJH8sipiYdHaVhbbf9v8qqaqFr0xc9pk0xbba9q8WqFfea
+% Y-biLkVcLq-JHqpepeea0-as0Fb9pgeaYRXxe9vr0-vr0-vqpWqaae
+% aabiGaciaacaqabeaadaabauaaaOqaamaalaaabaGaem4AaS2aaWba
+% aSqabeaacqaIYaGmaaaakeaacqWGKbazdaWgaaWcbaGaeGymaedabe
+% aaaaGccqGHRaWkcqWGKbazdaWgaaWcbaGaeGymaedabeaakiabg2da
+% 9maalaaabaGaem4AaS2aaWbaaSqabeaacqaIYaGmaaaakeaacqWGKb
+% azdaWgaaWcbaGaeGOmaidabeaaaaGccqGHRaWkcqWGKbazdaWgaaWc
+% baGaeGOmaidabeaaaaa!50EF!
+\[
+\frac{{k^2 }}{{d_1 }} + d_1  = \frac{{k^2 }}{{d_2 }} + d_2 
+\]
+
+% MathType!MTEF!2!1!+-
+% feaaeaart1ev0aaatCvAUfKttLearuavP1wzZbItLDhis9wBH5garm
+% Wu51MyVXgaruWqVvNCPvMCG4uz3bWemv3yPrwynfgDOLeDHXwAJbqe
+% gWuDJLgzHbIqYL2zOrhinfgDObss0fgBPngarqqtubsr4rNCHbGeaG
+% qiVCI8FfYJH8sipiYdHaVhbbf9v8qqaqFr0xc9pk0xbba9q8WqFfea
+% Y-biLkVcLq-JHqpepeea0-as0Fb9pgeaYRXxe9vr0-vr0-vqpWqaae
+% aabiGaciaacaqabeaadaabauaaaOqaaiabdUgaRnaaCaaaleqabaGa
+% eGOmaidaaOWaaeWaaeaadaWcaaqaaiabigdaXaqaaiabdsgaKnaaBa
+% aaleaacqaIXaqmaeqaaaaakiabgkHiTmaalaaabaGaeGymaedabaGa
+% emizaq2aaSbaaSqaaiabikdaYaqabaaaaaGccaGLOaGaayzkaaGaey
+% ypa0Jaemizaq2aaSbaaSqaaiabikdaYaqabaGccqGHsislcqWGKbaz
+% daWgaaWcbaGaeGymaedabeaaaaa!51E6!
+\[
+k^2 \left( {\frac{1}{{d_1 }} - \frac{1}{{d_2 }}} \right) = d_2  - d_1 
+\]
+
+% MathType!MTEF!2!1!+-
+% feaaeaart1ev0aaatCvAUfKttLearuavP1wzZbItLDhis9wBH5garm
+% Wu51MyVXgaruWqVvNCPvMCG4uz3bWemv3yPrwynfgDOLeDHXwAJbqe
+% gWuDJLgzHbIqYL2zOrhinfgDObss0fgBPngarqqtubsr4rNCHbGeaG
+% qiVCI8FfYJH8sipiYdHaVhbbf9v8qqaqFr0xc9pk0xbba9q8WqFfea
+% Y-biLkVcLq-JHqpepeea0-as0Fb9pgeaYRXxe9vr0-vr0-vqpWqaae
+% aabiGaciaacaqabeaadaabauaaaOqaaiabdUgaRnaaCaaaleqabaGa
+% eGOmaidaaOWaaeWaaeaadaWcaaqaaiabdsgaKnaaBaaaleaacqaIYa
+% GmaeqaaOGaeyOeI0Iaemizaq2aaSbaaSqaaiabigdaXaqabaaakeaa
+% cqWGKbazdaWgaaWcbaGaeGOmaidabeaakiaayIW7cqWGKbazdaWgaa
+% WcbaGaeGymaedabeaaaaaakiaawIcacaGLPaaacqGH9aqpcqWGKbaz
+% daWgaaWcbaGaeGOmaidabeaakiabgkHiTiabdsgaKnaaBaaaleaacq
+% aIXaqmaeqaaaaa!5677!
+\[
+k^2 \left( {\frac{{d_2  - d_1 }}{{d_2 {\kern 1pt} d_1 }}} \right) = d_2  - d_1 
+\]
+
+It follows immediately that 
+
+% MathType!MTEF!2!1!+-
+% feaaeaart1ev0aaatCvAUfKttLearuavP1wzZbItLDhis9wBH5garm
+% Wu51MyVXgaruWqVvNCPvMCG4uz3bWemv3yPrwynfgDOLeDHXwAJbqe
+% gWuDJLgzHbIqYL2zOrhinfgDObss0fgBPngarqqtubsr4rNCHbGeaG
+% qiVCI8FfYJH8sipiYdHaVhbbf9v8qqaqFr0xc9pk0xbba9q8WqFfea
+% Y-biLkVcLq-JHqpepeea0-as0Fb9pgeaYRXxe9vr0-vr0-vqpWqaae
+% aabiGaciaacaqabeaadaabauaaaOqaaiabdUgaRnaaCaaaleqabaGa
+% eGOmaidaaOGaeyypa0Jaemizaq2aaSbaaSqaaiabigdaXaqabaGcca
+% aMi8Uaemizaq2aaSbaaSqaaiabikdaYaqabaaaaa!4924!
+\[
+k^2  = d_1 {\kern 1pt} d_2 
+\]
+If we substitute this result into Equation~(\ref{eq:bothT}), we find
+
+% MathType!MTEF!2!1!+-
+% feaaeaart1ev0aaatCvAUfKttLearuavP1wzZbItLDhis9wBH5garm
+% Wu51MyVXgaruWqVvNCPvMCG4uz3bWemv3yPrwynfgDOLeDHXwAJbqe
+% gWuDJLgzHbIqYL2zOrhinfgDObss0fgBPngarqqtubsr4rNCHbGeaG
+% qiVCI8FfYJH8sipiYdHaVhbbf9v8qqaqFr0xc9pk0xbba9q8WqFfea
+% Y-biLkVcLq-JHqpepeea0-as0Fb9pgeaYRXxe9vr0-vr0-vqpWqaae
+% aabiGaciaacaqabeaadaabauaaaOqaaiabdsfaunaaBaaaleaacqaI
+% XaqmaeqaaOGaeyypa0JaeGOmaiJaeqiWda3aaOaaaeaadaWcaaqaai
+% abdsgaKnaaBaaaleaacqaIXaqmaeqaaOGaaGjcVlabdsgaKnaaBaaa
+% leaacqaIYaGmaeqaaOGaey4kaSIaemizaq2aa0baaSqaaiabigdaXa
+% qaaiabikdaYaaaaOqaaiabdEgaNjabdsgaKnaaBaaaleaacqaIXaqm
+% aeqaaaaaaeqaaOGaeeiiaaIaeeiiaaIaaGzbVlabbccaGiabbggaHj
+% abb6gaUjabbsgaKjabbccaGiaaywW7cqqGGaaicqqGGaaicqWGubav
+% daWgaaWcbaGaeGOmaidabeaakiabg2da9iabikdaYiabec8aWnaaka
+% aabaWaaSaaaeaacqWGKbazdaWgaaWcbaGaeGymaedabeaakiabdsga
+% KnaaBaaaleaacqaIYaGmaeqaaOGaey4kaSIaemizaq2aa0baaSqaai
+% abikdaYaqaaiabikdaYaaaaOqaaiabdEgaNjabdsgaKnaaBaaaleaa
+% cqaIYaGmaeqaaaaaaeqaaaaa!72D9!
+\[
+T_1  = 2\pi \sqrt {\frac{{d_1 {\kern 1pt} d_2  + d_1^2 }}{{gd_1 }}} {\rm   }\quad {\rm  and }\quad {\rm   }T_2  = 2\pi \sqrt {\frac{{d_1 d_2  + d_2^2 }}{{gd_2 }}} 
+\]
+Simplifying, we find
+% MathType!MTEF!2!1!+-
+% feaaeaart1ev0aaatCvAUfKttLearuavP1wzZbItLDhis9wBH5garm
+% Wu51MyVXgaruWqVvNCPvMCG4uz3bWemv3yPrwynfgDOLeDHXwAJbqe
+% gWuDJLgzHbIqYL2zOrhinfgDObss0fgBPngarqqtubsr4rNCHbGeaG
+% qiVCI8FfYJH8sipiYdHaVhbbf9v8qqaqFr0xc9pk0xbba9q8WqFfea
+% Y-biLkVcLq-JHqpepeea0-as0Fb9pgeaYRXxe9vr0-vr0-vqpWqaae
+% aabiGaciaacaqabeaadaabauaaaOqaaiabdsfaunaaBaaaleaacqaI
+% XaqmaeqaaOGaeyypa0Jaemivaq1aaSbaaSqaaiabikdaYaqabaGccq
+% GH9aqpcqaIYaGmcqaHapaCdaGcaaqaamaalaaabaGaemizaq2aaSba
+% aSqaaiabigdaXaqabaGccqGHRaWkcqWGKbazdaWgaaWcbaGaeGOmai
+% dabeaaaOqaaiabdEgaNbaaaSqabaGccqqGGaaiaaa!50AF!
+\[
+T_1  = T_2  = 2\pi \sqrt {\frac{{d_1  + d_2 }}{g}} {\rm  }
+\]
+the result we were seeking!
+
+\section*{Apparatus}
+
+Our Kater pendulum consists of a 1 inch wide by ¼ inch thick 
+brass bar, as shown in Figure 2.  We have several lengths 
+available.
+
+\begin{figure}[!hbt]     %Kater pendulum apparatus, kater1.eps
+\vspace{2in}
+\special{eps:kater1.eps}
+\caption{The vertical line marks the center of mass.
+$a$ is the distance from the end of the bar to the edge of the first hole.
+\label{fig:kater1}}
+\end{figure}
+
+
+There are two ways of doing the experiment.  You may try either one.
+As you will see, it takes some time to take the data for Method 1, but
+the analysis is very simple.  By contrast, it does not take long to
+take the necessary data using Method 2, but the analysis is much more
+complex.  We aren't sure yet which method is more accurate.  The
+experiment is new at CSB/SJU, and there are quite possibly systematic
+errors that we do not yet understand.
+
+\subsection*{Method 1}
+
+We attach sliding weights (for the moment, large paper clips) to the
+bar, and measure the periods $T_1$ and $T_2$ about each hole as 
+functions of
+the position of the weights, measured by the centimeter scale taped on
+the bar.  It will turn out that at some position of the weights, the
+periods will be nearly equal. This position is usually someplace
+between the two holes.  One must take some preliminary measurements to
+find out where that position is.  Then, one takes careful measurements
+of period vs. weight position for several centimeters on either side
+of the position at which the two periods are about equal.
+
+Thus one has two sets of data:  Period vs. weight position for each
+support point.  Do a least-squares fit to each set, and then plot both
+sets, with fits, on the same graph.  The two fit lines will intersect
+each other on the graph of Period vs. weight position.  That point of
+intersection is the point at which the two periods are exactly equal,
+and one can then read that value of the period from the graph.
+
+Once this work is done, the analysis is straightforward:  From the
+graph, one finds the period $T$  from the graph and then uses Equation~(\ref{eq:kater1}) to find $g$.  The calculation of the uncertainty is also
+straightforward.
+
+\subsection*{Method 2}
+
+It is much easier and quicker to attach weights to the bar in such a way that $T_1$ is nearly equal to $T_2$, and measure both periods accurately.  However, the analysis is considerably more involved.  At the cost of a little algebra, one can find an expression for g that depends on 
+both $T_1$ and $T_2$.  We begin by squaring Equation~(\ref{eq:bothT}) above to obtain
+
+% MathType!MTEF!2!1!+-
+% feaaeaart1ev0aaatCvAUfKttLearuavP1wzZbItLDhis9wBH5garm
+% Wu51MyVXgaruWqVvNCPvMCG4uz3bWemv3yPrwynfgDOLeDHXwAJbqe
+% gWuDJLgzHbIqYL2zOrhinfgDObss0fgBPngarqqtubsr4rNCHbGeaG
+% qiVCI8FfYJH8sipiYdHaVhbbf9v8qqaqFr0xc9pk0xbba9q8WqFfea
+% Y-biLkVcLq-JHqpepeea0-as0Fb9pgeaYRXxe9vr0-vr0-vqpWqaae
+% aabiGaciaacaqabeaadaabauaaaOqaaiabdsfaunaaDaaaleaacqaI
+% XaqmaeaacqaIYaGmaaGccqGH9aqpdaWcaaqaaiabisda0iabec8aWn
+% aaCaaaleqabaGaeGOmaidaaaGcbaGaem4zaCgaamaalaaabaGaem4A
+% aS2aaWbaaSqabeaacqaIYaGmaaGccqGHRaWkcqWGObaAdaqhaaWcba
+% GaeGymaedabaGaeGOmaidaaaGcbaGaemiAaG2aaSbaaSqaaiabigda
+% XaqabaaaaOGaeeiiaaIaaGzbVlabbccaGiabbccaGiabbggaHjabb6
+% gaUjabbsgaKjabbccaGiaaywW7cqqGGaaicqqGGaaicqWGubavdaqh
+% aaWcbaGaeGOmaidabaGaeGOmaidaaOGaeyypa0ZaaSaaaeaacqaI0a
+% ancqaHapaCdaahaaWcbeqaaiabikdaYaaaaOqaaiabdEgaNbaadaWc
+% aaqaaiabdUgaRnaaCaaaleqabaGaeGOmaidaaOGaey4kaSIaemiAaG
+% 2aa0baaSqaaiabikdaYaqaaiabikdaYaaaaOqaaiabdIgaOnaaBaaa
+% leaacqaIYaGmaeqaaaaaaaa!70D8!
+\[
+T_1^2  = \frac{{4\pi ^2 }}{g}\frac{{k^2  + h_1^2 }}{{h_1 }}{\rm  }\quad {\rm   and }\quad {\rm   }T_2^2  = \frac{{4\pi ^2 }}{g}\frac{{k^2  + h_2^2 }}{{h_2 }}
+\]
+We solve each of these equations for $k^2$ and equate, as 
+follows:
+
+% MathType!MTEF!2!1!+-
+% feaaeaart1ev0aaatCvAUfKttLearuavP1wzZbItLDhis9wBH5garm
+% Wu51MyVXgaruWqVvNCPvMCG4uz3bWemv3yPrwynfgDOLeDHXwAJbqe
+% gWuDJLgzHbIqYL2zOrhinfgDObss0fgBPngarqqtubsr4rNCHbGeaG
+% qiVCI8FfYJH8sipiYdHaVhbbf9v8qqaqFr0xc9pk0xbba9q8WqFfea
+% Y-biLkVcLq-JHqpepeea0-as0Fb9pgeaYRXxe9vr0-vr0-vqpWqaae
+% aabiGaciaacaqabeaadaabauaaaOqaamaalaaabaGaemivaq1aa0ba
+% aSqaaiabigdaXaqaaiabikdaYaaakiabdEgaNjaayIW7cqWGKbazda
+% WgaaWcbaGaeGymaedabeaaaOqaaiabisda0iabec8aWnaaCaaaleqa
+% baGaeGOmaidaaaaakiabgkHiTiabdsgaKnaaDaaaleaacqaIXaqmae
+% aacqaIYaGmaaGccqGH9aqpcqWGRbWAdaahaaWcbeqaaiabikdaYaaa
+% kiabg2da9maalaaabaGaemivaq1aa0baaSqaaiabikdaYaqaaiabik
+% daYaaakiabdEgaNjaayIW7cqWGKbazdaWgaaWcbaGaeGOmaidabeaa
+% aOqaaiabisda0iabec8aWnaaCaaaleqabaGaeGOmaidaaaaakiabgk
+% HiTiabdsgaKnaaDaaaleaacqaIYaGmaeaacqaIYaGmaaaaaa!6587!
+\[
+\frac{{T_1^2 g{\kern 1pt} d_1 }}{{4\pi ^2 }} - d_1^2  = k^2  = \frac{{T_2^2 g{\kern 1pt} d_2 }}{{4\pi ^2 }} - d_2^2 
+\]
+We collect all the terms involving g on the left hand side, 
+as follows:
+
+% MathType!MTEF!2!1!+-
+% feaaeaart1ev0aaatCvAUfKttLearuavP1wzZbItLDhis9wBH5garm
+% Wu51MyVXgaruWqVvNCPvMCG4uz3bWemv3yPrwynfgDOLeDHXwAJbqe
+% gWuDJLgzHbIqYL2zOrhinfgDObss0fgBPngarqqtubsr4rNCHbGeaG
+% qiVCI8FfYJH8sipiYdHaVhbbf9v8qqaqFr0xc9pk0xbba9q8WqFfea
+% Y-biLkVcLq-JHqpepeea0-as0Fb9pgeaYRXxe9vr0-vr0-vqpWqaae
+% aabiGaciaacaqabeaadaabauaaaOqaamaalaaabaGaem4zaCgabaGa
+% eGinaqJaeqiWda3aaWbaaSqabeaacqaIYaGmaaaaaOWaaeWaaeaacq
+% WGubavdaqhaaWcbaGaeGymaedabaGaeGOmaidaaOGaemizaq2aaSba
+% aSqaaiabigdaXaqabaGccqGHsislcqWGubavdaqhaaWcbaGaeGOmai
+% dabaGaeGOmaidaaOGaemizaq2aaSbaaSqaaiabikdaYaqabaaakiaa
+% wIcacaGLPaaacqGH9aqpcqWGKbazdaqhaaWcbaGaeGymaedabaGaeG
+% OmaidaaOGaeyOeI0Iaemizaq2aa0baaSqaaiabikdaYaqaaiabikda
+% Yaaaaaa!5B1D!
+\[
+\frac{g}{{4\pi ^2 }}\left( {T_1^2 d_1  - T_2^2 d_2 } \right) = d_1^2  - d_2^2 
+\]
+%
+Or, rearranging, we obtain
+%
+% MathType!MTEF!2!1!+-
+% feaaeaart1ev0aaatCvAUfKttLearuavP1wzZbItLDhis9wBH5garm
+% Wu51MyVXgaruWqVvNCPvMCG4uz3bqee0evGueE0jxyaibaieYlf9ir
+% Veeu0dXdh9vqqj-hEeeu0xXdbba9frFj0-OqFfea0dXdd9vqaq-Jfr
+% VkFHe9pgea0dXdar-Jb9hs0dXdbPYxe9vr0-vr0-vqpWqaaeaabiGa
+% ciaacaqabeaadaqaaqaaaOqaamaalaaabaGaeGinaqJaeqiWda3aaW
+% baaSqabeaacqaIYaGmaaaakeaacqWGNbWzaaGaeyypa0ZaaSaaaeaa
+% cqWGubavdaqhaaWcbaGaeGymaedabaGaeGOmaidaaOGaemizaq2aaS
+% baaSqaaiabigdaXaqabaGccqGHsislcqWGubavdaqhaaWcbaGaeGOm
+% aidabaGaeGOmaidaaOGaemizaq2aaSbaaSqaaiabikdaYaqabaaake
+% aacqWGKbazdaqhaaWcbaGaeGymaedabaGaeGOmaidaaOGaeyOeI0Ia
+% emizaq2aa0baaSqaaiabikdaYaqaaiabikdaYaaaaaaaaa!4B33!
+\begin{equation}%\[
+\frac{{4\pi ^2 }}{g} = \frac{{T_1^2 d_1  - T_2^2 d_2 }}{{d_1^2  - d_2^2 }}
+\label{eq:method2a}
+\end{equation}%\]
+This result is perfectly correct.  But it is not in a form that is
+particularly useful in this experiment, where the quantity we can
+measure directly is the distance between the supports, 
+$d_1+d_2$.  For this
+reason, we will try to find quantities $A$ and $B$ that satisfy an
+equation of the form
+%
+% MathType!MTEF!2!1!+-
+% feaaeaart1ev0aaatCvAUfKttLearuavP1wzZbItLDhis9wBH5garm
+% Wu51MyVXgaruWqVvNCPvMCG4uz3bqee0evGueE0jxyaibaieYlf9ir
+% Veeu0dXdh9vqqj-hEeeu0xXdbba9frFj0-OqFfea0dXdd9vqaq-Jfr
+% VkFHe9pgea0dXdar-Jb9hs0dXdbPYxe9vr0-vr0-vqpWqaaeaabiGa
+% ciaacaqabeaadaqaaqaaaOqaamaalaaabaGaeGinaqJaeqiWda3aaW
+% baaSqabeaacqaIYaGmaaaakeaacqWGNbWzaaGaeyypa0ZaaSaaaeaa
+% cqWGubavdaqhaaWcbaGaeGymaedabaGaeGOmaidaaOGaemizaq2aaS
+% baaSqaaiabigdaXaqabaGccqGHsislcqWGubavdaqhaaWcbaGaeGOm
+% aidabaGaeGOmaidaaOGaemizaq2aaSbaaSqaaiabikdaYaqabaaake
+% aacqWGKbazdaqhaaWcbaGaeGymaedabaGaeGOmaidaaOGaeyOeI0Ia
+% emizaq2aa0baaSqaaiabikdaYaqaaiabikdaYaaaaaGccqGH9aqpca
+% aMi8+aaSaaaeaacqWGbbqqaeaacqWGKbazdaWgaaWcbaGaeGymaeda
+% beaakiabgUcaRiabdsgaKnaaBaaaleaacqaIYaGmaeqaaaaakiabgU
+% caRmaalaaabaGaemOqaieabaGaemizaq2aaSbaaSqaaiabigdaXaqa
+% baGccqGHsislcqWGKbazdaWgaaWcbaGaeGOmaidabeaaaaaaaa!5C93!
+\[
+\frac{{4\pi ^2 }}{g} = \frac{{T_1^2 d_1  - T_2^2 d_2 }}{{d_1^2  - d_2^2 }} = {\kern 1pt} \frac{A}{{d_1  + d_2 }} + \frac{B}{{d_1  - d_2 }}
+\]
+The algebra takes a few lines, and so we will work it out 
+in Appendix 1.  The result is
+%
+% MathType!MTEF!2!1!+-
+% feaaeaart1ev0aaatCvAUfKttLearuavP1wzZbItLDhis9wBH5garm
+% Wu51MyVXgaruWqVvNCPvMCG4uz3bqee0evGueE0jxyaibaieYlf9ir
+% Veeu0dXdh9vqqj-hEeeu0xXdbba9frFj0-OqFfea0dXdd9vqaq-Jfr
+% VkFHe9pgea0dXdar-Jb9hs0dXdbPYxe9vr0-vr0-vqpWqaaeaabiGa
+% ciaacaqabeaadaqaaqaaaOqaamaalaaabaGaeGymaedabaGaem4zaC
+% gaaiabg2da9maalaaabaGaeGymaedabaGaeGinaqJaeqiWda3aaWba
+% aSqabeaacqaIYaGmaaaaaOGaaGjcVpaabmaabaWaaSaaaeaacqWGub
+% avdaqhaaWcbaGaeGymaedabaGaeGOmaidaaOGaey4kaSIaemivaq1a
+% a0baaSqaaiabikdaYaqaaiabikdaYaaaaOqaaiabikdaYmaabmaaba
+% Gaemizaq2aaSbaaSqaaiabigdaXaqabaGccqGHRaWkcqWGKbazdaWg
+% aaWcbaGaeGOmaidabeaaaOGaayjkaiaawMcaaaaacqGHRaWkdaWcaa
+% qaaiabdsfaunaaDaaaleaacqaIXaqmaeaacqaIYaGmaaGccqGHsisl
+% cqWGubavdaqhaaWcbaGaeGOmaidabaGaeGOmaidaaaGcbaGaeGOmai
+% ZaaeWaaeaacqWGKbazdaWgaaWcbaGaeGymaedabeaakiabgkHiTiab
+% dsgaKnaaBaaaleaacqaIYaGmaeqaaaGccaGLOaGaayzkaaaaaaGaay
+% jkaiaawMcaaaaa!5CA3!
+\begin{equation}%\[
+\frac{1}{g} = \frac{1}{{4\pi ^2 }}{\kern 1pt} \left( {\frac{{T_1^2  + T_2^2 }}{{2\left( {d_1  + d_2 } \right)}} + \frac{{T_1^2  - T_2^2 }}{{2\left( {d_1  - d_2 } \right)}}} \right)
+\label{eq:method2b}
+\end{equation}%\]
+Take a moment to look at this equation, and remember that we are
+trying to measure $g$ {\em very} accurately.  It turns out that casting
+Equation~(\ref{eq:method2a}) in this form allows us to do so.  The first term in the
+brackets contains three quantities---two times, $T_1$ and $T_2$, and
+the distance $d_1+d_2$---that we can measure very accurately.  The
+second term contains two quantities, $d_1$ and $d_2$, that we know
+much less accurately; but if $T_1$ and $T_2$ are nearly equal, the
+second term will be much smaller than the first, and so the
+uncertainties in $d_1$ and $d_2$ will turn out to matter less.  The
+result will be a very accurate measurement!
+
+\subsection*{Procedure (both methods)}
+
+Take a few minutes to look over the apparatus.  The pendulum is
+suspended from a knife edge mounted rigidly in a bench clamp.  We
+measure the period using a photogate detector connected to the Pasco
+Science Workshop software.  Your instructor will show you how this
+system works.  Play around with it for a few minutes until you are
+comfortable with it.
+
+There are a number of places where systematic error (as opposed to
+random error) can creep into this experiment.  {\bf In an experiment
+designed for high accuracy, it is important to look for and eliminate
+as many sources of systematic error as possible.}  Here are some things
+to watch out for:
+
+
+\begin{enumerate}
+\item It is important that the knife edge support be accurately level.
+Use a level to check.  If the knife edge is not level, adjust the
+support until you get the knife edge as nearly level as you can.
+
+\item The pendulum should oscillate back and forth in a plane.  Be
+sure it is not wobbling or moving from side to side.  It's not a bad
+idea to start it oscillating, and then let it go for a few minutes,
+before you measure the period.
+
+\item The plane in which pendulum oscillates should be perpendicular
+to the knife edge.
+
+\item The period of a pendulum depends slightly on the amplitude of
+the oscillation.  The equations we use, therefore, are strictly valid
+only in the limit of very small amplitude.  Consequently, keep the
+amplitude as small as possible.  If time permits, see if you can
+detect the small increase in period as the amplitude is increased.
+
+\item The experiment is sensitive to vibration.  For example, try
+banging on the table, or even blowing gently on the pendulum, while
+you measuring the period.  The effect is striking.  Look for ways to
+eliminate vibration as much as possible.  For example, place the
+computer mouse on a different surface, so that pressing it to start
+the experiment will not introduce a source of vibration.
+\end{enumerate}
+
+There are at least two other possibilities for systematic error:  the
+quartz clock in the Pasco interface box that is used to measure the
+period, and the micrometers and calipers that we use to measure
+lengths.
+
+It turns out that many of these sources of systematic error have the
+effect of lengthening the period.  Thus, if systematic errors are
+present, the value of $g$ will tend to be systematically low.
+The procedure is as follows:
+
+{\bf For Method 1:}
+
+\begin{enumerate}
+\item Make some initial measurements to find the point at which the periods are approximately equal.
+
+\item For several centimeters on either side of this point, make measurements of period vs. clamp position, at about 0.5 cm to 1 cm. intervals, for both supports.  Be sure to mount the clamps symmetrically on the bar.  For each measurement, record the average of at least 6 or 8 periods and the standard deviation, and calculate the standard deviation of the mean.  For later analysis, it can be convenient to record these measurements directly in the Linfit spreadsheet.
+
+\item For each data set, make a graph and do a least-squares fit.  A fit to a straight line will probably be adequate, but in some cases, the data may show enough curvature that one should fit to a quadratic.  The point where the two curves intersect gives the period needed for Equation~(\ref{eq:kater1}).
+
+\item Measure $d_1+d_2$ (the distance between the two supports).  It is important to make this measurement as accurately as possible.  Your instructor will show you how to do these measurements accurately.  Please handle the calipers and micrometers carefully!
+\end{enumerate}
+
+{\bf For Method 2:}
+
+\begin{enumerate}
+\item Make an initial measurement of the two periods, fairly roughly.
+
+\item Mount two paper clamps on the pendulum.  The idea here is to find, by trial and error, a location that makes the difference in the periods as small as possible.  Be sure to mount the clamps symmetrically on the bar.  A good choice to start is a position between hole 2 and the center of the bar.  Once you have found an optimum position, record it in your lab notebook.  (Note:  It is possible to make the difference too small-the Pasco software cannot resolve times to better than 0.1 ms, and therefore the periods should differ by at least several times this amount.)
+
+\item With the pendulum oscillating about one support, take about 100 measurements of the period.  Record the average period and the standard deviation, and calculate the standard deviation of the mean.
+
+\item Repeat for the second support.
+
+\item Measure the distances $a$ (the distance from the end of the bar to the first hole), $d_1+d_2$ (the distance between the two supports), and $L$ (the length of the pendulum) as accurately as you can.  Your instructor will show you how to do these measurements accurately.  Please handle the calipers and micrometers carefully!  They are sensitive, and moderately expensive.
+\end{enumerate}
+
+{\bf Both methods:}
+
+\begin{enumerate}
+\item One can set the Pasco software to stop taking data after a set
+elapsed time-thus, one can start timing the pendulum, and the program
+will stop itself, and list each reading, the number of oscillations,
+the mean value, and the standard deviation.  Your instructor will show
+you how this feature of the program works.
+
+\item Notice that the Pasco program calculates the average and the
+standard deviation, but does not calculate the standard deviation of
+the mean-the appropriate uncertainty for the average period!  You will
+need to record the number of periods measured, and calculate the
+standard deviation of the mean.  It is worth noting that the standard
+deviation-the uncertainty in each period-does not change appreciably,
+no matter how many measurements one takes.
+
+\item It can be helpful to adjust y axis of the graph in the Pasco
+program so that you can see the variation in period graphically while
+the data are being recorded.  Click on the y axis to do so.
+
+\item The micrometer and calipers claim an accuracy of 0.001 inch (or
+0.02 mm).  One should, of course, regard such claims with a grain of
+salt, and look for ways of double-checking!
+\end{enumerate}
+
+\subsection*{Data Analysis}
+{\bf Method 1}
+From a careful analysis of your graphs, find the point at which the
+periods are equal.  Then, use Equation~(\ref{eq:kater1}) to calculate $g$ and the
+uncertainty in $g$.
+
+{\bf Method 2}
+
+Refer to Figure 2, and see if you can calculate approximate values of
+$d_1$ and $d_2$, given your measured values of $L$ and $a$.  These
+values should be measured from the center of mass.  However, it turns
+out that the two holes do not cause the center of mass to be shifted
+from the center of the bar by more than a half a millimeter or so.
+It's easy to confirm this point by balancing the pendulum on one side,
+on the knife edge support.  Thus, if you calculate $d_1$ and $d_2$
+relative to the center of the bar instead of the center of mass,  you
+will know $d_1 - d_2$ to an accuracy of about 1 mm.  It turns out that
+this low accuracy measurement will not significantly affect the
+accuracy with which $g$ is measured!  You can then calculate 1/$g$
+using Equation~(\ref{eq:method2b}).
+
+The uncertainty analysis is a bit complicated, so we will go through
+it carefully in Appendix 2.  The idea is to find the uncertainty in
+1/$g$ from Equation~(\ref{eq:method2b}), and then use that result to find the
+uncertainty in $g$.  See the Appendix for details.  Be sure you
+understand why the large uncertainty in $d_1 - d_2$ does not affect
+the accuracy with which $g$ is measured, as long as the two periods
+are nearly equal.
+
+{\bf Both Methods}
+
+It is important to retain as much accuracy as possible in using either
+Equation~(\ref{eq:kater1}) or Equation~(\ref{eq:method2b}) to calculate $g$.  If you are using a
+calculator, it is worth using storage registers to store intermediate
+results, so that no accuracy is lost in reentering numbers.  You can
+also use a spreadsheet, or a program like {\em Mathcad} or {\em Mathematica} to do
+the calculations.
+
+\section*{Conclusions}
+
+Report your value of $g$, with uncertainty.  Discuss any systematic
+uncertainties or other problems with the experiment that you think
+need further refinement.
+
+It might also be interesting to compare your value of $g$ here with
+the value you found in the free fall experiment.
+\newpage
+\begin{center}
+{\bf APPENDIX 1
+Derivation of Equation~(\ref{eq:method2b})}
+\end{center}
+
+We want to derive Equation~(\ref{eq:method2b}) above-that is, we want to find 
+the quantities $A$ and $B$ that satisfy
+% MathType!MTEF!2!1!+-
+% feaaeaart1ev0aaatCvAUfKttLearuavP1wzZbItLDhis9wBH5garm
+% Wu51MyVXgaruWqVvNCPvMCG4uz3bWemv3yPrwynfgDOLeDHXwAJbqe
+% gWuDJLgzHbIqYL2zOrhinfgDObss0fgBPngarqqtubsr4rNCHbGeaG
+% qiVCI8FfYJH8sipiYdHaVhbbf9v8qqaqFr0xc9pk0xbba9q8WqFfea
+% Y-biLkVcLq-JHqpepeea0-as0Fb9pgeaYRXxe9vr0-vr0-vqpWqaae
+% aabiGaciaacaqabeaadaabauaaaOqaamaalaaabaGaemivaq1aa0ba
+% aSqaaiabigdaXaqaaiabikdaYaaakiabdsgaKnaaBaaaleaacqaIXa
+% qmaeqaaOGaeyOeI0Iaemivaq1aa0baaSqaaiabikdaYaqaaiabikda
+% YaaakiabdsgaKnaaBaaaleaacqaIYaGmaeqaaaGcbaGaemizaq2aa0
+% baaSqaaiabigdaXaqaaiabikdaYaaakiabgkHiTiabdsgaKnaaDaaa
+% leaacqaIYaGmaeaacqaIYaGmaaaaaOGaeyypa0ZaaSaaaeaacqWGbb
+% qqaeaacqWGKbazdaWgaaWcbaGaeGymaedabeaakiabgUcaRiabdsga
+% KnaaBaaaleaacqaIYaGmaeqaaaaakiabgUcaRmaalaaabaGaemOqai
+% eabaGaemizaq2aaSbaaSqaaiabigdaXaqabaGccqGHsislcqWGKbaz
+% daWgaaWcbaGaeGOmaidabeaaaaaaaa!632A!
+\begin{equation}%\[
+\frac{{T_1^2 d_1  - T_2^2 d_2 }}{{d_1^2  - d_2^2 }} = \frac{A}{{d_1  + d_2 }} + \frac{B}{{d_1  - d_2 }}
+\label{eq:partialfrac}
+\end{equation}%\]
+If we convert the right-hand side of this equation to a common denominator, we obtain
+% MathType!MTEF!2!1!+-
+% feaaeaart1ev0aaatCvAUfKttLearuavP1wzZbItLDhis9wBH5garm
+% Wu51MyVXgaruWqVvNCPvMCG4uz3bWemv3yPrwynfgDOLeDHXwAJbqe
+% gWuDJLgzHbIqYL2zOrhinfgDObss0fgBPngarqqtubsr4rNCHbGeaG
+% qiVCI8FfYJH8sipiYdHaVhbbf9v8qqaqFr0xc9pk0xbba9q8WqFfea
+% Y-biLkVcLq-JHqpepeea0-as0Fb9pgeaYRXxe9vr0-vr0-vqpWqaae
+% aabiGaciaacaqabeaadaabauaaaOqaamaalaaabaGaemivaq1aa0ba
+% aSqaaiabigdaXaqaaiabikdaYaaakiabdsgaKnaaBaaaleaacqaIXa
+% qmaeqaaOGaeyOeI0Iaemivaq1aa0baaSqaaiabikdaYaqaaiabikda
+% YaaakiabdsgaKnaaBaaaleaacqaIYaGmaeqaaaGcbaGaemizaq2aa0
+% baaSqaaiabigdaXaqaaiabikdaYaaakiabgkHiTiabdsgaKnaaDaaa
+% leaacqaIYaGmaeaacqaIYaGmaaaaaOGaeyypa0ZaaSaaaeaacqWGbb
+% qqdaqadaqaaiabdsgaKnaaBaaaleaacqaIXaqmaeqaaOGaeyOeI0Ia
+% emizaq2aaSbaaSqaaiabikdaYaqabaaakiaawIcacaGLPaaacqGHRa
+% WkcqWGcbGqdaqadaqaaiabdsgaKnaaBaaaleaacqaIXaqmaeqaaOGa
+% ey4kaSIaemizaq2aaSbaaSqaaiabikdaYaqabaaakiaawIcacaGLPa
+% aaaeaacqWGKbazdaqhaaWcbaGaeGymaedabaGaeGOmaidaaOGaeyOe
+% I0Iaemizaq2aa0baaSqaaiabikdaYaqaaiabikdaYaaaaaaaaa!6DEF!
+\[
+\frac{{T_1^2 d_1  - T_2^2 d_2 }}{{d_1^2  - d_2^2 }} = \frac{{A\left( {d_1  - d_2 } \right) + B\left( {d_1  + d_2 } \right)}}{{d_1^2  - d_2^2 }}
+\]
+Now, in the numerator of the right-hand side, collect all of the terms in $d_1$ and $d_1$:
+% MathType!MTEF!2!1!+-
+% feaaeaart1ev0aaatCvAUfKttLearuavP1wzZbItLDhis9wBH5garm
+% Wu51MyVXgaruWqVvNCPvMCG4uz3bWemv3yPrwynfgDOLeDHXwAJbqe
+% gWuDJLgzHbIqYL2zOrhinfgDObss0fgBPngarqqtubsr4rNCHbGeaG
+% qiVCI8FfYJH8sipiYdHaVhbbf9v8qqaqFr0xc9pk0xbba9q8WqFfea
+% Y-biLkVcLq-JHqpepeea0-as0Fb9pgeaYRXxe9vr0-vr0-vqpWqaae
+% aabiGaciaacaqabeaadaabauaaaOqaamaalaaabaGaemivaq1aa0ba
+% aSqaaiabigdaXaqaaiabikdaYaaakiabdsgaKnaaBaaaleaacqaIXa
+% qmaeqaaOGaeyOeI0Iaemivaq1aa0baaSqaaiabikdaYaqaaiabikda
+% YaaakiabdsgaKnaaBaaaleaacqaIYaGmaeqaaaGcbaGaemizaq2aa0
+% baaSqaaiabigdaXaqaaiabikdaYaaakiabgkHiTiabdsgaKnaaDaaa
+% leaacqaIYaGmaeaacqaIYaGmaaaaaOGaeyypa0ZaaSaaaeaadaqada
+% qaaiabdgeabjabgUcaRiabdkeacbGaayjkaiaawMcaaiaaykW7cqWG
+% KbazdaWgaaWcbaGaeGymaedabeaakiabgUcaRmaabmaabaGaemOqai
+% KaeyOeI0IaemyqaeeacaGLOaGaayzkaaGaaGPaVlabdsgaKnaaBaaa
+% leaacqaIYaGmaeqaaaGcbaGaemizaq2aa0baaSqaaiabigdaXaqaai
+% abikdaYaaakiabgkHiTiabdsgaKnaaDaaaleaacqaIYaGmaeaacqaI
+% YaGmaaaaaaaa!6E2D!
+\[
+\frac{{T_1^2 d_1  - T_2^2 d_2 }}{{d_1^2  - d_2^2 }} = \frac{{\left( {A + B} \right)\,d_1  + \left( {B - A} \right)\,d_2 }}{{d_1^2  - d_2^2 }}
+\]
+If we now compare the numerators of the left and right sides, we see at once that
+% MathType!MTEF!2!1!+-
+% feaaeaart1ev0aaatCvAUfKttLearuavP1wzZbItLDhis9wBH5garm
+% Wu51MyVXgaruWqVvNCPvMCG4uz3bWemv3yPrwynfgDOLeDHXwAJbqe
+% gWuDJLgzHbIqYL2zOrhinfgDObss0fgBPngarqqtubsr4rNCHbGeaG
+% qiVCI8FfYJH8sipiYdHaVhbbf9v8qqaqFr0xc9pk0xbba9q8WqFfea
+% Y-biLkVcLq-JHqpepeea0-as0Fb9pgeaYRXxe9vr0-vr0-vqpWqaae
+% aabiGaciaacaqabeaadaabauaaaOabaeqabaGaemyqaeKaey4kaSIa
+% emOqaiKaeyypa0Jaemivaq1aa0baaSqaaiabigdaXaqaaiabikdaYa
+% aaaOqaaiabdkeacjabgkHiTiabdgeabjabg2da9iabgkHiTiabdsfa
+% unaaDaaaleaacqaIYaGmaeaacqaIYaGmaaaaaaa!4EAA!
+\[
+\begin{array}{l}
+ A + B = T_1^2  \\ 
+ B - A =  - T_2^2  \\ 
+ \end{array}
+\]
+Substituting this result into Equation~(\ref{eq:partialfrac}
+), we obtain
+% MathType!MTEF!2!1!+-
+% feaaeaart1ev0aaatCvAUfKttLearuavP1wzZbItLDhis9wBH5garm
+% Wu51MyVXgaruWqVvNCPvMCG4uz3bWemv3yPrwynfgDOLeDHXwAJbqe
+% gWuDJLgzHbIqYL2zOrhinfgDObss0fgBPngarqqtubsr4rNCHbGeaG
+% qiVCI8FfYJH8sipiYdHaVhbbf9v8qqaqFr0xc9pk0xbba9q8WqFfea
+% Y-biLkVcLq-JHqpepeea0-as0Fb9pgeaYRXxe9vr0-vr0-vqpWqaae
+% aabiGaciaacaqabeaadaabauaaaOqaamaalaaabaGaemivaq1aa0ba
+% aSqaaiabigdaXaqaaiabikdaYaaakiabdsgaKnaaBaaaleaacqaIXa
+% qmaeqaaOGaeyOeI0Iaemivaq1aa0baaSqaaiabikdaYaqaaiabikda
+% YaaakiabdsgaKnaaBaaaleaacqaIYaGmaeqaaaGcbaGaemizaq2aa0
+% baaSqaaiabigdaXaqaaiabikdaYaaakiabgkHiTiabdsgaKnaaDaaa
+% leaacqaIYaGmaeaacqaIYaGmaaaaaOGaeyypa0ZaaSaaaeaacqWGub
+% avdaqhaaWcbaGaeGymaedabaGaeGOmaidaaOGaey4kaSIaemivaq1a
+% a0baaSqaaiabikdaYaqaaiabikdaYaaaaOqaaiabikdaYmaabmaaba
+% Gaemizaq2aaSbaaSqaaiabigdaXaqabaGccqGHRaWkcqWGKbazdaWg
+% aaWcbaGaeGOmaidabeaaaOGaayjkaiaawMcaaaaacqGHRaWkdaWcaa
+% qaaiabdsfaunaaDaaaleaacqaIXaqmaeaacqaIYaGmaaGccqGHsisl
+% cqWGubavdaqhaaWcbaGaeGOmaidabaGaeGOmaidaaaGcbaGaeGOmai
+% ZaaeWaaeaacqWGKbazdaWgaaWcbaGaeGymaedabeaakiabgkHiTiab
+% dsgaKnaaBaaaleaacqaIYaGmaeqaaaGccaGLOaGaayzkaaaaaaaa!750D!
+\[
+\frac{{T_1^2 d_1  - T_2^2 d_2 }}{{d_1^2  - d_2^2 }} = \frac{{T_1^2  + T_2^2 }}{{2\left( {d_1  + d_2 } \right)}} + \frac{{T_1^2  - T_2^2 }}{{2\left( {d_1  - d_2 } \right)}}
+\]
+This result leads immediately to Equation~(\ref{eq:method2b}) above.
+\newpage
+\begin{center}
+{\bf Appendix 2
+Calculation of the uncertainty in 1/$g$}
+\end{center}
+
+We begin by writing Equation~(\ref{eq:method2b}) in the form
+% MathType!MTEF!2!1!+-
+% feaaeaart1ev0aaatCvAUfKttLearuavP1wzZbItLDhis9wBH5garm
+% Wu51MyVXgaruWqVvNCPvMCG4uz3bWemv3yPrwynfgDOLeDHXwAJbqe
+% gWuDJLgzHbIqYL2zOrhinfgDObss0fgBPngarqqtubsr4rNCHbGeaG
+% qiVCI8FfYJH8sipiYdHaVhbbf9v8qqaqFr0xc9pk0xbba9q8WqFfea
+% Y-biLkVcLq-JHqpepeea0-as0Fb9pgeaYRXxe9vr0-vr0-vqpWqaae
+% aabiGaciaacaqabeaadaabauaaaOqaamaalaaabaGaeGymaedabaGa
+% em4zaCgaaiabg2da9maalaaabaGaemiuaaLaey4kaSIaemyuaefaba
+% GaeGinaqJaeqiWda3aaWbaaSqabeaacqaIYaGmaaaaaOGaaGjcVdaa
+% !4B2F!
+\[
+\frac{1}{g} = \frac{{P + Q}}{{4\pi ^2 }}{\kern 1pt} 
+\]
+where
+% MathType!MTEF!2!1!+-
+% feaaeaart1ev0aaatCvAUfKttLearuavP1wzZbItLDhis9wBH5garm
+% Wu51MyVXgaruWqVvNCPvMCG4uz3bWemv3yPrwynfgDOLeDHXwAJbqe
+% gWuDJLgzHbIqYL2zOrhinfgDObss0fgBPngarqqtubsr4rNCHbGeaG
+% qiVCI8FfYJH8sipiYdHaVhbbf9v8qqaqFr0xc9pk0xbba9q8WqFfea
+% Y-biLkVcLq-JHqpepeea0-as0Fb9pgeaYRXxe9vr0-vr0-vqpWqaae
+% aabiGaciaacaqabeaadaabauaaaOqaaiabdcfaqjabg2da9maalaaa
+% baGaemivaq1aa0baaSqaaiabigdaXaqaaiabikdaYaaakiabgUcaRi
+% abdsfaunaaDaaaleaacqaIYaGmaeaacqaIYaGmaaaakeaacqaIYaGm
+% daqadaqaaiabdsgaKnaaBaaaleaacqaIXaqmaeqaaOGaey4kaSIaem
+% izaq2aaSbaaSqaaiabikdaYaqabaaakiaawIcacaGLPaaaaaGaeeii
+% aaIaaGzbVlabbccaGiabbccaGiabbggaHjabb6gaUjabbsgaKjabbc
+% caGiabbccaGiaaywW7cqqGGaaicqqGrbqucqqG9aqpdaWcaaqaaiab
+% dsfaunaaDaaaleaacqaIXaqmaeaacqaIYaGmaaGccqGHsislcqWGub
+% avdaqhaaWcbaGaeGOmaidabaGaeGOmaidaaaGcbaGaeGOmaiZaaeWa
+% aeaacqWGKbazdaWgaaWcbaGaeGymaedabeaakiabgkHiTiabdsgaKn
+% aaBaaaleaacqaIYaGmaeqaaaGccaGLOaGaayzkaaaaaiabbccaGaaa
+% !6FC0!
+\[
+P = \frac{{T_1^2  + T_2^2 }}{{2\left( {d_1  + d_2 } \right)}}{\rm  }\quad {\rm   and  }\quad {\rm  Q = }\frac{{T_1^2  - T_2^2 }}{{2\left( {d_1  - d_2 } \right)}}{\rm  }
+\]
+But the quantity $d_1 + d_2$ is measured as a single distance, with a single uncertainty.  Likewise, one can consider $d_1 - d_2$ as a single quantity, known to within a millimeter or so.  (Note that in any case, one cannot treat $d_1$ and $d_2$ as independent-as one increases, the other necessarily decreases.)  Consequently, it is convenient to define
+% MathType!MTEF!2!1!+-
+% feaaeaart1ev0aaatCvAUfKttLearuavP1wzZbItLDhis9wBH5garm
+% Wu51MyVXgaruWqVvNCPvMCG4uz3bWemv3yPrwynfgDOLeDHXwAJbqe
+% gWuDJLgzHbIqYL2zOrhinfgDObss0fgBPngarqqtubsr4rNCHbGeaG
+% qiVCI8FfYJH8sipiYdHaVhbbf9v8qqaqFr0xc9pk0xbba9q8WqFfea
+% Y-biLkVcLq-JHqpepeea0-as0Fb9pgeaYRXxe9vr0-vr0-vqpWqaae
+% aabiGaciaacaqabeaadaabauaaaOqaaiabdseaejabggMi6kabdsga
+% KnaaBaaaleaacqaIXaqmaeqaaOGaey4kaSIaemizaq2aaSbaaSqaai
+% abikdaYaqabaGccqqGGaaicaaMf8UaeeiiaaIaeeiiaaIaeeyyaeMa
+% eeOBa4MaeeizaqMaeeiiaaIaeeiiaaIaaGzbVlabbccaGiabdsgaKj
+% abggMi6kabdsgaKnaaBaaaleaacqaIXaqmaeqaaOGaeyOeI0Iaemiz
+% aq2aaSbaaSqaaiabikdaYaqabaaaaa!5C79!
+\[
+D \equiv d_1  + d_2 {\rm  }\quad {\rm   and  }\quad {\rm  }d \equiv d_1  - d_2 
+\]
+Hence, our expressions for $P$ and $Q$ become
+% MathType!MTEF!2!1!+-
+% feaaeaart1ev0aaatCvAUfKttLearuavP1wzZbItLDhis9wBH5garm
+% Wu51MyVXgaruWqVvNCPvMCG4uz3bWemv3yPrwynfgDOLeDHXwAJbqe
+% gWuDJLgzHbIqYL2zOrhinfgDObss0fgBPngarqqtubsr4rNCHbGeaG
+% qiVCI8FfYJH8sipiYdHaVhbbf9v8qqaqFr0xc9pk0xbba9q8WqFfea
+% Y-biLkVcLq-JHqpepeea0-as0Fb9pgeaYRXxe9vr0-vr0-vqpWqaae
+% aabiGaciaacaqabeaadaabauaaaOqaaiabdcfaqjabg2da9maalaaa
+% baGaemivaq1aa0baaSqaaiabigdaXaqaaiabikdaYaaakiabgUcaRi
+% abdsfaunaaDaaaleaacqaIYaGmaeaacqaIYaGmaaaakeaacqaIYaGm
+% cqWGebaraaGaeeiiaaIaaGzbVlabbccaGiabbccaGiabbggaHjabb6
+% gaUjabbsgaKjabbccaGiaaywW7cqqGGaaicqqGGaaicqqGrbqucqqG
+% 9aqpdaWcaaqaaiabdsfaunaaDaaaleaacqaIXaqmaeaacqaIYaGmaa
+% GccqGHsislcqWGubavdaqhaaWcbaGaeGOmaidabaGaeGOmaidaaaGc
+% baGaeGOmaiJaemizaqgaaiabbccaGaaa!6361!
+\[
+P = \frac{{T_1^2  + T_2^2 }}{{2D}}{\rm  }\quad {\rm   and }\quad {\rm   Q = }\frac{{T_1^2  - T_2^2 }}{{2d}}{\rm  }
+\]
+Notice that all the quantities in $P$ are known very accurately; however, $Q$ is known less accurately, both because the numerator is a difference, and because $d$ is known only to within a millimeter or so.  It is for this reason that one adjusts the periods to make $Q$ as small as possible.
+
+The error calculation is more complicated than can easily be done using the methods in Appendix A of the Physics 191 laboratory manual.  It can nevertheless be shown that
+% MathType!MTEF!2!1!+-
+% feaaeaart1ev0aaatCvAUfKttLearuavP1wzZbItLDhis9wBH5garm
+% Wu51MyVXgaruWqVvNCPvMCG4uz3bWemv3yPrwynfgDOLeDHXwAJbqe
+% gWuDJLgzHbIqYL2zOrhinfgDObss0fgBPngarqqtubsr4rNCHbGeaG
+% qiVCI8FfYJH8sipiYdHaVhbbf9v8qqaqFr0xc9pk0xbba9q8WqFfea
+% Y-biLkVcLq-JHqpepeea0-as0Fb9pgeaYRXxe9vr0-vr0-vqpWqaae
+% aabiGaciaacaqabeaadaabauaaaOqaaiabes7aKjaaygW7cqWGqbau
+% cqGH9aqpcqWGqbaudaGcaaqaamaabmaabaGaeGOmaiZaaSaaaeaacq
+% WGubavdaWgaaWcbaGaeGymaedabeaakiaayIW7cqaH0oazcaaMb8Ua
+% emivaq1aaSbaaSqaaiabigdaXaqabaaakeaacqWGubavdaqhaaWcba
+% GaeGymaedabaGaeGOmaidaaOGaey4kaSIaemivaq1aa0baaSqaaiab
+% ikdaYaqaaiabikdaYaaaaaaakiaawIcacaGLPaaadaahaaWcbeqaai
+% abikdaYaaakiabgUcaRmaabmaabaGaeGOmaiZaaSaaaeaacqWGubav
+% daWgaaWcbaGaeGOmaiJaaGjcVdqabaGccqaH0oazcaaMb8Uaemivaq
+% 1aaSbaaSqaaiabikdaYaqabaaakeaacqWGubavdaqhaaWcbaGaeGym
+% aedabaGaeGOmaidaaOGaey4kaSIaemivaq1aa0baaSqaaiabikdaYa
+% qaaiabikdaYaaaaaaakiaawIcacaGLPaaadaahaaWcbeqaaiabikda
+% YaaakiabgUcaRmaabmaabaWaaSaaaeaacqaH0oazcaaMb8Uaemiraq
+% eabaGaemiraqeaaaGaayjkaiaawMcaamaaCaaaleqabaGaeGOmaida
+% aaqabaaaaa!78BB!
+\[
+\delta P = P\sqrt {\left( {2\frac{{T_1 {\kern 1pt} \delta T_1 }}{{T_1^2  + T_2^2 }}} \right)^2  + \left( {2\frac{{T_{2{\kern 1pt} } \delta T_2 }}{{T_1^2  + T_2^2 }}} \right)^2  + \left( {\frac{{\delta D}}{D}} \right)^2 } 
+\]
+and that
+% MathType!MTEF!2!1!+-
+% feaaeaart1ev0aaatCvAUfKttLearuavP1wzZbItLDhis9wBH5garm
+% Wu51MyVXgaruWqVvNCPvMCG4uz3bWemv3yPrwynfgDOLeDHXwAJbqe
+% gWuDJLgzHbIqYL2zOrhinfgDObss0fgBPngarqqtubsr4rNCHbGeaG
+% qiVCI8FfYJH8sipiYdHaVhbbf9v8qqaqFr0xc9pk0xbba9q8WqFfea
+% Y-biLkVcLq-JHqpepeea0-as0Fb9pgeaYRXxe9vr0-vr0-vqpWqaae
+% aabiGaciaacaqabeaadaabauaaaOqaaiabes7aKjabdgfarjabg2da
+% 9iabdgfarnaakaaabaWaaeWaaeaacqaIYaGmdaWcaaqaaiabdsfaun
+% aaBaaaleaacqaIXaqmaeqaaOGaaGjcVlabes7aKjaaygW7cqWGubav
+% daWgaaWcbaGaeGymaedabeaaaOqaaiabdsfaunaaDaaaleaacqaIXa
+% qmaeaacqaIYaGmaaGccqGHsislcqWGubavdaqhaaWcbaGaeGOmaida
+% baGaeGOmaidaaaaaaOGaayjkaiaawMcaamaaCaaaleqabaGaeGOmai
+% daaOGaey4kaSYaaeWaaeaacqaIYaGmdaWcaaqaaiabdsfaunaaBaaa
+% leaacqaIYaGmcaaMi8oabeaakiabes7aKjaaygW7cqWGubavdaWgaa
+% WcbaGaeGOmaidabeaaaOqaaiabdsfaunaaDaaaleaacqaIXaqmaeaa
+% cqaIYaGmaaGccqGHsislcqWGubavdaqhaaWcbaGaeGOmaidabaGaeG
+% OmaidaaaaaaOGaayjkaiaawMcaamaaCaaaleqabaGaeGOmaidaaOGa
+% ey4kaSYaaeWaaeaadaWcaaqaaiabes7aKjaaygW7cqWGKbazaeaacq
+% WGKbazaaaacaGLOaGaayzkaaWaaWbaaSqabeaacqaIYaGmaaaabeaa
+% aaa!77CB!
+\[
+\delta Q = Q\sqrt {\left( {2\frac{{T_1 {\kern 1pt} \delta T_1 }}{{T_1^2  - T_2^2 }}} \right)^2  + \left( {2\frac{{T_{2{\kern 1pt} } \delta T_2 }}{{T_1^2  - T_2^2 }}} \right)^2  + \left( {\frac{{\delta d}}{d}} \right)^2 } 
+\]
+The uncertainty in 1/$g$ is therefore
+% MathType!MTEF!2!1!+-
+% feaaeaart1ev0aaatCvAUfKttLearuavP1wzZbItLDhis9wBH5garm
+% Wu51MyVXgaruWqVvNCPvMCG4uz3bWemv3yPrwynfgDOLeDHXwAJbqe
+% gWuDJLgzHbIqYL2zOrhinfgDObss0fgBPngarqqtubsr4rNCHbGeaG
+% qiVCI8FfYJH8sipiYdHaVhbbf9v8qqaqFr0xc9pk0xbba9q8WqFfea
+% Y-biLkVcLq-JHqpepeea0-as0Fb9pgeaYRXxe9vr0-vr0-vqpWqaae
+% aabiGaciaacaqabeaadaabauaaaOqaaiabes7aKjaaykW7daqadaqa
+% amaalaaabaGaeGymaedabaGaem4zaCgaaaGaayjkaiaawMcaaiabg2
+% da9maalaaabaWaaOaaaeaacqaH0oazcaaMb8Uaemiuaa1aaWbaaSqa
+% beaacqaIYaGmaaGccqGHRaWkcqaH0oazcaaMb8Uaemyuae1aaWbaaS
+% qabeaacqaIYaGmaaaabeaaaOqaaiabisda0iabec8aWnaaCaaaleqa
+% baGaeGOmaidaaaaaaaa!570D!
+\[
+\delta \,\left( {\frac{1}{g}} \right) = \frac{{\sqrt {\delta P^2  + \delta Q^2 } }}{{4\pi ^2 }}
+\]
+and it is an easy matter to find the uncertainty in $g$.

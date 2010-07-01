@@ -1,0 +1,6 @@
+# PCTeX Project File, Version 1.1
+	name: appc
+	texformat: LATEX
+appc.tex
+	wndpos: 1 -1 -1 -1 -1 154 154 998 527
+	zorder: 0

@@ -1,0 +1,31 @@
+\documentclass[10pt]{article}
+\newcommand{\Z}{\phantom{0}}
+\pagestyle{empty}
+\textwidth=6.5in \textheight=9.45in \topmargin=-0.7in 
+\oddsidemargin=-.25in 
+\newcommand{\nc}{\newcommand} \nc{\rnc}{\renewcommand}
+\nc{\WAPP}{{\sl WAPP}${}^+\;$}
+\begin{document}
+\section*{Error Codes for Grading Lab Practical}
+
+\begin{description}
+\item[0$^+$] too many sigfigs in reported error
+\item[1$^+$] too many sigfigs in reported number
+\item[1$^-$] too few sigfigs in reported number
+\item[2] missing or incorrect units in reported number
+\item[3!] calculation of quantity wrong or missing
+\item[3d]  calculation of quantity is not self documented
+\item[3e]  in calculation of quantity, error is wrong or missing
+\item[3ed]  in calculation of quantity, error is not self documented
+\item[4] reduced $\chi^2$ not discussed RE: scientific validity
+\item[5d] \WAPP: data not entered correctly (often related to numbers in scientific notation)
+\item[5e] \WAPP: error not entered correctly
+\item[5f] \WAPP: incorrect functional form
+\item[6!] required curve missing or incorrect
+\item[6n] missing or incorrect plot axis label: name of quantity
+\item[6u] missing or incorrect plot axis label: unit of quantity
+\end{description}
+
+
+\end{document}
+

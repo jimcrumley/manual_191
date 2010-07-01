@@ -1,0 +1,327 @@
+%!
+%%BoundingBox: 10 10 602 782
+/font1 {/Times-Roman findfont 10 scalefont setfont} bind def
+/font2 {/Times-Roman findfont 16 scalefont setfont} bind def
+/font3 {/Times-Roman findfont 25 scalefont setfont} bind def
+/font4 {/Times-Roman findfont 38 scalefont setfont} bind def
+
+/m /moveto load def
+/l /lineto load def
+/S /stroke load def
+/d /setdash load def
+/w /setlinewidth load def
+
+/s /show load def
+/sc {dup stringwidth pop 2 div neg 0 rmoveto s} bind def
+/sr {dup stringwidth pop  neg 0 rmoveto s} bind def
+/syc {gsave currentpoint translate 90 rotate dup stringwidth pop 2 div neg 0 rmoveto s grestore} bind def
+
+/triup {/base exch def 0 base rmoveto base neg base 2 mul neg rlineto base 2 mul 0 rlineto closepath fill} bind def
+/tridwn {/base exch def 0 base neg rmoveto base neg base 2 mul rlineto base 2 mul 0 rlineto closepath fill} bind def
+/box  {/side exch 2 mul def side 2 div neg side 2 div neg rmoveto side 0 rlineto 0 side rlineto side neg 0 rlineto closepath fill} bind def
+/diamnd {/side exch def 0 side neg rmoveto side side rlineto side neg side rlineto side neg side neg rlineto closepath fill} bind def
+
+/cbezier  .55228475 def
+/cbezier1 .44771525 def
+/carcx { /dy exch radius mul def /dx exch radius mul def currentpoint exch dx cbezier mul add exch 
+currentpoint dy cbezier1 mul add exch dx add exch
+currentpoint dy  add exch dx add exch curveto} bind def
+/carcy { /dy exch radius mul def /dx exch radius mul def currentpoint dy cbezier mul add 
+currentpoint dy add exch dx cbezier1 mul add exch
+currentpoint dy add exch dx add exch curveto} bind def
+/circle {/radius exch def 0 radius neg rmoveto 1 1 carcx -1 1 carcy -1 -1 carcx 1 -1 carcy closepath fill} bind def
+
+/dot {gsave .2 setlinewidth -.1 0 rmoveto .2 0 rlineto stroke grestore} bind def
+
+/triuS {/base exch def 0 base rmoveto base neg base 2 mul neg rlineto base 2 mul 0 rlineto closepath stroke} bind def
+/tridwS {/base exch def 0 base neg rmoveto base neg base 2 mul rlineto base 2 mul 0 rlineto closepath stroke} bind def
+/boS  {/side exch 2 mul def side 2 div neg side 2 div neg rmoveto side 0 rlineto 0 side rlineto side neg 0 rlineto closepath stroke} bind def
+/diamnS {/side exch def 0 side neg rmoveto side side rlineto side neg side rlineto side neg side neg rlineto closepath stroke} bind def
+/circlS {/radius exch def 0 radius neg rmoveto 1 1 carcx -1 1 carcy -1 -1 carcx 1 -1 carcy closepath stroke} bind def
+
+90 rotate 0 -612 translate
+font2
+ % start of actual plot
+font3
+164.5 100.8 m
+164.5 109.1 l
+S
+241.2 100.8 m
+241.2 111.9 l
+S
+241.2  74.2 m
+(2) sc 
+317.9 100.8 m
+317.9 109.1 l
+S
+394.5 100.8 m
+394.5 111.9 l
+S
+394.5  74.2 m
+(4) sc 
+471.2 100.8 m
+471.2 109.1 l
+S
+547.9 100.8 m
+547.9 111.9 l
+S
+547.9  74.2 m
+(6) sc 
+624.5 100.8 m
+624.5 109.1 l
+S
+701.2 100.8 m
+701.2 111.9 l
+S
+701.2  74.2 m
+(8) sc 
+701.2 543.6 m
+701.2 532.5 l
+S
+624.5 543.6 m
+624.5 535.3 l
+S
+547.9 543.6 m
+547.9 532.5 l
+S
+471.2 543.6 m
+471.2 535.3 l
+S
+394.5 543.6 m
+394.5 532.5 l
+S
+317.9 543.6 m
+317.9 535.3 l
+S
+241.2 543.6 m
+241.2 532.5 l
+S
+164.5 543.6 m
+164.5 535.3 l
+S
+137.7 529.9 m
+143.2 529.9 l
+S
+137.7 497.5 m
+148.8 497.5 l
+S
+122.9 488.6 m
+(70) sr 
+137.7 465.0 m
+143.2 465.0 l
+S
+137.7 432.5 m
+148.8 432.5 l
+S
+122.9 423.7 m
+(60) sr 
+137.7 400.1 m
+143.2 400.1 l
+S
+137.7 367.6 m
+148.8 367.6 l
+S
+122.9 358.8 m
+(50) sr 
+137.7 335.2 m
+143.2 335.2 l
+S
+137.7 302.7 m
+148.8 302.7 l
+S
+122.9 293.8 m
+(40) sr 
+137.7 270.2 m
+143.2 270.2 l
+S
+137.7 237.8 m
+148.8 237.8 l
+S
+122.9 228.9 m
+(30) sr 
+137.7 205.3 m
+143.2 205.3 l
+S
+137.7 172.9 m
+148.8 172.9 l
+S
+122.9 164.0 m
+(20) sr 
+137.7 140.4 m
+143.2 140.4 l
+S
+137.7 107.9 m
+148.8 107.9 l
+S
+122.9  99.1 m
+(10) sr 
+728.0 107.9 m
+717.0 107.9 l
+S
+728.0 140.4 m
+722.5 140.4 l
+S
+728.0 172.9 m
+717.0 172.9 l
+S
+728.0 205.3 m
+722.5 205.3 l
+S
+728.0 237.8 m
+717.0 237.8 l
+S
+728.0 270.2 m
+722.5 270.2 l
+S
+728.0 302.7 m
+717.0 302.7 l
+S
+728.0 335.2 m
+722.5 335.2 l
+S
+728.0 367.6 m
+717.0 367.6 l
+S
+728.0 400.1 m
+722.5 400.1 l
+S
+728.0 432.5 m
+717.0 432.5 l
+S
+728.0 465.0 m
+722.5 465.0 l
+S
+728.0 497.5 m
+717.0 497.5 l
+S
+728.0 529.9 m
+722.5 529.9 l
+S
+137.7 100.8 m
+728.0 100.8 l
+728.0 543.6 l
+137.7 543.6 l
+137.7 100.8 l
+S
+432.9 561.3 m
+(Temperature vs. Distance) sc 
+432.9  47.7 m
+(Distance \(cm\)) sc 
+ 80.1 322.2 m
+(Temperature \(C\)) syc
+164.5 146.9 m
+  3.0 boS   
+164.5 149.8 m
+164.5 172.9 l
+S
+161.6 172.9 m
+167.5 172.9 l
+S
+164.5 143.9 m
+164.5 120.9 l
+S
+161.6 120.9 m
+167.5 120.9 l
+S
+241.2 159.9 m
+  3.0 boS   
+241.2 162.8 m
+241.2 185.8 l
+S
+238.2 185.8 m
+244.1 185.8 l
+S
+241.2 156.9 m
+241.2 133.9 l
+S
+238.2 133.9 m
+244.1 133.9 l
+S
+317.9 270.2 m
+  3.0 boS   
+317.9 273.2 m
+317.9 296.2 l
+S
+314.9 296.2 m
+320.8 296.2 l
+S
+317.9 267.3 m
+317.9 244.3 l
+S
+314.9 244.3 m
+320.8 244.3 l
+S
+394.5 328.7 m
+  3.0 boS   
+394.5 331.6 m
+394.5 354.6 l
+S
+391.6 354.6 m
+397.5 354.6 l
+S
+394.5 325.7 m
+394.5 302.7 l
+S
+391.6 302.7 m
+397.5 302.7 l
+S
+471.2 419.5 m
+  3.0 boS   
+471.2 422.5 m
+471.2 445.5 l
+S
+468.3 445.5 m
+474.2 445.5 l
+S
+471.2 416.6 m
+471.2 393.6 l
+S
+468.3 393.6 m
+474.2 393.6 l
+S
+547.9 445.5 m
+  3.0 boS   
+547.9 448.5 m
+547.9 471.5 l
+S
+544.9 471.5 m
+550.8 471.5 l
+S
+547.9 442.6 m
+547.9 419.5 l
+S
+544.9 419.5 m
+550.8 419.5 l
+S
+624.5 458.5 m
+  3.0 boS   
+624.5 461.5 m
+624.5 484.5 l
+S
+621.6 484.5 m
+627.5 484.5 l
+S
+624.5 455.6 m
+624.5 432.5 l
+S
+621.6 432.5 m
+627.5 432.5 l
+S
+701.2 497.5 m
+  3.0 boS   
+701.2 500.4 m
+701.2 523.4 l
+S
+698.3 523.4 m
+704.2 523.4 l
+S
+701.2 494.5 m
+701.2 471.5 l
+S
+698.3 471.5 m
+704.2 471.5 l
+S
+137.7 132.0 m
+432.9 337.3 l
+728.0 542.6 l
+ S showpage

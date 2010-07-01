@@ -1,0 +1,390 @@
+% DATA ANALYSIS
+\newexp
+
+\section*{Before Lab}
+You must make three hand-drawn graphs in your lab notebook
+{\bf before} you come to lab: 
+\begin{itemize}
+\item Data Set 1 --- the graph of distance (on the $y$-axis) vs.\ time (on the
+$x$-axis) should look approximately linear.
+\item Data Set 2 --- the graph of activity $N$ (on the $y$-axis) vs.\ time (on the
+$x$-axis) should look curved.
+\item Data Set 2 --- the semi-log graph of $\ln(N)$ (on the $y$-axis) vs.\ time (on the
+$x$-axis) should look linear.  Follow the exponential function graphical
+analysis outlined on page \pageref{exprel} in Appendix C. 
+Provide a table analogous to Table \ref{table:pressure} on page
+\pageref{table:pressure} showing the logarithmic transformation of the data and error
+in Data Set 2.
+\end{itemize}
+Each graph should be sized to fill a notebook
+page with axes ranges selected to surround the data with a minimum of unused space.
+Accurately drawn errors bars (following Figure~\ref{fig:b1}) are required.
+
+
+One purpose of the first few experiments is to introduce you to
+the data reduction and analysis concepts that are described in the
+four Appendices to this manual.  You should begin working your way
+through these Appendices now---there is a lot in them and it will take
+you some time to understand it.
+
+For this experiment you will need to be familiar with at least some
+of the material in each of these Appendices:
+\begin{itemize}
+\item Appendix A (on error analysis) talks about how to estimate uncertainties
+in experimentally measured quantities.
+\item Appendix B (fairly short) gives you some guidelines on how to make a graph.
+Use the graphs in Appendix C as examples.
+%
+\item Appendix C (on graphical analysis), especially the sections on linear
+and exponential functions.  Note especially the logarithmic transformation that we
+use to make an exponential function look like a straight line.  You may need
+to review the properties of logarithms as you study this section.
+%
+\item Appendix D on Computer-Assisted Curve Fitting.  We will be making
+two least-squares fits on the computer for this experiment, and a good many
+more later in the semester.  Appendix D provides an introduction to
+the method of least squares and to the computer program we will be
+using.
+\end{itemize}
+
+Of course, you should also read carefully the writeup for this experiment, given
+below.  
+
+%\begin{tabbing}
+%reference12345 \= col2 \kill
+%References: \> Laboratory Manual, Experimental Error or Uncertainty,
+% page~\pageref{scierror} \\
+%\> Data Handling, page~\pageref{datahandle} \\
+%\> Data Analysis, page~\pageref{datanal} \\
+%\> Computer Assisted Curve Fitting, page~\pageref{compassis}
+%\end{tabbing}
+
+\section*{Data}
+    Much of your work in laboratory this semester will involve
+the careful plotting and analysis of experimental data.  In this
+exercise you will be given two sets of data and asked to
+work with each set.
+%\begin{center}
+%Data Set 1 \\
+%Average Velocity
+%\end{center}
+\subsubsection*{Data Set 1:  Average Velocity}
+     Suppose an airplane on a long flight over a very poorly
+mapped route passes over a series of air traffic control radio
+beacon checkpoints that have been dropped by parachute.  At each
+checkpoint the time is recorded with an accuracy of about 1
+second (i.e., better than 0.001 hours).  The distance of each
+checkpoint from the plane's starting point is known only to
+within about $\pm$150 km.  The following data are recorded:
+\newcommand{\Z}{\phantom{0}}
+\begin{center}
+\begin{tabular}{|cc|}\hline
+ & distance from \\
+ elapsed time & starting point \\
+ (hours $\pm$0.001) & (km $\pm$150) \\ \hline
+ 0.235 & \Z200 \\
+ 1.596 & 1200 \\
+%1.678 & 1500 \\
+ 1.921 & 1850 \\
+ 2.778 & 2100 \\
+ 3.310 & 2750 \\
+ 4.314 & 3500 \\
+ 4.846 & 4200 \\
+ 6.147 & 4900 \\
+ 6.678 & 5700 \\
+ 7.979 & 6650 \\\hline
+\end{tabular}
+\end{center}
+%\begin{center}
+%Data Set 2 \\
+%Half-life
+%\end{center}
+\subsubsection*{Data Set 2:  Radioactive Decay}
+    The activity of a certain radioactive element is monitored by
+a Geiger counter, which clicks and records a ``count" each time it
+detects a nucleus undergoing a radioactive decay.  The number $N$ of counts
+during a one minute period is recorded along with the start time of
+the count.  The estimated uncertainty in a count ($\delta N$) is
+$\sqrt{N}$. (Why this is the proper error estimate is explained
+in Taylor's {\em An Introduction to Error Analysis}.)  The error in start-time is negligible.
+%<<Statistics`DiscreteDistributions`
+%Table[Random[PoissonDistribution[2800 E^(- .03 n)]],{n,1,50}]
+\begin{center}
+\begin{tabular}{|ccc|}
+\hline
+time & $N$ & $\delta N$ \\
+(min) & (counts/min) & (counts/min) \\ \hline
+\Z2 & 2523 & 50\\
+\Z4 & 1908 & 44\\
+\Z6 & 1632 & 40\\
+\Z8 & 1263 & 36\\
+10  & 1068 & 33\\
+12  & \Z861 & 29\\
+14  & \Z714 & 27\\
+16  & \Z560 & 24\\
+18  & \Z452 & 21\\
+20  & \Z372 & 19\\ \hline
+\end{tabular}
+\end{center}
+%                FIT                 
+% PARAMETER     VALUE      ERROR     
+%   A =         0.303E+04   50.      
+%   B =        -0.105      0.18E-02  
+%\Z2 & 2662 & 52 \\
+%\Z6 & 2333 & 48 \\
+%10 & 2091 & 46 \\
+%14 & 1817 & 43 \\
+%18 & 1719 & 41 \\
+%22 & 1464 & 38 \\
+%26 & 1328 & 36 \\
+%30 & 1087 & 33 \\
+%34 & 1034 & 32 \\
+%38 & \Z886 & 30 \\
+%42 & \Z733 & 27 \\
+%46 & \Z698 & 26 \\
+%50 & \Z649 & 25 \\\hline
+%\end{tabular}
+%\end{center}
+%%                FIT                
+%% PARAMETER     VALUE      ERROR     
+%%   A =         0.283E+04   41.     
+%%   B =        -0.303E-01  0.61E-03 
+%% reduced chi-squared of  1.4
+
+%The activity $C$ in
+%counts/minute are recorded as a function of time, resulting in
+%the following table.  
+%The uncertainty in the activity is about
+%3\%.
+%\begin{center}
+%\begin{tabular}{cc|cc}
+%time & $C$ & time & $C$ \\
+%(min) & (counts/min $\pm$3\%) & (min) & (counts/min $\pm$3\%) \\ \hline
+%5.5 & 2410 & 26.5 & 1251 \\
+%7.0 & 2284 & 29.5 & 1137 \\
+%8.5 & 2188 & 32.5 & 1130 \\
+%10.0 & 2038 & 35.5 & 1002 \\
+%11.5 & 1959 & 38.5 & 905 \\
+%13.0 & 1971 & 41.5 & 786 \\
+%14.5 & 1918 & 44.5 & 773 \\
+%16.5 & 1756 & 47.5 & 704 \\
+%18.5 & 1675 & 50.5 & 687 \\
+%20.5 & 1599 & 53.5 & 618 \\
+%22.5 & 1464 & 56.5 & 562 \\
+%24.5 & 1350 & 59.5 & 478 \\
+%\end{tabular}
+%\end{center}
+%                FIT                      
+% PARAMETER     VALUE      ERROR          
+%   A =         0.280E+04   37.            
+%   B =        -0.290E-01  0.40E-03        
+
+\section*{Analysis}
+\subsection*{Graphical Analysis}
+Try to complete all four steps given below {\em before} coming to lab.
+If you have problems, talk to your instructor, but as a minimum
+draw the three required graphs of the above data in your notebook.
+
+
+\begin{enumerate}
+\item In your lab notebook, make a careful graph of each set of
+        data, following the guidelines given in
+        Appendix B  and using the graphs in
+        Appendix C  in the lab
+        manual as an example.  Be sure
+        you plot the error bars.
+\item For the first data set, the graph  of distance vs.\ time
+        should be linear.  Draw the best possible line and record
+its slope (average velocity, $B$) and $y$-intercept ($A$).
+
+Following the procedure shown in Fig.~\ref{fig:slope} on
+page \pageref{fig:slope} draw two additional approximating lines
+one with a steeper slope than the best line, and one with a less
+steep slope. Find the slope and $y$-intercept of these lines.
+Use half the resulting range of
+possible slopes to estimate the
+uncertainty in average speed ($\delta B$), i.e.,
+\[
+\delta B = {|B_{\rm max} -B_{\rm min}|\over 2}
+\]
+Similarly find the
+uncertainty in $y$-intercept ($\delta A$).
+%       If it is, use the graph to estimate
+%        the average speed of the plane.
+
+%        Make careful calculations of the slope and the $y$-intercept
+%        of the best line.%, and explain how they are to be interpreted.
+%        Use the range of
+%        possible slopes allowed by the error bars to estimate the
+%        uncertainty in average speed (see Fig.~\ref{fig:slope} in
+%Appendix C) and $y$-intercept. %page~\pageref{datanal}).
+{\bf Result:} for slope a best value with uncertainty and units; for $y$-intercept
+ a best value with uncertainty and units.
+\item For the second data set, the graph of activity vs.\ time
+        should {\em not} be linear.  Therefore the first step is to
+        determine what sort of function describes the data.  Read
+        carefully the section in Appendix C on Exponential Function
+        (page~\pageref{exprel}) of this lab manual.  Following
+        the advice of that section make a semi-log plot of the
+        data which should look linear.  Begin by making a table analogous to 
+Table \ref{table:pressure} on page
+\pageref{table:pressure} showing the logarithmic transformation of the data and error
+bars. Again, draw three approximating lines.
+Calculate the slope and the $y$-intercept of the best line on the log-transformed plot.
+Use half the range of
+        possible slopes allowed by the error bars to estimate the
+        uncertainty in slope
+and $y$-intercept. %page~\pageref{datanal}).
+{\bf Result:} for slope ($B$) a value with uncertainty and units; for $y$-intercept
+($C$, see Eq.~\ref{eq:transform_line}) a value with uncertainty (no units!).
+Calculate the $A$ parameter of the exponential function from $C$ (see Eq.~\ref{eq:transformC}) (report units!).
+Use the high-low method (see page \pageref{par:high.low.game}) to find
+the uncertainty in $A$.
+
+
+%        and see if you can find a way of plotting the data that
+%        gives you a straight line.  (Hint:  Radioactive materials
+%        usually decay exponentially).
+
+%        Note that you can use Linfit, the data analysis and least-squares
+%        fitting program we will be using, to make on-screen graphs of
+%your
+%data quickly and easily.  It may save you a good bit of time if you
+%        use the program to investigate the form
+%        of the fitting function before plotting the graphs in your
+%        lab notebook.
+%
+\item Is there any way the  exponential parameters can be estimated (however crudely) directly from
+non-transformed data?  Yes! The $A$ parameter represents the activity at zero time;
+with a bit of extrapolation of the curve one can guess-estimate $A$ from the $y$-intercept.
+Exponential functions can be characterized by a ``half-life,'' $\tau$,
+in this case the time needed for half of the sample to undergo decay.
+To estimate the half-life from your untransformed graph, find
+%The half-life can be easily estimated from your untransformed graph.  Find
+any two points on the smooth curve (i.e., not data points) such that the activity 
+of the second point
+is half the activity of the first point.  The time interval between
+the two points is the half-life.  Use your graph to make a {\em rough} estimate.
+One can then calculate the $B$ parameter from the half-life:
+
+%We can find a more accurate estimate of the half-life by deriving a 
+%relationship between it and the $B$ parameter.
+If we have two points $(t_1,N_1)$ and $(t_2,N_2)$ such that
+$N_2=N_1/2$ and $\tau=t_2-t_1$.  The exponential relation says:
+\begin{eqnarray}
+N_1&=&A e^{Bt_1}\\
+N_2&=&Ae^{Bt_2}
+\end{eqnarray}
+If we divide the second equation by the first we have:
+\begin{equation}
+{1\over 2} =  {N_2\over N_1} = {Ae^{Bt_2} \over Ae^{Bt_1}} = e^{B(t_2-t_1)} =
+e^{B\tau} 
+\end{equation}
+If we now take the natural log of both sides we have:
+\begin{equation}
+\ln\left({1\over 2}\right) = \ln\left(e^{B\tau}\right) = B\tau 
+\end{equation}
+or
+\begin{equation}
+B = {\ln\left({1\over 2}\right) \over \tau} 
+\end{equation}
+
+On the other hand, you can reverse this equation and use the slope ($B$) of your semilog plot
+%Thus if you calculate $B$ using your graph, you can use the result 
+to calculate (more accurately) the half-life $\tau$.
+Note that this relationship between  $B$ and $\tau$ is contained
+in Eq.~\ref{eq:cnew}:
+\begin{equation}
+B = 
+{\ln\left(y_{2}/y_{1}\right) \over x_{2} - x_{1}} =
+{Y_{2}-Y_{1} \over x_{2} - x_{1}}
+\end{equation}
+Use your graphically determined slope $B$ to calculate the half-life $\tau$, and compare it to the value
+you found above, from the direct inspection of your untransformed graph. (Don't forget
+to include units for $\tau$.)
+
+\end{enumerate}
+\subsection*{Computer Analysis}
+    In the laboratory we will go over the graphical data analysis
+outlined above, and then see how to use the computer to analyze
+the same data using the method of least squares (see Appendix D).
+{\bf Result:} for each dataset the computer will find values for
+parameters $A$  and $B$ (each with an uncertainty).  You will need to
+add appropriate units.  Tape the two fit reports and three computer
+generated plots into your notebook.
+
+
+%Feel free to log on to the \WAPP web site\footnote{{\tt http://www.physics.csbsju.edu/stats/WAPP2.html}} 
+%and do the on-line analysis at home before you come to lab!
+
+    Before leaving lab, make sure the instructor has checked your
+work.
+
+\section*{Lab Writeup}
+
+The Introduction to this lab manual describes what should
+usually be included in your notebook, but this experiment is
+a bit different.
+
+For this particular experiment, be sure to include the following items:
+\begin{enumerate}
+\item The four steps outlined above, which constitute your graphical
+analysis of the two data sets.
+\item The results of your computer analysis for the two data sets.
+Tape the fit reports and three graphs into your notebook.  Properly
+(sigfigs, error, unit) report the results of each computer fit.
+
+Compare your own graphical analysis calculation of each
+$A$ and $B$ parameter to what \WAPP reports.  The 
+values should agree within experimental uncertainty.
+For the reason cited on page \pageref{par:small.error}, your graphical
+estimates of uncertainty may be larger than those found by \WAPP.
+
+\item Using the $B$ parameter found by \WAPP calculate the half-life and its
+uncertainty. The calculation of the uncertainty in the
+half-life is probably new to you.  You will need to use one
+of the formulas in Appendix A
+(page~\pageref{errorprop}) of this lab manual (or one in the compendium
+of such formulae in Appendix E at the end of this lab manual) to find the
+{\em uncertainty} in the half-life in terms of the
+uncertainty in the parameter $B$.  
+Check with your instructor if you are not
+sure how this calculation works.  Compare this calculated
+half-life to that found graphically.
+
+\item Conclusions (see below)
+\item Critique (see below)
+\item $3\times5$ quick report card
+\end{enumerate}
+
+\section*{Conclusions}
+Your conclusion should include the following:
+\begin{itemize}
+\item Two tables summarizing the results of your analysis for the
+two sets of data (including every calculated $A$ and $B$ value
+with proper sigfigs, units and uncertainty).  Place the  the graphically estimated
+parameters directly adjacent to the equivalent computer determined parameters so they can
+be compared easily.
+(Tabulating and comparing results obtained during lab is almost
+always part of your conclusion section.)
+%
+\item Several paragraphs discussing the conclusions you drew from
+this analysis.  For example,
+\begin{itemize}
+\item Did your graphical results and computer least-squares fit results agree, within
+      experimental uncertainty?
+%
+\item How valid and reliable were your least squares fits?  See Appendix D page
+\pageref{par:chi_square}
+for a discussion of the relationship between reduced
+chi-squared and the validity of the fit.
+%
+\item Any other conclusions you drew from your analysis.
+\end{itemize}
+\end{itemize}
+
+
+\subsection*{Critique of Lab}
+     Follow the suggestions given in the Introduction to the Laboratory Manual.
+You may also want to comment on the relative ease of using the
+computer.

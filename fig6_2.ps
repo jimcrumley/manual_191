@@ -1,0 +1,676 @@
+%!PS-Adobe-2.0 EPSF-2.0
+%%BoundingBox: 25 3.00003 360 245
+%%Title: fig6.2.img
+%%CreationDate: 10:45 AM February  6, 1992
+%%Pages: 1 +1
+%%EndComments
+1 setlinejoin
+/M  { moveto } bind def /S { show  } bind def
+/R { rmoveto } bind def /L { lineto } bind def
+/B { newpath 0 0 M 0 1 L 1 1 L 1 0 L closepath } bind def
+/CS { closepath stroke } bind def
+/newfont 10 dict def
+newfont begin
+
+ /FontType 3 def
+ /FontMatrix [1 0 0 1 0 0] def
+ /FontBBox [0 0 1 1] def
+ /Encoding 256 array def
+ 0 1 255 {Encoding exch /.notdef put} for
+
+ /CharProcs 1 dict def
+ CharProcs begin
+ /.notdef {} def
+
+end
+
+ /BuildChar {
+  1 0
+  0 0 1 1
+  setcachedevice
+  exch begin
+  Encoding exch get
+  CharProcs exch get
+  end
+  exec
+ } def
+end
+/PatternFont newfont definefont pop
+
+/bwproc {
+	rgbproc
+	dup length 3 idiv string 0 3 0
+	5 -1 roll {
+	add 2 1 roll 1 sub dup 0 eq
+	{ pop 3 idiv 3 -1 roll dup 4 -1 roll dup
+	  3 1 roll 5 -1 roll put 1 add 3 0 }
+	{ 2 1 roll } ifelse
+	} forall
+	pop pop pop
+} def
+systemdict /colorimage known not {
+	/colorimage {
+		pop
+		pop
+		/rgbproc exch def
+		{ bwproc } image
+	} def
+} if
+/incr {
+    2 1 roll dup 3 -1 roll
+    5 -1 roll dup 6 1 roll cvi put
+    3 1 roll dup 4 1 roll add 3 1 roll
+} bind def
+/scanspan {
+/xb2 exch def
+/xg2 exch def
+/xr2 exch def
+/xx2 exch def
+/xb1 exch def
+/xg1 exch def
+/xr1 exch def
+/xx1 exch def
+/dx xx2 xx1 sub def
+dx 0 ne {
+	/drdx xr2 xr1 sub dx div def
+	/dgdx xg2 xg1 sub dx div def
+	/dbdx xb2 xb1 sub dx div def
+}{
+	/drdx 0 def
+	/dgdx 0 def
+	/dbdx 0 def
+} ifelse
+/len dx 1 add cvi 3 mul def
+len string dup dup
+xr1 drdx 3 -1 roll
+0 3 len 1 sub { incr } for
+pop pop pop
+xg1 dgdx 3 -1 roll
+1 3 len 1 sub { incr } for
+pop pop pop
+xb1 dbdx 3 -1 roll
+2 3 len 1 sub { incr } for
+3 1 roll pop pop
+} bind def
+/scantrap {
+/trapsave save def
+/b4 exch def
+/g4 exch def
+/r4 exch def
+/x4 exch def
+/b3 exch def
+/g3 exch def
+/r3 exch def
+/x3 exch def
+/b2 exch def
+/g2 exch def
+/r2 exch def
+/y2 exch def
+/x2 exch def
+/b1 exch def
+/g1 exch def
+/r1 exch def
+/y1 exch def
+/x1 exch def
+/dy y1 y2 sub def
+dy 0 ne {
+	/dxdy12 x2 x1 sub dy div def
+	/dxdy43 x3 x4 sub dy div def
+	/drdy12 r2 r1 sub dy div def
+	/drdy43 r3 r4 sub dy div def
+	/dgdy12 g2 g1 sub dy div def
+	/dgdy43 g3 g4 sub dy div def
+	/dbdy12 b2 b1 sub dy div def
+	/dbdy43 b3 b4 sub dy div def
+}{
+	/dxdy12 0 def
+	/dxdy43 0 def
+	/drdy12 0 def
+	/drdy43 0 def
+	/dgdy12 0 def
+	/dgdy43 0 def
+	/dbdy12 0 def
+	/dbdy43 0 def
+} ifelse
+y1 -1 y2 {
+	x4 x1 sub 0 lt { exit } if
+	/y exch def
+	/traploopsave save def
+	x1 r1 g1 b1 x4 r4 g4 b4 scanspan
+	/img exch def
+	/xlen x4 x1 sub 1 add def
+	x1 y translate
+	xlen 1 scale
+	xlen cvi 1 8 [xlen 0 0 0.9 0 0] { img } false 3 colorimage
+	traploopsave restore
+	/x1 x1 dxdy12 add def
+	/r1 r1 drdy12 add def
+	/g1 g1 dgdy12 add def
+	/b1 b1 dbdy12 add def
+	/x4 x4 dxdy43 add def
+	/r4 r4 drdy43 add def
+	/g4 g4 dgdy43 add def
+	/b4 b4 dbdy43 add def
+} for
+trapsave restore
+} def
+/d {
+newpath
+moveto
+lineto
+lineto
+closepath
+stroke
+} bind def
+/q {
+newpath
+moveto
+lineto
+lineto
+lineto
+closepath
+stroke
+} bind def
+/draw3 {
+setgray
+newpath
+moveto
+lineto
+lineto
+closepath
+stroke
+} bind def
+/F3 {
+setgray
+newpath
+moveto
+lineto
+lineto
+closepath
+fill
+} bind def
+/F4 {
+setgray
+newpath
+moveto
+lineto
+lineto
+lineto
+closepath
+fill
+} bind def
+/F5 {
+setgray
+newpath
+moveto
+lineto
+lineto
+lineto
+lineto
+closepath
+fill
+} bind def
+%%EndProlog
+%%Page: label 1
+gsave
+newpath 0 0 M 0 792 L 612 792 L 612 0 L closepath clip
+0 0 0 setrgbcolor
+0 0 0 setrgbcolor
+gsave
+0 0 0 setrgbcolor
+1 setlinewidth
+newpath
+25 157 M
+91 157 L
+91 108 L
+26 108 L
+26 108 L
+stroke
+grestore
+0 0 0 setrgbcolor
+gsave
+0 0 0 setrgbcolor
+1 setlinewidth
+newpath
+25 140 M
+91 140 L
+stroke
+grestore
+0 0 0 setrgbcolor
+gsave
+0 0 0 setrgbcolor
+1 setlinewidth
+newpath
+25 125 M
+91 125 L
+stroke
+grestore
+0 0 0 setrgbcolor
+gsave
+1 setlinewidth
+matrix currentmatrix
+[11.4018 0 0 11.4018 90 133] concat
+newpath
+0 0 1 0 360 arc
+closepath setmatrix stroke
+grestore
+0 0 0 setrgbcolor
+gsave
+1 setlinewidth
+matrix currentmatrix
+[11 0 0 11 107 151] concat
+newpath
+0 0 1 0 360 arc
+closepath setmatrix stroke
+grestore
+0 0 0 setrgbcolor
+gsave
+0 0 0 setrgbcolor
+gsave
+0 setlinejoin
+172.696 220.718 translate
+45.8551 rotate
+5.5 5.5 scale
+newpath 0 0 M -4 -1 L -4 1 L closepath fill
+grestore
+1 setlinewidth
+newpath
+106 152 M
+172 220 L
+stroke
+grestore
+0 0 0 setrgbcolor
+gsave
+0 0 0 setrgbcolor
+gsave
+0 setlinejoin
+244 132 translate
+0 rotate
+5.5 5.5 scale
+newpath 0 0 M -4 -1 L -4 1 L closepath fill
+grestore
+1 setlinewidth
+newpath
+90 132 M
+243 132 L
+stroke
+grestore
+0 0 0 setrgbcolor
+gsave
+0 0 0 setrgbcolor
+gsave
+0 setlinejoin
+205.774 34.3664 translate
+-39.3163 rotate
+5.5 5.5 scale
+newpath 0 0 M -4 -1 L -4 1 L closepath fill
+grestore
+1 setlinewidth
+newpath
+89 130 M
+205 35 L
+stroke
+grestore
+0 0 0 setrgbcolor
+gsave
+0 0 0 setrgbcolor
+1 setlinewidth
+[8 8] 0 setdash
+newpath
+204 40 M
+204 131 L
+stroke
+grestore
+0 0 0 setrgbcolor
+gsave
+0 0 0 setrgbcolor
+1 setlinewidth
+[8 8] 0 setdash
+newpath
+107 150 M
+171 150 L
+stroke
+grestore
+0 0 0 setrgbcolor
+gsave
+0 0 0 setrgbcolor
+1 setlinewidth
+[8 8] 0 setdash
+newpath
+172 216 M
+172 152 L
+stroke
+grestore
+0 0 0 setrgbcolor
+gsave
+newpath
+242 132 M 222 152 L 291 152 L 291 132 L
+closepath clip newpath
+252 137 M gsave
+-252 0.0 translate
+0.818331 1.0 scale
+307.944 0.0 translate
+/NewCenturySchlbk-Bold findfont 14 scalefont setfont
+0 0 0 setrgbcolor
+(v) S
+grestore
+grestore
+0 0 0 setrgbcolor
+gsave
+0 0 0 setrgbcolor
+1 setlinewidth
+newpath
+250 146.5 M
+259 146.5 L
+stroke
+grestore
+0 0 0 setrgbcolor
+gsave
+newpath
+248 128 M 228 141 L 295 141 L 295 128 L
+closepath clip newpath
+258 132 M /Symbol findfont 10 scalefont setfont
+0 0 0 setrgbcolor
+(1) S
+grestore
+0 0 0 setrgbcolor
+gsave
+newpath
+120 153 M 100 173 L 169 173 L 169 153 L
+closepath clip newpath
+130 158 M gsave
+-130 0.0 translate
+0.818331 1.0 scale
+158.86 0.0 translate
+/NewCenturySchlbk-Bold findfont 14 scalefont setfont
+0 0 0 setrgbcolor
+(v) S
+grestore
+grestore
+0 0 0 setrgbcolor
+gsave
+newpath
+166 179 M 146 199 L 215 199 L 215 179 L
+closepath clip newpath
+176 184 M gsave
+-176 0.0 translate
+0.818331 1.0 scale
+215.072 0.0 translate
+/NewCenturySchlbk-Bold findfont 14 scalefont setfont
+0 0 0 setrgbcolor
+(v) S
+grestore
+grestore
+0 0 0 setrgbcolor
+gsave
+newpath
+172 175 M 152 188 L 225 188 L 225 175 L
+closepath clip newpath
+182 179 M gsave
+-182 0.0 translate
+1.06075 1.0 scale
+171.576 0.0 translate
+/Symbol findfont 10 scalefont setfont
+0 0 0 setrgbcolor
+(2) S
+/NewCenturySchlbk-Roman findfont 10 scalefont setfont
+(y) S
+grestore
+grestore
+0 0 0 setrgbcolor
+gsave
+newpath
+144 113 M 124 133 L 193 133 L 193 113 L
+closepath clip newpath
+154 118 M gsave
+-154 0.0 translate
+0.818331 1.0 scale
+188.188 0.0 translate
+/NewCenturySchlbk-Bold findfont 14 scalefont setfont
+0 0 0 setrgbcolor
+(v) S
+grestore
+grestore
+0 0 0 setrgbcolor
+gsave
+newpath
+151 108 M 131 121 L 204 121 L 204 108 L
+closepath clip newpath
+161 112 M gsave
+-161 0.0 translate
+1.06075 1.0 scale
+151.779 0.0 translate
+/Symbol findfont 10 scalefont setfont
+0 0 0 setrgbcolor
+(1) S
+/NewCenturySchlbk-Roman findfont 10 scalefont setfont
+(x) S
+grestore
+grestore
+0 0 0 setrgbcolor
+gsave
+newpath
+126 149 M 106 162 L 179 162 L 179 149 L
+closepath clip newpath
+136 153 M gsave
+-136 0.0 translate
+1.06075 1.0 scale
+128.211 0.0 translate
+/Symbol findfont 10 scalefont setfont
+0 0 0 setrgbcolor
+(2) S
+/NewCenturySchlbk-Roman findfont 10 scalefont setfont
+(x) S
+grestore
+grestore
+0 0 0 setrgbcolor
+0 0 0 setrgbcolor
+gsave
+matrix currentmatrix
+[304 0 0 -242 56 245] concat
+B
+setmatrix
+1 setlinewidth
+gsave stroke grestore
+grestore
+0 0 0 setrgbcolor
+0 0 0 setrgbcolor
+gsave
+0 0 0 setrgbcolor
+1 setlinewidth
+newpath
+243.922 157.099 M
+243.922 222.813 L
+stroke
+grestore
+0 0 0 setrgbcolor
+gsave
+0 0 0 setrgbcolor
+1 setlinewidth
+newpath
+243.922 156.088 M
+324.33 156.088 L
+stroke
+grestore
+0 0 0 setrgbcolor
+gsave
+newpath
+230 222 M 210 240 L 281 240 L 281 222 L
+closepath clip newpath
+/Courier-Bold findfont 14 scalefont setfont
+0 0 0 setrgbcolor
+240 228 M 0.6 0 (Y) ashow
+grestore
+0 0 0 setrgbcolor
+gsave
+newpath
+320 148 M 300 166 L 371 166 L 371 148 L
+closepath clip newpath
+/Courier-Bold findfont 14 scalefont setfont
+0 0 0 setrgbcolor
+330 154 M 0.6 0 (X) ashow
+grestore
+0 0 0 setrgbcolor
+gsave
+newpath
+221 76 M 201 94 L 272 94 L 272 76 L
+closepath clip newpath
+/Courier-Bold findfont 14 scalefont setfont
+0 0 0 setrgbcolor
+231 82 M 0.6 0 (') ashow
+grestore
+0 0 0 setrgbcolor
+gsave
+newpath
+173 177 M 153 195 L 224 195 L 224 177 L
+closepath clip newpath
+/Courier-Bold findfont 14 scalefont setfont
+0 0 0 setrgbcolor
+183 183 M 0.6 0 (') ashow
+grestore
+0 0 0 setrgbcolor
+gsave
+newpath
+127 150 M 107 168 L 178 168 L 178 150 L
+closepath clip newpath
+/Courier-Bold findfont 14 scalefont setfont
+0 0 0 setrgbcolor
+137 156 M 0.6 0 (') ashow
+grestore
+0 0 0 setrgbcolor
+gsave
+newpath
+153 111 M 133 129 L 204 129 L 204 111 L
+closepath clip newpath
+/Courier-Bold findfont 14 scalefont setfont
+0 0 0 setrgbcolor
+163 117 M 0.6 0 (') ashow
+grestore
+0 0 0 setrgbcolor
+gsave
+newpath
+211 78 M 191 96 L 262 96 L 262 78 L
+closepath clip newpath
+/Courier-Bold findfont 14 scalefont setfont
+0 0 0 setrgbcolor
+221 84 M 0.6 0 (v) ashow
+grestore
+0 0 0 setrgbcolor
+gsave
+newpath
+218 75 M 198 88 L 265 88 L 265 75 L
+closepath clip newpath
+228 79 M /Symbol findfont 10 scalefont setfont
+0 0 0 setrgbcolor
+(1) S
+grestore
+0 0 0 setrgbcolor
+gsave
+0 0 0 setrgbcolor
+1 setlinewidth
+newpath
+220.5 93.5 M
+230 93.5 L
+230 93.5 L
+stroke
+grestore
+0 0 0 setrgbcolor
+gsave
+newpath
+223 75 M 203 88 L 272 88 L 272 75 L
+closepath clip newpath
+233 79 M gsave
+-233 0.0 translate
+1.14566 1.0 scale
+203.376 0.0 translate
+/NewCenturySchlbk-Bold findfont 10 scalefont setfont
+0 0 0 setrgbcolor
+(y) S
+grestore
+grestore
+0 0 0 setrgbcolor
+0 0 0 setrgbcolor
+gsave
+newpath
+112 183 M 92 203 L 161 203 L 161 183 L
+closepath clip newpath
+122 188 M gsave
+-122 0.0 translate
+0.818331 1.0 scale
+149.084 0.0 translate
+/NewCenturySchlbk-Bold findfont 14 scalefont setfont
+0 0 0 setrgbcolor
+(v) S
+grestore
+grestore
+0 0 0 setrgbcolor
+gsave
+newpath
+117 178 M 97 191 L 164 191 L 164 178 L
+closepath clip newpath
+127 182 M /Symbol findfont 10 scalefont setfont
+0 0 0 setrgbcolor
+(2) S
+grestore
+0 0 0 setrgbcolor
+gsave
+0 0 0 setrgbcolor
+1 setlinewidth
+newpath
+120 198.5 M
+129 198.5 L
+stroke
+grestore
+0 0 0 setrgbcolor
+gsave
+newpath
+120 183 M 100 201 L 171 201 L 171 183 L
+closepath clip newpath
+/Courier-Bold findfont 14 scalefont setfont
+0 0 0 setrgbcolor
+130 189 M 0.6 0 (') ashow
+grestore
+0 0 0 setrgbcolor
+0 0 0 setrgbcolor
+gsave
+newpath
+113 67 M 93 87 L 162 87 L 162 67 L
+closepath clip newpath
+123 72 M gsave
+-123 0.0 translate
+0.818331 1.0 scale
+150.306 0.0 translate
+/NewCenturySchlbk-Bold findfont 14 scalefont setfont
+0 0 0 setrgbcolor
+(v) S
+grestore
+grestore
+0 0 0 setrgbcolor
+gsave
+0 0 0 setrgbcolor
+1 setlinewidth
+newpath
+121 82 M
+130 82 L
+stroke
+grestore
+0 0 0 setrgbcolor
+gsave
+newpath
+118 64 M 98 77 L 165 77 L 165 64 L
+closepath clip newpath
+128 68 M /Symbol findfont 10 scalefont setfont
+0 0 0 setrgbcolor
+(1) S
+grestore
+0 0 0 setrgbcolor
+gsave
+newpath
+121 67 M 101 85 L 172 85 L 172 67 L
+closepath clip newpath
+/Courier-Bold findfont 14 scalefont setfont
+0 0 0 setrgbcolor
+131 73 M 0.6 0 (') ashow
+grestore
+grestore
+showpage

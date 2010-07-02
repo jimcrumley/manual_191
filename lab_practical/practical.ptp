@@ -1,0 +1,8 @@
+# PCTeX Project File, Version 1.1
+	name: practical
+	texformat: latex
+	typesetmode: DVI
+practical.tex
+	wndpos: 1 -1 -1 -1 -1 88 92 866 463
+	zorder: 0
+	edit: 56

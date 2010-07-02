@@ -49,7 +49,7 @@ are useful for finding functional relationships; they are
 graphs to ``linearize'' our data; and
 %	
 	\item {\em the method of least squares}.  For this method,
-	we will use a computer program that is described in
+	we will use a computer program, Linfit, that is described in
 	Appendix D.
 \end{itemize}	
 For either
@@ -273,11 +273,9 @@ Eq.~\ref{eq:c4}, we obtain
    = \ln A + Bx   \label{eq:c5}
 \end{equation}
 If we now define $Y \equiv \ln y$ and $C \equiv \ln A$, this
-equation becomes 
-\begin{equation}
-Y = C + Bx \label{eq:transform_line}
-\end{equation}
-
+equation becomes \[
+Y = C + Bx
+\]
 which is the equation of a straight line with slope $B$ and
 intercept $C$!  Thus if we plot $Y$ versus $x$ (that is,
 $\ln y$ versus $x$) and obtain a straight line, we may infer that our
@@ -293,7 +291,10 @@ it is easy to find the logarithms, either with a calculator or a
 spreadsheet (such as Excel\footnote{
 In Excel {\tt log10()}=$\log_{10}()$ and {\tt ln()}=$\log_e()$.
  {\tt log()} by itself is ambiguous: in Excel it is $\log_{10}()$
-but in most computer languages it is $\log_e()$.}).
+but in most computer languages it is $\log_e()$.}
+%
+ or the similar spreadsheet module in
+Linfit).
 
 Suppose, then, that our data can be described by a straight line
 on a semi-log graph.  We can find the slope $B$ and intercept $C$
@@ -305,8 +306,7 @@ B = {{Y_{2} - Y_{1}} \over {x_{2} - x_{1}}} = {{\ln y_{2} - \ln y_{1}}
            \over {x_{2} - x_{1}}} = 
 {\ln\left(y_{2}/y_{1}\right) \over x_{2} - x_{1}}  \label{eq:cnew}
 \end{equation}
-Note that the units of $B$ are the units of $1/x$, since the results of the 
-standard functions---including $\ln()$---never have units. 
+Note that the units of $B$ are the units of $1/x$.
 
 The intercept $C$ can likewise be easily found, and once we have it,
 we can find the parameter $A$ by observing that
@@ -319,13 +319,10 @@ we can find the parameter $A$ by observing that
 %           transformation for us (see Fig.~\ref{fig:c3c}).
 %\end{enumerate}
 %
-\begin{equation}
-C = \ln A  \qquad \mbox{or} \qquad  A = e^{C} \label{eq:transformC}
-\end{equation}
-The above equations disguise the units of $A$, however if you return to Eq.~\ref{eq:c4}
-and recall that ``the 
-standard functions---including $\exp(Bx)=e^{Bx}$---never have units"
-it should be clear that $A$ has the same units as $y$.
+\[
+C = \ln A  \qquad \mbox{or} \qquad  A = e^{C}
+\]
+Note that the units of $A$ are the units of $y$.
 
 Thus we have found the parameters $A$ and $B$ that describe our
 exponential function.
@@ -350,9 +347,6 @@ As an example, consider the data for atmospheric pressure, $P$,
 versus altitude, $H$, given in the following table.
 % atmospheric pressure, $P$, given in the Table~\ref{table:c3a} and
 %plotted in Fig.~\ref{fig:c3a} and Fig.~\ref{fig:c3a1
-For this data set the uncertainty in pressure, $\delta P$, is 0.03~bar
-and the uncertainty in height is `negligible' (i.e., assumed small enough
-not to matter).
 
 \begin{table}[h]
 \begin{center}
@@ -361,7 +355,7 @@ not to matter).
 $H$ (km) & $P$ (bars) & $\ln P$ & $\ln (P + \delta P)$ & $\ln (P - \delta P)$ \\
  \hline
 0.0 \hspace{6pt}  & 1.00 $\pm$ 0.03 & 0.00    & +0.03     &  $-$0.03\\
-2.0 \hspace{6pt}  & 0.75            & $-$0.29 & $-$0.25   &  $-$0.33 \\
+2.0 \hspace{6pt}  & 0.75            & $-$0.29 & $-$0.25   &  $-$0.22 \\
 4.0 \hspace{6pt}  &     0.60        & $-$0.51 &   $-$0.46 &  $-$0.56 \\
 5.0 \hspace{6pt}  &     0.48        & $-$0.73 &   $-$0.67 &  $-$0.80 \\
 7.5 \hspace{6pt}  &   0.37          & $-$0.99 &   $-$0.92 &  $-$1.08  \\
@@ -381,8 +375,9 @@ shows a curve.  The second is a semi-log graph (that
 is, a graph of $\ln(P)$ vs.\ $H$) that shows a straight line.  
 (Note that the log scale
 changes the appearance of the error bars: they are not symmetrical
-and the bar size has changed from the ``normal" plot. That final error bar
-ranges from $\ln(0.04)=-3.22$ to $\ln(0.10)=-2.30$ with anchor at $\ln(0.07)=-2.66$.)  
+and the bar size has changed from the ``normal" plot.\footnote{That final error bar
+ranges from $\ln(0.04)=-3.22$ to $\ln(0.10)=-2.30$ with ``anchor" at $\ln(0.07)=-2.66$.})  
+
 Since this second
 graph is linear, we may infer that these data are consistent with an
 exponential function.  As an exercise, see if you can determine the

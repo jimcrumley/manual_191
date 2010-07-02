@@ -4,17 +4,17 @@
 
 \section*{Before Lab} In this experiment, we will be investigate the
 coefficient of kinetic friction.  In particular, we will measure
-the acceleration of a system of masses, and use it to calculate the
+the acceleration of a system of masses, and using it to calculate the
 coefficient of kinetic friction.
 
-The first step is to derive an expression for $\mu_k$, the
+Our first step is to derive an expression for $\mu_k$, the
 coefficient
 of kinetic friction.  You should do this derivation in your lab book
 {\em before} you come to lab.  Your TA will check your notebook at
 the beginning of the lab.
 
 Here is a sketch of how to go about the derivation.  Consider the block
-and pulley system shown in Fig.~\ref{fig:kinetic}.  Draw 
+and pulley system shown in Fig.~\ref{fig:kinetic}.  Draw two
 free-body
 diagrams (one for each body), identifying all of the forces acting each mass.  Write
 Newton's second law for each body.   Assume that the masses are
@@ -37,7 +37,7 @@ of gravity.
 
 \section*{Introduction and Theory}
 In class, we have assumed that the
-coefficient of friction is constant---that is, it depends on only on the type of surfaces
+coefficient of friction is constant---that is, it depends on only on the surfaces
 in contact, and not on surface area, mass, or other parameters.  In
 this lab we will measure the
 coefficient of kinetic friction for the same two surfaces, but different
@@ -48,9 +48,9 @@ Consider Eq.~\ref{eq:kinfric} above.  What does this equation tell us?
 We know that the
 coefficient of kinetic friction $\mu_{k}$ is assumed to be constant.
 If it is, then the left side of Eq.~(\ref{eq:kinfric})
-should always have the same value for any condition which results
-in motion. 
-Hence if we change the masses $M$ or $m$, the acceleration
+should always have some constant value for a given set of data.  Hence
+if
+we change the masses $M$ or $m$ on the right side, the acceleration
 $a$ should also change, so as to keep $\mu_k$
  the same.
 % This makes sense because if a different mass is hung
@@ -68,14 +68,15 @@ friction $\mu_k$.
 Fig.~\ref{fig:kinetic} shows the experimental setup. You should have the following materials
 available at your lab station:
 \begin{enumerate}
-\item Pasco interface box and Smart Pulley (the pulley with wire attached)
+\item Pasco interface box and computer
+\item Smart Pulley (the pulley with wire attached)
 \item Table clamp
 \item Mass and hanger set
 \item Wooden blocks with hooks
 \item String
 \item Plastic horizontal surface on which the wood block slides
 \end {enumerate}
-\begin{figure}
+\begin{figure}[hbt]
 \begin{center}
 {\resizebox{4.5in}{!}{{\includegraphics{kineticD.eps}}}}
 \end{center}
@@ -88,16 +89,12 @@ This device reads position by scanning the pulley spokes with a beam
 of light.  It thus measures the angular velocity of the pulley.  The
 computer uses the radius to convert angular velocity to the linear
 velocity of the edge of the pulley---that velocity is of course equal
-to the velocity of the descending mass.  All of this is exactly as in
-the previous experiment.
+to the velocity of the descending mass.
 
 \section*{Procedure}
-Set up the apparatus as shown in the Figure.  Launch the DataStudio program,
-Excel, and a web browser.
-%, plug in your Smart
-%Pulley, and turn on the computer if it isn't already on.  At this
-%point you're ready to run the DataStudio program.  
-Your TA
+Set up the apparatus as shown in the Figure, plug in your Smart
+Pulley, and turn on the computer if it isn't already on.  At this
+point you're ready to run the {\em Science Workshop} program.  Your TA
 will give you specific instructions on the use of this software.
 
 You will be taking a number of sets of data.  For each set, use the
@@ -110,116 +107,92 @@ on the table without needing an initial push (since we are measuring
 {\em kinetic} friction).
 %
 \item Pull the block back until the mass $m$ is raised to the pulley.
-Hold the block at rest until the next step.   {\bf Be sure that the string
-is level.}
+Hold the block at rest until the next step.   Be sure that the string
+is level.
 %
-\item  When you are ready to take data, click Start in DataStudio and then release the block.
+\item  When the computer is ready to take data, release the block.
 %
 \item Now you can view the velocity vs.\ time data on a
-DataStudio graph.  Copy and paste the linear portion of these data
-to \WAPP and into a spreadsheet (as a backup copy; never print out
-this data). Note that data pasted from DataStudio will include
-text column labels which need to be deleted from the \WAPP ``Block Copy \& Paste"
-web-form. Do a least-squares fit to find
+Scientific Workshop graph.  Transfer the linear portion of these data
+to the Linfit spreadsheet, and do a least-squares fit to find
 the slope (that is, the acceleration).  You don't need to print the
-fit report, but do record the acceleration (and its error) in your spreadsheet and notebook.
-Note if the reduced chi-square signals a non-constant acceleration.
-(Recall from previous experiment: $\delta v = .003\; {\rm m/s}$ and negligible error in time.)
+fit report, but do record the acceleration in your spreadsheet or notebook.
+(Recall: $\delta v = .003\; {\rm m/s}$.)
 %
-\item For each mass $m$, do \underline{four} separate runs, and find the
+\item For each mass $m$, do four separate runs, and find the
 acceleration for each.  
 
-Find the average acceleration (spreadsheet function: {\tt average()}) and determine
-its error using the standard deviation of the mean (spreadsheet function: {\tt stdev()/sqrt(4)}). Compare the
-\WAPP reported errors in $a$ to the error in $a$ determined from
-the standard deviation.  Are these error estimates
+Find the average acceleration and determine
+its error using the standard deviation of the mean. Compare the
+Linfit reported errors in $a$ to the error in $a$ determined from
+the standard deviation of the mean.  Are these error estimates
 in the same ballpark (say within a factor of 2)? We will
 use these results to find a value for $\mu_k$ (and its error)
-for each mass $m$.  
-%It may be convenient to save
-%your data in a single spreadsheet file, with a separate worksheet page
-%for each $m$.
+for each mass $m$.  It may be convenient to save
+your data in a single spreadsheet file, with a separate worksheet page
+for each $m$.
 %
-\end{enumerate}
-Follow the above procedure \underline{three} times
-(for a total of 12 runs), each
+\item Repeat the above procedure at least three or four times, each
 time for a {\em different} mass $m$, keeping everything else constant.
-%For each $m$, take data from four runs.  
-Choose your values of $m$ to get
+For
+each $m$, take data from four runs.  Choose your values of $m$ to get
 as wide a range of accelerations as possible---that way, we will be
 measuring $\mu_k$ under a wide range of experimental conditions.
 %
+\end{enumerate}
 
 \section*{Data Reduction and Analysis}
 
-For each $m$ calculate a value for $\mu_{k}$ using Eq.~\ref{eq:kinfric} and the average $a$.
-Find the error in this $\mu_{k}$ using the ``high-low game" (see page \pageref{par:high.low.game}). 
-(Note the maximum value of $\mu_{k}$ is achieved with:
-$M^-$, $a^-$, and $m^+$.)
-We use this method because a calculation of the uncertainty in
-$\mu_{k}$ using the methods of Appendix A is fairly involved.  
-This  crude method has
-the advantage of simplicity but it
-neglects canceling errors.
+For each $m$, calculate four values for $\mu_{k}$ using Eq.~\ref{eq:kinfric}  
+using the four accelerations you have already found.  Then, find the average value.
+
+Find the uncertainty in $\mu_{k}$ by calculating the standard deviation
+of the mean, as discussed in the Reaction Time experiment on page \pageref{exp:react}.
+This calculation may be done easily using a spreadsheet.  Note, however, that 
+this method does not take into account uncertainties in the masses, so be
+sure those measurements are as accurate as possible.  
+
+We use this method 
+because a calculation of the uncertainty in
+$\mu_{k}$ using the methods of Appendix A is fairly involved. 
+
+%Find the error in this $\mu_{k}$ using the ``high-low game". 
+%(Note the maximum value of $\mu_{k}$ is achieved with:
+%$M^-$, $a^-$, and $m^+$.)
+%
+%This  crude method has
+%the advantage of simplicity but it
+%neglects canceling errors.
 
 Make a final results table including $m$, $a$, $\mu_{k}$, and
 the uncertainty in $\mu_{k}$.  
 Somewhere in the table note the mass of the sliding block ($M$).
 
-You will probably find that the velocity vs.\ time plots are not exactly
+You will find that the velocity vs.\ time plots are not exactly
 linear.  Often there will be a kink where the slope (acceleration)
 changes appreciably.  Select such a data set and print out a copy of 
 the graph (with fit line).  What do you think caused this behavior?
 
-\subsubsection*{Spreadsheet Calculation}
-In this lab you will be repeatedly calculating $\mu_k$ and $\delta \mu_k = (\mu_{k\; \rm high} -\mu_{k\; \rm low})/2$.
-You may want to speed these calculations by  entering them as formulas in a spreadsheet.
-
-\begin{center}
-\begin{tabular}{|c|c|c|c|c|c|c|c|}
-\hline
-$M$ & $m$ & $a$              & $\delta a$      & $\mu_{k}$ & $\mu_{k}$ & $\mu_{k}$ & $\delta \mu_{k}$ \\
- (g)& (g) &  ${\rm (m/s^2)}$ & ${\rm (m/s^2)}$ &           & high      &  low      &  \\
-\hline
- \phantom{10000}& \phantom{10000}   &  \phantom{10000}& \phantom{10000} & \phantom{10000} &  \phantom{10000}& \phantom{10000} &  \phantom{10000} \\
-\hline
-  &   &  &  &  &  &  &      \\ \hline
-  &   &  &  &  &  &  &      \\ \hline
-\end{tabular}
-\end{center}
-
-The formulas will depend on which columns contain which values; find below
-an example.  (Since your columns may differ from those used in this example,
-you need to understand this example, not just copy it!)
-\begin{eqnarray}
-\mu_k &= & {\tt (B2*9.8-(A2+B2)*C2)/(A2*9.8)}\\
-\mu_{k\; \rm high}&=& {\tt ((B2+0.1)*9.8-(A2+B2)*(C2-D2))/((A2-0.1)*9.8)}\\
-\mu_{k\; \rm low}&=& {\tt ((B2-0.1)*9.8-(A2+B2)*(C2+D2))/((A2+0.1)*9.8)}
-\end{eqnarray}
-While entering these formulas may look complex, once completed all further calculations
-consist of just entering the data and ``pulling down the cell".
-
 \section*{More experiments}
 
-Do as many of the following additional experiments as time permits.  To save
-time do not do the four repetitions to find $\delta a$, instead 
-use the \WAPP reported error in $a$ to find $\delta \mu_{k}$.
+Do as many of the following additional experiments as time permits.
+
 \begin{enumerate}
-\setcounter{enumi}{1}
-\item Make another table of $M$, $\mu_{k}$, and $a$ (mass $M$ changing this time).
-Do three runs, varying the mass $M$ of
+\item Make another table of $M$, $\mu_{k}$, and $a$ (different
+mass $M$ this time).
+Try to do four trials, varying the mass $M$ of
 the block each time, but holding the hanging mass $m$ constant.
 You can change $M$ by setting masses on the block, but be sure you
 start with enough mass $m$ on the hanger that it will always slide.
-%In calculating the error in $\mu_{k}$,
-%use the \WAPP reported error in $a$ rather than the standard deviation
-%of the mean (since you will be doing just one trial for every
-%$M$ value).
+In calculating the error in $\mu_{k}$,
+use the Linfit reported error in $a$ rather than the standard deviation
+of the mean (since you will be doing just one trial for every
+$M$ value).
 %
 \item  Use masses from your first data set and compare what happens
 if you slide the block {\em on its side}.  (Remember to adjust the
 pulley height so the string is level!) This experiment will test
-whether surface area affects
+whether surface area effects
 the kinetic friction coefficient.  Note results in your lab book, comparing the two sets
 of data.
 %
@@ -238,11 +211,9 @@ simple, but rough, estimate)}
 Consider your data, including uncertainties, and discuss the
 following questions carefully and in detail:
 
-A constant slope for a run implies a constant frictional
-force during that run.  Did the frictional force seem to be constant during the runs?
-
 Did the coefficient of friction vary
-with acceleration? With surface area? With the mass of the block?
+with speed?
+With acceleration? With surface area? With the mass of the block?
 
 Overall, how good is our assumption that the coefficient of kinetic
 friction is constant, within the limits of experimental error?
@@ -251,10 +222,6 @@ friction is constant, within the limits of experimental error?
 \section*{Critique of Lab}
      Follow the suggestions given in the Introduction to the
 Laboratory Manual.
-
-\section*{Quick Report Card}
-Properly report (sigfigs, units, error) your three $\mu_k$ from the first part of the lab.
-Record the masses used for the runs in which $\mu_k$ was measured.
 
 %\newpage
 %\cleardoublepage

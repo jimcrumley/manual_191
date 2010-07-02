@@ -2,12 +2,9 @@
 	name: manual
 	texformat: LATEX
 	typesetmode: DVI
-	spellwordlist: 
+	spellwordlist: american
 manual.tex
 manual.dvi
-	wndpos: 1 -1 -1 -1 -1 0 0 679 483
-	zorder: 0
-	view: 103 -2
 manual.aux
 intro.aux
 analysis.aux
@@ -66,13 +63,7 @@ speed_true_log_logB.ps
 appd.tex
 manual.log
 practical.aux
-appd2.aux
-error_formula.aux
-projectile.app2b.eps
-Rotatefig.eps
 practical.tex
-appb_TB1.ps
-appd2.tex
-exampleCs.eps
-exampleC2_plot.eps
 error_formula.tex
+error_formula.aux
+appb_TB1.ps

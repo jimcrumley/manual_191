@@ -3,7 +3,7 @@
 %\section*{Computer Assisted Curve Fitting}
 %\addcontentsline{toc}{subsection}{Computer Assisted Curve Fitting}
 \label{compassis}
-
+\vspace{-.5in}
 \section*{Introduction}
 
 The preceding appendix showed how to use graphical techniques to find
@@ -22,8 +22,24 @@ of
 finding the {\em uncertainties} in the parameters that characterize a
 given function than we were able to develop in Appendix C.
 
-Those limitations are largely overcome if we use a numerical technique
-that is variously called the ``method of least squares,'' or
+A solution was published in 1805 by Adrien Marie Legendre in his book 
+on determining the orbits of comets. He correctly noted that there is 
+arbitrariness in the choice of the best equation, but proposed a solution:
+%
+
+\begin{quote}
+Of all the principles that can be proposed for this purpose, I think there 
+is none more general, more exact, or easier to apply, than that which we have 
+used in this work; it consists of making the sum of the squares of the errors 
+[deviation of measurement from equation] a minimum. By this method, a kind of 
+equilibrium is established among the errors which, since it prevents the extremes 
+from dominating, is appropriate for revealing the state of the system which most 
+nearly approaches the truth.
+\parskip=0pt
+\end{quote}
+
+This appendix will introduce you to this technique.
+It is variously called the ``method of least squares,'' or
 sometimes, ``regression analysis.''  (Social scientists are likely to
 use the second phrase.)  In this appendix, we will give a brief
 description of the method of least squares.  We will also introduce
@@ -228,15 +244,14 @@ this list of functions.
 
 There are many computer programs that can do least-squares fits.  In
 this laboratory, we will for the most part use the program Linfit.
-Linfit is available on all Physics Department computers, and on most
-networked PCs on both campuses.  Computers that run the Windows NT
+Linfit is available on all Physics Department computers.  Computers 
+that run the Windows XP
 operating system should have no difficulty in running Linfit.
 
-However, networked Windows 95/98 computers (for example, individually
-owned computers in dormitory rooms) may need to do an installation
-before Linfit will work properly.  People living off-campus can
+People living off-campus can
 also install their own copy.  It's easy to do---just download  
-the installation program from Professor Gearhart's web site (http://employees.csbsju.edu/cgearhart/).  You can also start at the
+the installation program from Professor Gearhart's web 
+site (http://faculty.csbsju.edu/cgearhart/).  You can also start at the
 Physics Department site (http://www.csbsju.edu/physics/) and work your
 way down.  Please see the Physics Department
 Laboratory Manager or Professor Gearhart if you have any difficulty
@@ -292,7 +307,8 @@ to return to the Home screen.
 
 One uses this screen to enter or edit data.  The buttons on this
 screen perform the following tasks:
-`
+
+
 \begin{tabular} {l p{3in}}
 \underline{Enter Data}     &   This button prompts the user to enter
                                data either from the keyboard or from a
@@ -356,40 +372,19 @@ skills that are essential for scientists and engineers.  Please see
 your instructor or consult the appropriate sections of your laboratory
 manual if you are unsure how to do this preliminary analysis.
 
-\subsection*{Graph Options Screen}
 
-You see this screen after pressing the GRAPH button on the home screen
-for the first time, or after pressing the Options button on the Graph
-screen. Use the graph options screen to select various options for
-your graph:
+\
 
-\begin{itemize}
-\item You can select a linear, semi-log ($\log y$ vs. $x$), or log-log
-($\log y$
-vs. $\log x$) graph.  Among other things, you can use this choice to
-find out
-if your data are consistent with an exponential or power law fitting function before doing your fit.  (Recall that for an exponential function, a plot of log Y vs. X results in a straight line.  Similarly, for a power law function, a plot of log Y vs. log X results in a straight line.
-Be sure you can confirm this behavior by taking the log of both sides of an exponential or power law function.
-%
-\item You can turn the error bars on or off.  Default is on.
-%
-\item If you have already done a fit, you have the option to plot
-the
-fitting function on top of your data.  Default is on.
-If you have not done a fit, but have entered your parameter estimates, you may plot the resulting fitting function.  Default is off for this case.  If your parameters are not reasonably accurate, the results are not always predictable.
-Once you have selected your options, press the Plot Graph button to see your graph.  The Cancel button will return you to the Home screen.
-\end{itemize}
+\subsection*{PGPlot Graph Screen}
 
-\subsection*{Graph Data Screen}
+The PGPlot screen gives you a plot of your data.  If you have already done
+your fit, it also plots a graph of your fitting function , so that you can see how well the fitting function describes your data.  It also allows you to print graphs and to save them in PostScript format.
 
-This screen gives you a plot of your data.  If you have already done
-your fit, it also superimposes a graph of your fitting function over
-your data, so that you can see how well the fitting function describes
-your data.
+PGPlot is a set of Fortran routines that is available from the astronomy department at CalTech.  It is called as a separate program from Linfit.  Consequently, screen plots must be closed separately, by clicking the button in the top right of the graph window.
 
-Optionally, you may also plot the fitting function based on your
-estimates of the fit parameters .  It is a good way to see how
-accurate your estimates are.
+%Optionally, you may also plot the fitting function based on your
+%estimates of the fit parameters, even before you have done a fit.  It is a good way to see how
+%accurate your estimates are.
 
 It is a good idea to look at a graph of your data BEFORE doing your
 fit.  In this way you can get some idea of what fitting functions
@@ -398,21 +393,35 @@ line to data that did not lie along a straight line!  By doing
 semi-log or log-log graphs, you can tell if your data are consistent
 with an exponential or power law function.  And so on.
 
-Note the row of icons at the top of the Graph screen.  Pressing these
-icons allows you to set various options on the graph, such as axis
+Note that the Graph screen allows you to set various options on the graph, such as axis
 labels, size and style used for data points, and so on.  We encourage
-you to experiment with these options.  On-line help is available by
-pressing the Help button that appears after you press one of these
-icons.
+you to experiment with these options.  On-line help is available.  Among other things,
 
-The buttons on the Graph screen perform the following functions:
 \begin{itemize}
-\item The Options button returns you to the Graph Options screen.
-\item The Continue button returns you to the Home screen.
-\item The Refresh button refreshes (that is, repaints) the graph.  It
-is often necessary to use this button to get a correct graph after
-making changes using the options available from the icons at the top
-of the screen.
+
+\item You can select a linear, semi-log ($\log y$ vs.\ $x$), or log-log
+($\log y$ vs.\ $\log x$) graph.  Among other things, you can use this choice to
+find out if your data are consistent with an exponential or power law fitting function before doing your fit.  (Recall that for an exponential function, a plot of log Y vs. X results in a straight line.  Similarly, for a power law function, a plot of log Y vs. log X results in a straight line.
+Be sure you can confirm this behavior by taking the log of both sides of an exponential or power law function.
+%
+\item You can turn the error bars on or off.  Default is on.
+%
+\item If you have already done a fit, you have the option to plot
+the
+fitting function on top of your data.  Default is on.
+%If you have not done a fit, but have entered your parameter estimates, you may plot the resulting fitting function.  Default is off for this case.  If your parameters are not reasonably accurate, the results are not always predictable.
+Once you have selected your options, press the Screen Plot button to see your graph.  The Continue button will return you to the Home screen.
+\item Note that the Graph Screen has several tabs that allow additional options for setting up graphs.
+\end{itemize}
+
+The buttons at the bottom on the Graph screen perform the following functions:
+\begin{itemize}
+\item The Screen Plot button produces an on-screen graph.  This graph will not close automatically; you need to close it manually by clicking on the close button at the top right of the graph window.
+%
+\item The Save PostScript File button saves the graph in PostScript format.  Such files can easily be converted to pdf format, and may also be examined in PostScript viewers such as GSView. 
+\item The Print Graph (GhostScript) button will print the file on any Windows printer.  Note that the Print Options menu allows you to view the graph in GSView instead.  For more on these (free) programs, see http://pages.cs.wisc.edu/~ghost/.
+\item The Print Graph (PostScript) button prints the graph to PostScript printers.  Most of the printers at CSB/SJU support PostScript.  However, if you use this button to print to a non-PostScript printer, you are likely to print many pages of PostScript code.
+\item The Continue button returns you to the Home Screen.
 \end{itemize}
 Some of these options, and others as well, are available on the menu
 bar for this screen.
@@ -421,12 +430,12 @@ bar for this screen.
 
 This screen reports the results of the current fit.  To do the fit,
 either use the menu Run/Go command or press the F5 function key.  You
-can print the report from the File menu.
+can print the report from the File menu.  Note that you can also save the file in both pdf and Word (.rtf) formats.
 
 If you have more than 20 or 25 data points, your report may be
 divided into two or more pages.  Use the Up Arrow and Down Arrow
 keyboard keys, the indicated function keys, or the appropriate menu
-bar choices to move from one page to another.
+bar choices to move from one page to another.  The light blue toolbar just under the menus can be helpful in scrolling through your fit report.
 
 \subsection*{Spreadsheet}
 
@@ -435,10 +444,9 @@ sort of repetitive calculation.  You can usually use your calculator
 for anything you might do in a spreadsheet; but many people find
 spreadsheets more convenient.
 
-The spreadsheet used in Linfit is Formula One, from Visual
-Components Inc.  Formula One is to a considerable extent compatible
+The spreadsheet used in Linfit is to a considerable extent compatible
 with Microsoft Excel.  It can read and write files in Excel format,
-though it cannot save or display Excel graphs or use many of the
+though it cannot use many of the
 fancier features of Excel.  Nevertheless, to a considerable extent
 work done in Excel can be read into Linfit, and vice versa.
 
@@ -451,14 +459,8 @@ how to work with a spreadsheet, what it can do, how to enter formulas,
 and the like, you should be able to work with the Linfit
 spreadsheet with out much difficulty.
 
-\paragraph*{Excel File Format} Please note: As of this writing (Summer
-1999), this spreadsheet cannot read files saved in the latest version
-of Microsoft Exel (version 8, in Office 97).  If you use this version
-of Excel, use the File/Save As menu in Excel to save your work in the
-format for versions 5/7 if you want to use your file in Linfit.
-Visual Components will probably introduce a new version that will read
-the latest Excel format, and we will add it to Linfit at that
-time.
+\paragraph*{Excel File Format} As of this writing (Summer 2009), we are introducing
+a new spreadsheet module that should recognize the latest Excel file formats.
 
 \paragraph*{How to enter formulas in the spreadsheet}
 Select (that is, click on) a cell, type an equals sign (=) and enter
@@ -551,10 +553,11 @@ STDEV    \>  STDEVP \> TAN    \>  TANH  \\
 TRUNC   \\
 \end{tabbing}
 
-\paragraph*{Spreadsheet Functions}
+\paragraph*{Spreadsheet and Statistical Functions}
 \begin{tabbing}	
 AVERAGE  \hspace{1in}  \=  COLUMN \hspace{1in}  \=  ROW  \\
 SUM     \>  SUMIF  \>  SUMSQ \\
+STDEV
 \end{tabbing}
 
 \subsection*{LINFIT Troubleshooting}

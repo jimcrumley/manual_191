@@ -3,7 +3,7 @@
 
 \section*{Before Lab}
 
-BEFORE COMING TO LAB: Do some uncertainty analysis.  You
+BEFORE COMING TO LAB: Do some preliminary uncertainty analysis.  You
 will be calculating the horizontal velocity $v_{x}$ of a
 projectile from your measurements
 of horizontal distance $x$ and vertical distance $y$, using
@@ -15,12 +15,11 @@ have uncertainties $\delta x$ and $\delta y$, there will be a
 resulting
 uncertainty $\delta v_{x}$ in the calculated velocity.  Work out an
 expression for its {\em relative} uncertainty $\delta v_{x}/v_{x}$
-in terms of the relative uncertainties of the measurements.  See page
-\pageref{errorprop} or Appendix
-E for help.
+in terms of the relative uncertainties of the measurements.  See Appendix
+A for help.
 
-% Get your TA to initial your preliminary uncertainty
-%analysis.
+ Get your TA to initial your preliminary uncertainty
+analysis.
 
 
 \section*{Introduction}
@@ -92,9 +91,9 @@ component---and that the path followed is parabolic.
 
 \section*{Experiment}
 
-\begin{figure}
+\begin{figure}[hbt]
 \begin{center}
-{\resizebox{5in}{!}{{\includegraphics{projectile.app2b.eps}}}}
+{\resizebox{5in}{!}{{\includegraphics{projectile.app.eps}}}}
 \end{center}
 %\vspace{3in}
 %\special{eps:projectile.app.eps x=5in y=3in}
@@ -102,15 +101,14 @@ component---and that the path followed is parabolic.
  \caption{Projectile motion apparatus.  \label{fig:projectile}}
 \end{figure}
 The apparatus for this experiment is simple, but can yield reasonably
-good data if careful measurements are made.  A spring powered gun
-will launch steel ball bearings towards a
+good data if careful measurements are made.  You will be
+launching steel ball bearings as projectiles.  A projectile launcher
+will
+get the ball moving and launch it horizontally (i.e., $v_{0y}=0$) from a table towards a
 vertical board covered with carbon paper.
-The gun will launch the projectiles (ball bearings) horizontally (i.e., $v_{0y}=0$).
-% from a table towards a
-%vertical board covered with carbon paper.
 The carbon paper marks the ball's point of impact.
 The horizontal distance $x$ traveled is changed by moving the board
-further and further away. The vertical distance $y$ the ball drops
+further and further away. The vertical distance $y$ it falls
 will be measured as a function of $x$.  The relationship between these distances determines
 the shape of the ball's flight path.
 
@@ -129,33 +127,25 @@ t = \sqrt{\frac{2y}{g}}  \label{eq:t(y)}
 \end{equation}
 so the horizontal velocity is
 \begin{equation}
-v_{x} = x/t =  x\sqrt{\frac{g}{2y}} =\sqrt{\frac{g}{2}}\;{x\over y^{1/2}} \label{eq:vx}
+v_{x} = x/t =  x\sqrt{\frac{g}{2y}} \label{eq:vx}
 \end{equation}
 If we square both sides and solve for $y$, we obtain
 \begin{equation}
 y = \frac{g}{2v_{x}^{2}}x^{2}, \label{eq:y(x)}
 \end{equation}
-which is the equation of a parabola.  You will be testing whether 
-the path is parabolic and whether 
-$v_{x}$
-does in fact remain constant.
+which is the equation of a parabola.  You will be testing whether $v_{x}$
+does in fact remain constant, and whether the path is parabolic.
 
 \section*{Procedure}
 \begin{enumerate}
 
-\item Check that the launcher is level. Attach paper to the board.  Use the launcher to make a horizontal line
-on the paper representing $y = 0$. (The location of the ball at launch is displayed
-on the side of the launcher.)
+\item Attach paper to the board.  Use the launcher to make a horizontal line
+on the paper representing $y = 0$.
 
 Use a plumb line from the end of the launcher to set the $x = 0$ point on the
-floor.  Notice (see Fig.~\ref{fig:projectile}) that the $x$ origin 
-should be the far side of the ball (since that's what hits the board) when the ball
-has just left the barrel.  Because the barrel is indented, this is approximately
-directly below the end of the launcher.
-%you will need to correct the origin for horizontal distance $x$ by
-%the radius of the ball, and the launch position of the ball as it leaves the
-%launcher.  
-%Check with your instructor if you are uncertain about this correction.  
+floor.  Notice that you will need to correct the horizontal distance $x$ for
+the radius of the ball, and the launch position of the ball as it leaves the
+launcher.  Check with your instructor if you are uncertain about this correction.  
 
 %Note the inconvenient location of the origin:
 %at the far edge of the ball --- a radius up in $y$ and a radius less in $x$ from the track end.
@@ -165,24 +155,21 @@ directly below the end of the launcher.
 %balls.
 
 \item  Attach carbon paper to the board, so that the ball will leave a mark where
-it hits the board. Use a level to check that the board is vertical.
-Move the base of the board 10~cm away from the $x$ origin (i.e., $x$ = 10 cm).
-%end of the launcher (so that your first (uncorrected) 
-%horizontal distance is $x$ = 10 cm);
+it hits the board. 
+Move the board 5 cm away from the end of the launcher (so that your first (uncorrected) 
+horizontal distance is $x$ = 5 cm);
 Estimate of the
-uncertainty, $\delta x$, in the board's location.
-Load the ball into the launcher and push it with a stick or pencil until
-it ``clicks" one time.
+uncertainty, $\delta x$, in the boards location. Use a level to check that the board is vertical. 
 Now launch the ball and check that it
-left a carbon mark on the paper where it hit the board.  Repeat two more times. 
+left a carbon mark on the paper where it hit the board.  Repeat four more times. 
 %{\em Note: Observe all safety precautions in the lab!}
 
 \item  Estimate the vertical distance
 the ball traveled for an average trial.  Estimate the uncertainty $\delta y$ from the
 half the spread in $y$.
 
-\item  Continue these measurements for horizontal distances of 20, 30,\ldots
-100 cm.  Make a table for your data and calculations something like this:
+\item  Continue these measurements for horizontal distances of 10, 15,\ldots
+50 cm.  Make a table for your data and calculations something like this:
 
 \begin{center}
 \begin{tabular}{|c|c|c|c|c|c|}
@@ -196,22 +183,16 @@ $x$ & $\delta x$& $y$ & $\delta y$& $v_{x}$ & $\delta v_{x}$ \\
   &   &  &  &  &      \\ \hline
 \end{tabular}
 \end{center}
-\item Calculate the velocities $v_{x}$ using Eq.~\ref{eq:vx}.  The uncertainty
+\item Calculate the velocities $v_{x}$ for the table.  Their uncertainties
 should be easy to compute using the formula you worked out before coming to
 lab.  Does $v_{x}$ appear to be constant, within the limits of your uncertainties?
-Transfer your $\{x,v_x,\delta v_x\}$ data to the plot-only version of \WAPP\footnote{
-{\tt http://www.physics.csbsju.edu/plot/WAPP2PLOT.html}, Google {\tt wapp2plot}, or find the
-link near the top of the \WAPP page.} to see if your velocites are nearly constant.  
-Tape a hardcopy of this plot into your notebook.
 
 %\item Make a graph of $y$ vs.\ $x$, including error bars to indicate the
 %uncertainties, and sketch the curve as best you can.
 
 \item  In this experiment, the errors in both $x$ and $y$ are
-typically non-negligible.  Copy and paste  your $\{x,\delta x,y,\delta y\}$ data
-into \WAPP.
-%, and so you must
-%include the uncertainty in $x$ in your least-squares fit.
+typically non-negligible, and so you will probably want to
+include the uncertainty in $x$ in your least-squares fit in Linfit.
 
 %Be sure to include the $x$ error bars on your graphs.
 
@@ -259,46 +240,31 @@ into \WAPP.
 %uncertainties to go with your $y$ data.  It may be convenient to
 %use a spreadsheet for these calculations.
 
-\item Use \WAPP to test whether $y(x)$ is a parabola; fit the data using
-the power-law form $Y = AX^{B}$.  
-Make normal and log-log plots of your results.  As always, tape the
-fit report and plots into your notebook.
-According to the predictions of Eq.~(\ref{eq:y(x)}),  $B$ ought to be somewhere near
-2, and $A$ should be approximately $g/(2v_{x}^{2})$.  Explain why in your notebook!
-Is your $B$ near 2?
-%Compare your values for the parameters $A$ and $B$
-%to the predictions of Eq.~(\ref{eq:y(x)}).  $B$ ought to be somewhere near
-%2, and $A$ should be approximately $g/(2v_{x}^{2})$.
+\item Use LINFIT to test whether $y(x)$ is a parabola; fit the data using
+the form $Y = AX^{B}$, where $B$ is not a fixed constant, but a variable to
+be determined by LINFIT.  Compare your values for the parameters $A$ and $B$
+to the predictions of Eq.~(\ref{eq:y(x)}).  $B$ ought to be somewhere near
+2, and $A$ should be approximately $g/(2v_{x}^{2})$.
+Make normal and log-log plots of your results.
 
-\item Almost certainly your $B$ determined above was not exactly 2, yet
-almost every fundamental physical law uses powers that are integers 
-(or sometimes simple fractions). (Consider: if $B$ is not an integer the
-units of $A$ will be corresponding odd, and $A$ cannot then even be
-compared to $g/(2v_{x}^{2})$.)
-A proper value for $A$ is obtained if we fit 
-to $Y = AX^{B}$ but tell \WAPP to keep $B$ constant
-at 2.    Do this fit and calculate $v_x$ from the resulting $A$ value:
-\begin{equation}
-A= {g\over 2v_{x}^{2}} \quad\mbox{ so } \quad v_x=\sqrt{g\over 2A} =\sqrt{g\over 2}\;A^{-1/2}
-\end{equation}
-assuming $g=980\;{\rm cm/sec}^2$.  Find the error in $v_x$ using the appropriate
-equation from Appendix E.
+\item A better value for $A$ is obtained if we fit 
+to $Y = AX^{B}$ but keep $B$ constant
+at 2.  Due to Linfit limitations, this will require turning off
+$x$ errors.  Calculate $v_x$ from this $A$ value.
 
 \section*{Conclusions}
 
 Discuss the results of the experiment:  Is the horizontal component of
 velocity constant, within experimental uncertainty?  And are your data
-consistent with a parabolic path?  As always, properly report the results
-of your least-squares fits in a final table; include a discussion of the reduced
-chi-squared values.
+consistent with a parabolic path?  As always, give detailed analysis
+of your least-squares fits, including a discussion of the reduced
+chi-squared value.
 
 \section*{Critique of Lab}
      Follow the suggestions given in the Introduction to the
 Laboratory Manual.
 
-\section*{Quick Report Card}
-Properly report (sigfigs, units, error) the following: $B$ from the fit of \#7 above and
-$v_x$ from \#8 above.  Also report the reduced chi-square for both of these fits.
+
 
 
 \end{enumerate}

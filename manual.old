@@ -1,6 +1,6 @@
-\documentclass[11pt,twoside]{report}
-\usepackage{graphics}
-%\includeonly{ballisti}   %intro, analysis, freefall, reaction, project, atwood,
+\documentstyle[11pt,twoside]{report}
+%\includeonly{kater}
+%\includeonly{analysis} %, freefall, reaction, project, atwood,
 %twobody,kinetic, rotation,harmonic,pendulum,appa, appb, appc, appd}
 \setlength{\unitlength}{0.025in}
 \input setbmp
@@ -22,7 +22,7 @@
                      \addtocounter{chapter}{1}
                      \setcounter{equation}{0}
                      \setcounter{figure}{0}
-                     \chapter*{EXPERIMENT \# \thechapter:\ \newname} 
+                     \chapter*{EXPERIMENT \# \thechapter:\ \newname}
                      \markboth{\exphead}{\exphead}
                      \addcontentsline{toc}{section}{\newname}}
 \newcommand{\newapp}{\cleardoublepage
@@ -36,19 +36,7 @@
 \newcommand{\exphead}{\hspace*{\fill} \underline{EXPERIMENT \#\thechapter:\
                       \newname} \hspace*{\fill}}
 \newcommand{\apphead}{\hspace*{\fill} \underline{\newname} \hspace*{\fill}}
-\newcommand{\nc}{\newcommand} \nc{\rnc}{\renewcommand}
-\nc{\bc}{\begin{center}} \nc{\ec}{\end{center}}
-\nc{\be}{\begin{enumerate}} \nc{\ee}{\end{enumerate}}
-\nc{\bi}{\begin{itemize}} \nc{\ei}{\end{itemize}}
-\nc{\bt}{\begin{tabular}} \nc{\et}{\end{tabular}}
-\nc{\beq}{\begin{equation}} \nc{\eeq}{\end{equation}}
-\nc{\beqa}{\begin{eqnarray}} \nc{\eeqa}{\end{eqnarray}}
-\nc{\bfig}{\begin{figure}} \nc{\efig}{\end{figure}}
-\nc{\bpic}{\begin{picture}
-
-\pagestyle{headings}} \nc{\epic}{\end{picture}}
-
-
+\pagestyle{headings}
 \textwidth=6in
 \textheight=9.25in
 \topmargin=-0.5in 				% + 1 3/8 in  = 7/8
@@ -59,7 +47,7 @@
 \flushbottom
 \title{{\Huge {\bf Laboratory Manual for \\ Foundations of Physics I}}}
 \author{{\LARGE Physics 191}}
-\date{{\Large Fall 2009}}
+\date{{\Large Fall 1999}}
 \begin{document}
 \maketitle
 \tableofcontents
@@ -70,49 +58,46 @@
 \include{analysis}
 \renewcommand{\newname}{Freely Falling Body}
 \include{freefall}
-\renewcommand{\newname}{Reaction Time and Falling Bodies} \label{exp:react}
-\include{reaction} 
+\renewcommand{\newname}{Reaction Time and Falling Bodies}
+\include{reaction}
 \renewcommand{\newname}{Projectile Motion}
 \include{project}
+\renewcommand{\newname}{BALLISTIC PENDULUM}
+\include{ballisti}
 \renewcommand{\newname}{Atwood Machine}
 \include{atwood}
-\renewcommand{\newname}{Kinetic Friction}
-\include{kinetic}
-\renewcommand{\newname}{Ballistic Pendulum}
-\include{ballisti}
 \renewcommand{\newname}{Two-Body Collisions}
 \include{twobody}
+\renewcommand{\newname}{Kinetic Friction}
+\include{kinetic}
 %\renewcommand{\newname}{WORK DONE BY A VARIABLE FORCE}
 %\include{variforce}
 \renewcommand{\newname}{Rotational Dynamics}
 \include{rotation}
-\renewcommand{\newname}{Lab Practical Exam}
-\include{practical}
 \renewcommand{\newname}{Simple Harmonic Motion}
 \include{harmonic}
+\renewcommand{\newname}{Kater Pendulum}
+\include{kater}
 \renewcommand{\newname}{The Pendulum}
 \include{pendulum}
-%\renewcommand{\newname}{Kater Pendulum}
-%\include{kater}
 \appendix
-\renewcommand{\newname}{APPENDIX A---Error Analysis}
+\renewcommand{\newname}{APPENDIX A--Error Analysis}
 \include{appa}
-\renewcommand{\newname}{APPENDIX B---Tables and Graphs}
+\renewcommand{\newname}{APPENDIX B--Tables and Graphs}
 \include{appb}
-\renewcommand{\newname}{APPENDIX C---Graphical Analysis and Functional Forms}
+\renewcommand{\newname}{APPENDIX C--Graphical Analysis and Functional Forms}
 \include{appc}
-\renewcommand{\newname}{APPENDIX D---Computer Assisted Curve Fitting}
+\renewcommand{\newname}{APPENDIX D--Computer Assisted Curve Fitting}
 \include{appd}
-\renewcommand{\newname}{APPENDIX E---Uncertainty Formulae}
-\include{error_formula}
 
 \mbox{}
 
-\addtocontents{toc}{PLEASE NOTE:  We may not do the experiments 
-in this order, and may not do all of the experiments.   We may 
+\addtocontents{toc}{PLEASE NOTE:  We may not do the experiments
+in this order, and may not do all of the experiments.   We may
 introduce other experiments not on this list.}
 
 \mbox{}
 
 \end{document}
 \bye
+

@@ -13,11 +13,11 @@
 spindle on which two steel disks are mounted.  {\em DO NOT remove these steel
 disks}.  {\em DO NOT rotate the steel disks unless the air is on and at a minimum
 of 9 psi (some units require 12 psi)}.
-\item A small pulley, appropriate solid screws, one/two drop pins, an anchor washer connected to
-a $25 \:$g mass by a piece of string, and a bar or large cylindrical ring (with plate).
+\item A small and a large pulley, a solid screw, an anchor washer connected to
+a $25 \:$g mass by a piece of string, and a large cylindrical ring.
 \item An air regulator connected to the unit and a compressed air supply.
 \item A lab computer with a Pasco interface and software for data analysis.
-\item Calipers (accuracy: 0.02~mm)
+\item Calipers
 \item Digital balance
 \end{enumerate}
 
@@ -41,8 +41,8 @@ the rotational form of Newton's second law:
 \end{equation}
 where ${\tau}$ is the torque, $I$ is the moment of inertia, and
 ${\alpha}$ is the angular acceleration.  In this experiment, we
-will  apply a torque to  a rigid body
-and measure the resulting
+will use an applied torque to set a rigid body in accelerated
+rotational motion; measure the
 angular acceleration $\alpha$; and then use Eq.~\ref{eq:rot1} to
 calculate the rotational inertia $I$.
 
@@ -53,7 +53,7 @@ part of the experiment, the bottom disk is fixed, and the top one is
 allowed to rotate with minimal friction on an air cushion that we
 set up between the two disks.
 
-We exert a torque as follows:  wrap a string around a pulley that
+We exert a torque as follows:  we wrap a string around a pulley that
 is attached to the top disk.  The string goes over a second pulley
 (Fig.~\ref{fig:rot1}, left end of the side view), where it is attached to a weight.  When
 the weight is released, the tension in the string exerts a torque 
@@ -84,53 +84,38 @@ the combined system.
 \item Subtract the second rotational inertia from the first to find
 the rotational inertia of the object alone.
 \end{itemize}
-We can then compare the experimental value of $I$ to a theoretical
-prediction based on the object's shape.
+We can then compare the experimental value of $I$ to the theoretical
+result.
 
-\begin{figure}     
+\begin{figure}[!hbt]     
 \begin{center}
 {\resizebox{4.5in}{!}{{\includegraphics{freebody2.eps}}}}
 \end{center}
 %\vspace{3in}
 %\special{eps:freebody.eps}
-\caption{Force diagram for the rotational inertia apparatus.  The tension, $T$, in a thread wrapped around the
-small pulley (radius: $r$) provides a torque that spins the system.  The tension in the thread
-results from the force of
-gravity, $mg$, on the descending mass.
-The tension is slightly less than the force of gravity, so the descending mass has
-a (small) acceleration, $a$.
+\caption{Force diagram for rotational inertia apparatus.
           \label{fig:freebody}}
 \end{figure}
 %
 \subsection*{Calculating the experimental rotational inertia}
-\begin{figure}
-\begin{center}
-{\resizebox{4in}{!}{{\includegraphics{Rotatefig.eps}}}}  %was diskB.eps
-\end{center}
-% \vskip.2in
-% \vskip5.5in
-% \special{bmp:disk.bmp y=5.5in}
- \caption{Rotational motion apparatus.  \label{fig:rot1}}
- \vskip.2in
-\end{figure}
 
 Consider the apparatus shown in Figures~\ref{fig:rot1} and
 \ref{fig:rot2}.  We seek an expression for the rotational inertia
-$I$ of the rotating system:  the rotating top disk with or without the object
+$I$ of the rotating system:  the rotating top disk and the object
 (cylindrical ring or rectangular bar) placed on top of it.
 
 First, we must find the torque that the string exerts on the top
 disk.  The equation that relates torque to force is:
-\begin{equation}
+\[
 \vec{\tau} = \vec{r} \times \vec{F}
-\end{equation}
+\]
 where $\vec{F}$ is the force acting on the object, at a distance
 $\vec{r}$ from
 the axis of rotation.  Using the definition of the vector
 product, we find that the magnitude of the torque can be written
-\begin{equation}
+\[
 \tau = rF \sin\theta
-\end{equation}
+\]
 where $\theta$ is the angle between $\vec{r}$ and $\vec{F}$.
 
 As noted above, the torque is exerted by the
@@ -141,28 +126,28 @@ Fig.~\ref{fig:freebody} and the right side of the side
 view in  Fig.~\ref{fig:rot1}.)  Under these circumstances, the angle
 $\theta$ will always be equal to $90^{\circ}$ making $\sin\theta = 1$.
 Therefore, the torque on the system is
-\begin{equation}
+\[
 \tau = rT.
-\end{equation}
+\]
 
 To find an expression for the moment of inertia $I$ of the entire
 system, we apply the rotational form of Newton's second law:
-\begin{equation}
+\[
 \tau = Tr = I \alpha.
-\end{equation}
+\]
 We also apply the linear form of Newton's second law to the
 descending mass (choosing positive down):
-\begin{equation}
+\[
 mg -T = ma  \;\;\; {\rm or}
-\end{equation}
-\begin{equation}
+\]
+\[
 mg -m \alpha r = T
-\end{equation}
+\]
 where we have used the usual relation between linear and angular acceleration,
 $a=\alpha r$.  We combine these two equations to get the result
-\begin{equation}
+\[
 mgr = (I + mr^{2}) \alpha  .
-\end{equation}
+\]
 We could just solve this equation for $I$.  However, it will turn
 out that the second term in the parentheses ($ mr^{2}$) is much smaller
 than $I$. Consequently, to a very good approximation, we can neglect
@@ -173,15 +158,15 @@ I = {mgr \over \alpha}
 \end{equation}
 
 
-Equation E.10 then applies and 
+Use the Equations in Table~\ref{table1} in Appendix A to show that
 the uncertainty in $I$ is given by
-\begin{equation}
+\[
 {\delta I \over I} = \sqrt{
                            \left( {\delta m \over m} \right)^2  +
                            \left( {\delta r \over r} \right)^2  +
                        \left( {{\delta \alpha} \over \alpha} \right)^2
                      }
-\end{equation}
+\]
 Be sure to include your derivation in your lab notebook.
 
 
@@ -208,9 +193,7 @@ The uncertainty is {\em approximately}:
 %paaaleracGOmaaGccy4kdeaaaeGaikZaoaaabiaHKjaMiiXGsnWdba
 %WcbiqGPjqGUbqeaaGcbiXGsnWdbaWcbiqGPjqGUbqeaaaaaOGawIIa
 %wMcad8aaaSqebiaIYaaaaebaaaa!233A!
-\begin{equation}
-{{\delta \,I} \over I}=\sqrt {\left( {{{\delta \kern 1pt M} \over M}} \right)^2+\left( {2{{\delta \kern 1pt R_{out}} \over {R_{out}}}} \right)^2+\left( {2{{\delta \kern 1pt R_{in}} \over {R_{in}}}} \right)^2}
-\end{equation}
+$${{\delta \,I} \over I}=\sqrt {\left( {{{\delta \kern 1pt M} \over M}} \right)^2+\left( {2{{\delta \kern 1pt R_{out}} \over {R_{out}}}} \right)^2+\left( {2{{\delta \kern 1pt R_{in}} \over {R_{in}}}} \right)^2}$$
 
 \paragraph*{rectangular bar:}
 The  equation for
@@ -229,9 +212,7 @@ The uncertainty is {\em approximately}
 %aOGagUYabaaabiaIYmGdaaqacqizcGjccSiBaeGalYgaaaGawIIawM
 %cad8aaaSqebiaIYaaakiGHRmqaaaqacGOmd4aaaeGaesMayIGedEha
 %biXG3baaaiGLOiGLPaWapaaaleracGOmaaaaraaaaa!1944!
-\begin{equation}
-{{\delta \,I} \over I}=\sqrt {\left( {{{\delta \kern 1pt M} \over M}} \right)^2+\left( {2{{\delta \kern 1pt \ell } \over \ell }} \right)^2+\left( {2{{\delta \kern 1pt w} \over w}} \right)^2}
-\end{equation}
+$${{\delta \,I} \over I}=\sqrt {\left( {{{\delta \kern 1pt M} \over M}} \right)^2+\left( {2{{\delta \kern 1pt \ell } \over \ell }} \right)^2+\left( {2{{\delta \kern 1pt w} \over w}} \right)^2}$$
 
 %Be sure to include a derivation of the expression for the uncertainty
 %in the theoretical value
@@ -239,6 +220,16 @@ The uncertainty is {\em approximately}
 %quantities (mass and dimensions).   Use the methods developed in Appendix A.
 
 \section*{Procedure}
+\begin{figure}[!hbt]
+\begin{center}
+{\resizebox{4in}{!}{{\includegraphics{diskB.eps}}}}
+\end{center}
+% \vskip.2in
+% \vskip5.5in
+% \special{bmp:disk.bmp y=5.5in}
+ \caption{Rotational motion apparatus.  \label{fig:rot1}}
+ \vskip.2in
+\end{figure}
 
 %Before you begin, record in your lab notebook the masses and radii of the top
 %and bottom steel disks. Label these quantities {\em clearly} so as not to
@@ -258,7 +249,7 @@ angular acceleration will not stay constant and your data may be
 affected.
 
 Once your unit is level, turn on the
-air supply and adjust the regulator so that the air pressure is between 9 and 12 psi.
+air supply and adjust the regulator so that the air pressure between 9 and 12 psi.
 The air pressure is adjusted by turning the knob on top of the regulator.
 
 Compressed air emerging from small nozzles in the base and
@@ -266,43 +257,28 @@ spindle form a cushion on which the top disk can float.  In
 this way, friction is eliminated (or at least minimized).
 The apparatus
 uses an infrared detector to measure the passing of the light and dark bands on the
-sides of the disk.  
-%This quantity is shown in the display and has units of bands/sec or
-%hertz (Hz).  
-You can change which disk you are monitoring by toggling the
-Top/Bottom switch.  
-The wires emerging from the display box carry signals to
+sides of the disk.  This quantity is shown in the display and has units of bands/sec or
+hertz (Hz).  You can change which disk you are monitoring by toggling the
+Top/Bottom switch.  The wires emerging from the display box carry signals to
 the computer so that the frequency of both the top and bottom disks can be
 monitored simultaneously.  The Pasco software converts this signal
 into angular velocity, so that one can measure the angular velocity of
 the disk as a function of time.
 
-On some units, there is a white tube clamp underneath the base of
+There is a white tube clamp underneath the base of
 the unit.  When it is closed, it allows the bottom disk to rotate freely on
 the base.  When it is opened, the bottom disk will rest securely on the base.
 Since we will only use the top disk in this part of the experiment, open the
-tube clamp.  On other units this same function is controlled by a drop pin.
-
-The top disk can be made to rotate freely on the bottom disk by plugging
-the hole in the axle with a solid screw (or in Part II by filling
-the hole with a drop pin)
-%placing the drop pin or screwing a solid screw into the opening at the center
-%of the disk.  
-In this part of the experiment we will use the solid screw which must
-thread the anchor washer (with attached string) and the pulley --- connecting both to the center of the top disk.
-The anchor washer fits into the recess of
-the pulley and the thread fits through the slot in the pulley.  The screw goes
-through the hole in the square aluminum plate (if used, see Option A below), the pulley, the washer and into
-the threaded hole in the top of the disk.  The thread comes out of the slot in
-the pulley, runs over the groove in the cylinder bearing, and suspends the
-falling mass.
+tube clamp.  The top disk can be made to rotate freely on the bottom disk by
+placing the drop pin or screwing a solid screw into the opening at the center
+of the disk.  In this part of the experiment we will use the solid screw.
 
 In order for the mass supplying the torque to fall freely, place the apparatus
 so that the cylinder bearing hangs over the edge of the table.
-%Using the {\em solid, grey} screw secure the square aluminum plate
-%(if needed---it is used only for the cylindrical ring), the thread
-%anchor washer, and the small pulley to the hole in the center of the top disk.
-\begin{figure}
+Using the {\em solid, grey} screw secure the square aluminum plate
+(if needed---it is used only for the cylindrical ring), the thread
+anchor washer, and the small pulley to the hole in the center of the top disk.
+\begin{figure}[!hbt]
 \begin{center}
 {\resizebox{4in}{!}{{\includegraphics{plate.eps}}}}
 \end{center}
@@ -311,12 +287,17 @@ so that the cylinder bearing hangs over the edge of the table.
 \caption{Diagram for setting up the Moment of Inertia experiment.
   \label{fig:rot2}}
 \end{figure}
-See Figure~\ref{fig:rot2}.  
+See Figure~\ref{fig:rot2}.  The thread anchor washer fits into the recess of
+the pulley and the thread fits through the slot in the pulley.  The screw goes
+through the hole in the square aluminum plate, the pulley, the washer and into
+the threaded hole in the top of the disk.  The thread comes out of the slot in
+the pulley, runs over the groove in the cylinder bearing, and suspends the
+accelerating mass.
 
 Now check to make sure that the air pressure is still at the right value for
 your set-up (keep
 monitoring the pressure throughout the experiment).  The bottom disk should be
-stable (the tube clamp is open, or drop pin out) and the top disk should rotate freely.  By
+stable (the tube clamp is open) and the top disk should rotate freely.  By
 {\em gently} turning the top disk, wind the thread around the pulley until the
 top of the descending mass is level with the bottom of the cylinder
 bearing
@@ -326,15 +307,15 @@ mass should accelerate the disk.  The thread should unwind from the pulley
 and, before the mass hits the ground, the thread should begin to start winding
 back on the pulley.  If the mass does hit the ground, shorten the length of
 thread appropriately.  Make a couple of test runs to get used
-to the equipment.  %Make sure the switch on the display housing is in the `TOP'
-%position since only the top disk is rotating.
+to the equipment.  Make sure the switch on the display housing is in the `TOP'
+position since only the top disk is rotating.
 
-{\bf Note:  Observe a short ``mini" experiment on conservation of
+{\bf Note:  One can do a short ``mini" experiment on conservation of
 energy at this point.}  After you drop the mass as outlined above, it
 will reach its minimum point, and then rise again as the kinetic
 energy of the disk is transferred back into the potential energy of
 the small mass $m$.  See how near the mass gets to its original
-starting position---very little energy is lost to friction in
+starting position, and estimate how much energy is lost to friction in
 this process.
 
 %The next step is to get acquainted with the computer and software.
@@ -365,72 +346,94 @@ plate {\em without imparting any initial angular velocity to it}.
 %You can view the displacement vs.\ time graph if you want, but {\em definitely}
 %view the velocity vs.\ time graph.
 
-Check the angular velocity vs.\ time graph to make
-sure that it is a linearly increasing function of time. Continue until two
-complete up-and-down cycles have been recorded and then hit Stop. Select a
-linear portion of the data, and transfer it to \WAPP.  (Use $\delta \omega = .03$~rad/sec
-and neglegible error in time.) Do a
+ Check the angular velocity vs.\ time graph to make
+sure that it is a linearly increasing function of time.  Select the
+linear portion of the data, and transfer it to Linfit.  Do a
 least-squares fit to find the angular acceleration (the slope of the
 graph of angular velocity vs. time).  You don't need to print the fit
 report, but do be sure to record the angular acceleration in a data
 table.
 
 If your graph of angular velocity vs.\ time appears to be okay, continue to take three
-more measurements of angular acceleration and record the absolute value of four values 
-(two from up segments, two from down segments) in your
+more measurements of angular acceleration and record the four values in your
 lab notebook in a data table.  When you analyze the data you will average the
-four (now positive) angular accelerations and use the average acceleration to
+four angular accelerations and use the average acceleration to
 calculate the moment of
-inertia of the setup (i.e., the aluminum plate (if used), the pulley, and the
-top disk).  The standard deviation of the mean\footnote{
-Recall: see page \pageref{sdev.mean} or  \pageref{atwood.sdev.mean}.} will be the uncertainty
-in the angular acceleration ($\delta\alpha$).
+inertia of the setup (i.e., the aluminum plate, the pulley, and the
+top disk).  The standard deviation of the mean will be the uncertainty
+in the angular acceleration.
 
-Our strategy will be to measure
-the rotational inertia of the system with and without an object.  The
-rotational inertia of the object alone will then be the difference
-between these two values.  We have just measured the angular acceleration
-without an object, so we must next:
-%
-\begin{itemize}
-\item Measure the angular velocity as a function of time for
-the system with the object.
-%
-\item Paste the angular velocity vs.\ time data into \WAPP, and do a
-least-squares fit to find the angular acceleration.
-%
-\item Repeat the procedure outlined above, recording
-four measurements of angular acceleration in a table. Calculate the
-average angular acceleration and the standard deviation of the mean
-($\delta \alpha$) just as you did before but now with the object aboard.
-\end{itemize}
+\subsection*{Please choose one of the following two options for the
+remainder of your procedure.}
 
-{\bf Select an object, add it to the system and measure the angular acceleration!}
-
-\subsubsection*{Option A:  Rotational inertia of a cylindrical ring}
-%Now you are ready to measure the moment of inertia of a cylindrical
-%ring. 
-Take either of
+\subsubsection*{Option I:  Rotational inertia of a cylindrical ring}
+Now you are ready to measure the moment of inertia of a cylindrical
+ring. Take either of
 the two black, steel cylindrical rings and measure its mass and the
 inner and outer diameters. Record these values in your
 lab notebook.
 
 The cylindrical ring is mounted on an aluminum plate, which will be
-clamped to the top steel disk with the pulley between---your instructor will show you how.
+clamped to the top steel disk---your instructor will show you how.
+Our strategy will be to measure
+the rotational inertia of the system with and without the ring.  The
+rotational inertia of the ring alone will then be the difference
+between these two values.  So we will want to
+%
+\begin{itemize}
+\item Measure
+       the angular velocity as a function of time for the system
+without the ring.
+%
+\item Paste the angular velocity vs.\ time data into Linfit, and do a
+least-squares fit to find the angular acceleration.
+%
+\item Measure the angular velocity as a function of time for
+the system with the ring.
+%
+\item Paste the angular velocity vs.\ time data into Linfit, and do a
+least-squares fit to find the angular acceleration.
+\end{itemize}
+%
 Make sure to fit the locating pins on the ring into the holes
 in the aluminum plate, so that the cylinder will rotate about its
 center of mass.
 
-\subsubsection*{Option B: Rotational Inertia of a Solid Rectangular
+Repeat the procedure outlined above, recording
+four measurements of angular acceleration in a table. Calculate the
+average angular accelerations and the standard deviations of the mean
+for each configuration (with and without the ring).
+
+\subsubsection*{Option II: Rotational Inertia of a Solid Rectangular
 Bar} The procedure is similar to the one outlined above, except that
 we will not need the aluminum plate.  First, record the
 mass and dimensions of the rectangular steel bar in your lab notebook.
+Then proceed as follows:
 
-Secure the bar on top of the pulley (which is on top of the steel disk)
+\begin{itemize}
+\item Measure the angular velocity as a function of time for the system without the bar
+\item Paste the angular velocity vs.\ time data into Linfit, and do a
+least-squares fit to find the angular acceleration.
+
+\item[] Remove the  {\em solid, grey} screw and place the
+rectangular steel bar on the aluminum plate.  Secure the bar, plate, and pulley
 with the {\em solid, red}
-screw.  The {\em red} screw will go through the bar, the pulley, the
+screw.  The {\em red} screw will go through the bar, the plate, the pulley, the
 thread
 washer, and into the steel disk.
+
+\item Measure the angular velocity as a function of time for the system
+with the bar.
+
+
+\item Paste the angular velocity vs.\ time data into Linfit, and do a
+least-squares fit to find the angular acceleration.
+\end{itemize}
+
+Repeat the procedure outlined above, recording
+four measurements of angular acceleration in a table.  Calculate the
+average angular acceleration and the standard deviation of the mean
+for each configuration (with and without the bar).
 
 \section*{Data Reduction and Analysis}
 
@@ -440,20 +443,20 @@ and without the object.  To find the moment of inertia of the object
 alone, proceed as follows:
 
 \begin{enumerate}
-%\item
-%Collect your average accelerations in a table, along with their
-%uncertainties.
+\item
+Collect your average accelerations in a table, along with their
+uncertainties.
 %
-%\item Find the torque exerted on the system by the descending mass,
-%using the equations derived above.
+\item Find the torque exerted on the system by the descending mass,
+using the equations derived above.
 %
 \item Use Eq.~\ref{eq:rotfree} above to find the both rotational
-inertias (with and without the object).
+inertias.
 %
 \item Find the uncertainty in both rotational inertias.
 %
-\item Subtract your experimental rotational inertias to find the rotational inertia of the object alone,
-and calculate its uncertainty (see page \pageref{table1} or Appendix E).
+\item Subtract to find the rotational inertia of the object,
+and calculate its uncertainty.
 %
 \item Finally, calculate the theoretical value of the rotational
 inertia, with uncertainty, and compare it with your experimental
@@ -506,44 +509,34 @@ textbook for a more complete discussion.) In this experiment we will
 see whether or not angular momentum is conserved.
 
 The experiment works as follows:  We will set up the apparatus so that
-{\em both} disks can rotate independently, and set them rotating at different
-angular velocities, ${\omega}_1$ and ${\omega}_2$ (and thus with different
+{\em both} disks can rotate, and set them rotating at different
+angular velocities.  Thus, each disk will have a separate
 initial angular
-momentum, ${L}_1$ and ${L}_2$).  Then, we collapse the air cushion between the two disks, so
+momentum.  Then, we collapse the air cushion between the two disks, so
 that they come together and rotate {\em as a single body}, with some
-final angular velocity ${\omega}_f$ and angular momentum ${L}_f$.  We can then
+final angular velocity and angular momentum.  We can then
 compare the initial and final angular momenta and see if
-angular momentum is conserved:
-\begin{eqnarray}
-L_f &=& L_1+L_2 \label{eq:Lconserved1}\\
-I_f \omega_f &=& I_1\omega_1+I_2\omega_2 \label{eq:Lconserved2}\\
-{1\over2}M_f R^2 \omega_f &=& {1\over2}M_1 R^2\omega_1+{1\over2}M_2 R^2\omega_2 \label{eq:Lconserved3}\\
-M_f  \omega_f &=& M_1 \omega_1+M_2 \omega_2 \label{eq:Lconserved4}
-\end{eqnarray}
-In this final form, conservation of angular momentum looks exactly like
-conservation of linear momentum!
+angular momentum is conserved,
 
-Remember that in such a `totally inelastic' collision, kinetic energy is not
-conserved.  We can check by calculating the initial and
-final kinetic energies.  %What would you expect, given the problems we
-%have solved in class?
+Remember that in such a collision, kinetic energy might not be
+conserved.  We can check this point by calculating the initial and
+final kinetic energies.  What would you expect, given the problems we
+have solved in class?
 
-The computer will graph the angular velocities of the
-two disks before, during and after the collision, allowing  you to select the initial and final
-angular velocities.  %From these angular velocities you will calculate the
-%initial and final angular momenta and kinetic energies.
+The computer will take measurements of the
+two disks before and after the collision and report to you the initial and final
+angular velocities.  From these angular velocities you will calculate the
+initial and final angular momenta and kinetic energies.
 
 \section*{Procedure}
-Begin by closing the white tube clamp located underneath the base of the unit or
-inserting the drop pin into the labeled valve.
+Begin by closing the white tube clamp located underneath the base of the unit.
 Doing so will allow the bottom disk to rotate freely.
 
-Record the masses %and radii 
-of the top and bottom disks.%---these values will
-%be supplied by your TA.  You will use
-%them later to calculate the moments of inertia for the top and bottom disks.
+Record the masses and radii of the top and bottom disks---these values will
+be supplied by your TA.  You will use
+them later to calculate the moments of inertia for the top and bottom disks.
 
-Insert the ``drop pin'' in the hole in the top disk's axle, so that the top
+Insert the ``drop pin'' in the hole in the top disk, so that the top
 disk will rotate independently of the bottom one.  (Your instructor
 will show you how.) Spin the bottom disk fairly fast and the top disk
 more slowly.  Spin the two disks in the {\em same direction}.  {\em
@@ -552,40 +545,35 @@ velocity}.
 
 Tell the computer to start taking data.  Let it record the initial
 angular velocities for several seconds, and then collapse the air
-cushion by pulling the drop pin.  Stop the data collection a few
-seconds after the collision when the disks are rotating as one.
-%
-%The Pasco DataStudio program will then display
-Select from the resulting graph (a bit just before or after the collision)
-the initial ($\omega_{1}$ and $\omega_{2}$) and final ($\omega_{f}$)
-angular velocities. (If you select the $\Sigma$ button on the graph it
-will display the mean $\omega$ for the data you select.)
+cushion by pulling the drop pin.
+
+The Pasco Science Workshop program will then display
+the initial ($\omega_{1}$ and $\omega_{2}$) and final ($\omega_{3}$)
+angular velocities.
 
 
-%Run the experiment four times in all and collect you data in a table.
-%Leave
-%eight columns for the following quantities: initial angular momenta for the top
-%and bottom disks, initial rotational kinetic energies for the top and bottom
-%disks, final angular momentum for the two disks together, the final
-%rotational kinetic energy for the two disks together, the change in angular
-%momentum, and the change in rotational kinetic energy.
+Run the experiment four times in all and collect you data in a table.
+Leave
+eight columns for the following quantities: initial angular momenta for the top
+and bottom disks, initial rotational kinetic energies for the top and bottom
+disks, final angular momentum for the two disks together, the final
+rotational kinetic energy for the two disks together, the change in angular
+momentum, and the change in rotational kinetic energy.
 
 \section*{Analysis}
-%---OUT---
-\begin{comment}
 First calculate the moments of inertia for the top and bottom disks using the
 equation
-\begin{equation}
+\[
 I = {{1} \over {2}} \, MR^{2}.
-\end{equation}
+\]
 The moment of inertia for the combined top/bottom disk situation will just be
 the sum of the individual moments of inertia.
 
 Next start filling in the table mentioned above for each of the four runs.
 The angular momentum is equal to
-\begin{equation}
+\[
 \vec{L} = I \vec{\omega}.
-\end{equation}
+\]
 If you spun both disks in the same direction as outlined above, you
 can ignore the vector nature of this equation.  If you spun
 the disks in opposite directions, the angular momentum of one disk
@@ -593,69 +581,36 @@ will be negative with respect to the other.  It doesn't matter which
 one you call negative.
 
 The rotational kinetic energy is equal to
-\begin{equation}
+\[
 K_{\mbox{{\small rot}}} = {{1} \over {2}} \, I \omega^{2}
-\end{equation}
+\]
 
 Next calculate change in angular momentum from the initial to the final state:
-\begin{equation}
+\[
 \Delta L = L_{1} + L_{2} - L_{3}
-\end{equation}
+\]
 where $L_{1}$ and $L_{2}$ are the initial angular momenta and $L_{3}$ is the
 final angular momentum.  Record $\Delta L$ for the four runs in tabular form.
 The percentage of angular momentum lost can be calculated from:
-\begin{equation}
+\[
 {{\Delta L} \over {L_{1} + L_{2}}}
-\end{equation}
+\]
 Also calculate the change in rotational kinetic energy:
-\begin{equation}
+\[
 \Delta K_{\mbox{{\small rot}}} = K_{1} + K_{2} - K_{3}
-\end{equation}
+\]
 where $K_{1}$ and $K_{2}$ are the initial rotational kinetic
 energies and $K_{3}$ is the final rotational kinetic energy.  Record
 $\Delta K_{\mbox{{\small rot}}}$ for the four runs in tabular form.
 The percentage of energy lost can be calculated from:
-\begin{equation}
+\[
 {{\Delta K_{\mbox{{\small rot}}}} \over {K_{1} + K_{2}}}
-\end{equation}
-\end{comment}
-%---END OUT---------
-Conservation of angular momentum says the change in
-angular momentum should be be zero:
-\begin{equation}
-\Delta L \equiv L_{f} -(L_{1} + L_{2})=0
-\end{equation}
-As shown above, because the disks have the same radius, this can be simplified to:
-\begin{equation}
-M_1 \omega_1+M_2 \omega_2 -M_f  \omega_f = 0\label{eq:Lconserved5}
-\end{equation}
-Of course, because of measurement uncertainty, it will not be exactly zero,
-so the question becomes: is it consistent with zero when errors are considered?
-
-Using Eq.~E.7 we find the error in a product $M\omega$ is given by:
-\begin{equation}
-\delta(M\omega)=\sqrt{(M\delta \omega)^2+(\omega\delta M)^2}
-\end{equation}
-Using Eq.~E.5 we find the error in the sum (or difference) of such terms in
-Eq.~\ref{eq:Lconserved5} is given by:
-\begin{equation}
-\sqrt{\left(\delta(M_1 \omega_1)\right)^2+\left(\delta(M_2 \omega_2)\right)^2+\left(\delta(M_f \omega_f)\right)^2}
-\end{equation}
-which expands to
-\begin{equation}
-\sqrt{(M_1\delta \omega)^2+(\omega_1\delta M)^2+(M_2\delta \omega)^2+(\omega_2\delta M)^2+(M_f\delta \omega)^2+(\omega_f\delta M_f)^2}
-\end{equation}
-
-Use a spreadsheet to make this calculation easier! Note: for this process we estimate the
-error in the measurement of angular velocity to be:
-\begin{equation}
-\delta\omega = 0.1\mbox{ rad/sec}
-\end{equation}
+\]
 
 \section*{Conclusions}
 \subsection*{Part I}
 Present the results obtained in Parts I of the experiment in a
-carefully constructed table.  Be sure to include uncertainties and units.
+carefully constructed table.  Be sure to include uncertainties.
 
 Your discussion of the results should include (but is not limited to)
 the following points:
@@ -675,23 +630,17 @@ justify your answer.
 \subsection*{Part II}
 Present the results obtained in Part II of the experiment in a
 carefully constructed table.
-Comment on the extent to which angular momentum was conserved.
-Angular momentum is  conserved only if there are no {\em
+Comment on the extent to which angular momentum was conserved in Part II of the
+experiment.  Angular momentum is  conserved only if there are no {\em
 external}
 torques acting on the system.  If your results show that the angular momentum
 of the system was not conserved, could it be due to the presence of an
 external torque or is it merely the effect of experimental
 uncertainty?
 
-%Was the rotational
-%kinetic energy conserved?  Does this tell you that the collision was elastic
-%or inelastic?
+Was the rotational
+kinetic energy conserved?  Does this tell you that the collision was elastic
+or inelastic?
 
 \section*{Critique}
 Follow the suggestions in the Introduction to the Laboratory Manual.
-
-\section*{Quick Report Card}
-Properly report (sigfigs, units, error) your experimental value for the object's $I$.
-Properly report (sigfigs, units, error) your theoretical value for the object's $I$.
-
-From Part II, properly report (sigfigs, units, error) $\Delta L$, i.e., Eq.~\ref{eq:Lconserved5}.

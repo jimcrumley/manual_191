@@ -228,11 +228,11 @@ a discussion of this point.  Thus we should use
  =  \sqrt{ {{\sum (L_{i} - \langle L \rangle)^{2}} \over {9}}}
      = 0.036 \;\mbox{m}
 \]
-Almost certainly your calculator can automatically
-calculate the standard deviation of entered data; the Excel
+Your calculator can almost certainly
+calculate the standard deviation of a set of data. The calculation is even easier in a spreadheet; for example, the Excel
 function {\tt stdev()} reports the standard deviation of
 its argument.  It will pay you to learn
-how to use these functions!
+how to use these functions!  The program Help screens will usually show examples.
 
 Usually the average deviation is a bit
 less than the standard deviation.  
@@ -281,7 +281,7 @@ standard deviation:
     \over {N - 1}}}
 \]
 
-\item {\bf standard deviation of the mean:} (SDOM) The uncertainty of the
+\item {\bf standard deviation of the mean:} The uncertainty of the
 {\em average value} is given by the standard deviation
 of the mean, \label{sdev.mean}
 
@@ -297,13 +297,10 @@ accurate than any single measurement.
 \end{itemize}
 
      The error estimate ($\delta y$), should always be reported along
-with the measurement using the form: $y \pm \delta y$.
-When  the errors in an experiment are known to be unbiased and random,
-the average of repeated measurments may be of interest, in which case
-you should report:
-% (or
+with the measurement using the form: $y \pm \delta y$ (or
 %$\langle y \rangle \pm \sigma_{\langle y \rangle}$ for
-$\langle y \rangle \pm S$.
+$\langle y \rangle \pm S$ for
+repeated measurements).
 
 %Note: some texts use the notation $\bar{y}$ to denote
 %the average value of $y$.  Using this notation the uncertainty in the average
@@ -337,8 +334,7 @@ time.  In this section we will see how to find uncertainties in
 measured quantities.
 
 
-\subsubsection*{High-Low Method}
-\label{par:high.low.game}
+
 Suppose we have a rectangle
 for which we have measured the height $H=2.73\pm .03$~cm and the 
 width $W=3.97\pm.03$~cm, and we
@@ -376,7 +372,6 @@ achieve a particular accuracy in the result?".  (3) The method does not take int
 account the unlikeliness of the measured quantities conspiring to achieve exactly the
 right combination of extreme values to produce the extreme calculated result.
 
-\subsubsection*{Worst-Case Formulas}
 We can simplify the calculations (and solve problems (1) and (2)) by doing
 the algebra for a general case.
 We write the formula for the area $A$ and its uncertainty $\delta A$
@@ -421,8 +416,6 @@ error estimates ``worst-case errors".
 Since $\delta A/A$ is the relative error in $A$ this last equation says
 that the relative error in $A$ is the sum of the relative errors in $w$ and $h$.
 
-\subsubsection*{Usual Error Formulas}
-\label{par:error.formula}
 While we do not reproduce the proof here, a
 more advanced statistical treatment shows that the likelihood of
 partial cancelation of multiple errors (problem (3) above) can
@@ -438,8 +431,7 @@ area is the square root of the sum of the squares of the
 percentage errors in $h$ and $w$.  %$\ell$ and $w$.
 
 Table~\ref{table1} gives the result of this
-calculation for several commonly used operations and Appendix E
-provides a longer list of results.  Note that Eq.~A.2 in
+calculation for several commonly used operations.  Note that Eq.~A.2 in
 that table is identical to the result we found above for the
 uncertainty in the area.
 It would be a useful exercise for you to confirm all of these results.
@@ -546,7 +538,7 @@ the fractional part of the speed is of no significance if the uncertainty  is 3 
 Similarly, given the crude nature of our estimates of error, one or at most
 two significant digits in the uncertainty should be reported.  
 Note a fast way to lose lots of points: $ 22.1875\pm 2.99308$ --- no units and 
-too many significant digits in both the number and the error.\label{appa:sigfigs}
+too many significant digits in both the number and the error.
 
 Since the numerical value of  constants (such as
 $\pi$ or $\ln(2)$) are known to very high precision, they should
@@ -595,7 +587,7 @@ squares of all the terms:
                  \right)^{2} + \left( {{\partial z} \over {\partial y}} \,
                  \delta y \right)^{2} }
 \]
-Once can derive all of the formulas in Table~\ref{table1}, as well as
+Once can derive all of the formulas in Table~\ref{table1} and Appendix E, as well as
 the equations for more complex cases, using this technique.  See
 Taylor's book, previously cited, for a more detailed treatment.
 
